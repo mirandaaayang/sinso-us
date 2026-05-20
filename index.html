@@ -464,22 +464,29 @@
 
     /* ─── Logo strip ──────────────────────────────────────── */
     .logos-section { padding: 64px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .logos-label { text-align: center; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 36px; }
-    .logos-strip {
+    .logos-label { text-align: center; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 40px; }
+    .logos-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 36px;
+      column-gap: 0;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .logos-grid-item {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 40px 56px;
     }
-    .logos-strip img {
-      height: 28px;
+    .logos-grid-item img {
+      height: 36px;
       width: auto;
-      filter: grayscale(1) opacity(0.45);
-      transition: filter 0.2s;
+      max-width: 120px;
+      filter: grayscale(1) opacity(0.4);
+      transition: filter 0.2s, transform 0.2s;
       object-fit: contain;
     }
-    .logos-strip img:hover { filter: grayscale(0) opacity(1); }
+    .logos-grid-item img:hover { filter: grayscale(0) opacity(1); transform: scale(1.07); }
 
     /* ─── Reassurance bar ─────────────────────────────────── */
     .reassurance-grid {
@@ -763,30 +770,30 @@
 
 <hr class="section-divider">
 
-<!-- ═══════════ WEDGE 1 — ARTIST / COLLECTOR EDITIONS ═══════ -->
+<!-- ═══════════ VERTICAL 1 — ARTIST EDITIONS ═══════════════ -->
 <section class="section" id="artist">
   <div class="container">
     <div class="wedge-spotlight">
       <div class="wedge-spotlight-img">
-        <img src="images/products/6M0A4293.jpg" alt="Collector edition puzzle and game packaging with vivid ECG color" loading="lazy">
+        <img src="images/products/injoy-puzzles-hero.jpg" alt="In Joy Puzzle Company — artist edition puzzle boxes printed by Sinso" loading="lazy">
       </div>
       <div class="wedge-spotlight-body">
-        <span class="eyebrow">Wedge 01 — Artist &amp; Collector Editions</span>
+        <span class="eyebrow">Vertical 01 — Artist Editions</span>
         <h2>When the box is part of the art</h2>
         <p class="lead">
-          For puzzle makers, toy brands, and artist collaborations — the packaging has to carry the same visual weight as the product inside. ECG color does that. Standard CMYK doesn't.
+          Artist-edition puzzle and game packaging demands color accuracy that standard CMYK simply cannot deliver. Our ECG press reproduces the full brilliance of an artist's original — deep violets, gradient greens, saturated oranges — exactly as intended.
         </p>
         <div class="capability-tags">
           <span class="tag tag--accent">ECG 8-color printing</span>
-          <span class="tag">Puzzle boxes</span>
-          <span class="tag">Game packaging</span>
+          <span class="tag">Artist collaborations</span>
+          <span class="tag">Puzzle &amp; game boxes</span>
           <span class="tag">Collector editions</span>
           <span class="tag">Matte + soft-touch</span>
           <span class="tag">Spot UV</span>
         </div>
         <div class="proof-quote">
           <p>"The deep blues and vivid oranges in our Holton Rower collaboration came out exactly as the artist intended — we had tried two other printers first."</p>
-          <cite>— Puzzle brand customer, Brooklyn NY</cite>
+          <cite>— In Joy Puzzle Company, Brooklyn NY</cite>
         </div>
       </div>
     </div>
@@ -795,57 +802,57 @@
 
 <hr class="section-divider">
 
-<!-- ═══════════ WEDGE 2 — SPECIALTY PAPER GOODS ══════════════ -->
-<section class="section section--soft" id="paper">
+<!-- ═══════════ VERTICAL 2 — TOY SET PACKAGING ═══════════════ -->
+<section class="section section--soft" id="toys">
   <div class="container">
     <div class="wedge-header">
-      <span class="eyebrow">Wedge 02 — Specialty Paper Goods</span>
-      <h2>Puzzles, games, and tactile packaging that commands a premium</h2>
+      <span class="eyebrow">Vertical 02 — Toy &amp; Game Packaging</span>
+      <h2>Shelf-ready toy packaging that holds up to retail</h2>
       <p class="lead" style="margin: 14px auto 0; text-align: center;">
-        Beyond our ECG capability, we run conventional 7-color offset for high-detail CMYK work. Same factory, same QC, same US coordination.
+        From rigid gift sets to blister packs and retail display boxes — built to vendor spec for Target, Walmart, and specialty toy retailers.
       </p>
     </div>
     <div class="wedge-grid-3">
       <div class="wedge-card">
         <div class="wedge-card-img">
-          <img src="images/products/6M0A4309.jpg" alt="Premium puzzle box packaging" loading="lazy">
+          <img src="images/products/6M0A4302.jpg" alt="Retail toy box packaging" loading="lazy">
         </div>
         <div class="wedge-card-body">
-          <h3>Puzzle &amp; Game Boxes</h3>
-          <p>Custom die-cut, rigid or folding, with backer inserts. Experience with 500-piece, 1000-piece, and oversized formats.</p>
+          <h3>Retail Toy Boxes</h3>
+          <p>Four-color and ECG offset-printed folding cartons with window die-cuts, varnish coatings, and retail-compliant barcodes and UPC placement.</p>
         </div>
       </div>
       <div class="wedge-card">
         <div class="wedge-card-img">
-          <img src="images/products/6M0A4381.jpg" alt="Premium gift set packaging" loading="lazy">
+          <img src="images/products/6M0A4381.jpg" alt="Premium gift set toy packaging" loading="lazy">
         </div>
         <div class="wedge-card-body">
-          <h3>Gift Sets &amp; Curated Packaging</h3>
-          <p>Rigid gift boxes, magnetic closures, ribbon pulls, and interior flocked trays — produced as a complete kit.</p>
+          <h3>Gift Sets &amp; Bundled Packs</h3>
+          <p>Rigid gift boxes with magnetic closures, foil stamping, and custom-shaped interior trays — produced as a complete turnkey kit.</p>
         </div>
       </div>
       <div class="wedge-card">
         <div class="wedge-card-img">
-          <img src="images/products/6M0A4392.jpg" alt="Pet product retail packaging" loading="lazy">
+          <img src="images/products/6M0A4390.jpg" alt="Toy display and backer card packaging" loading="lazy">
         </div>
         <div class="wedge-card-body">
-          <h3>Retail Blister &amp; Backer Cards</h3>
-          <p>Vendor-compliant backer cards, blister packs, and hanging cards built to Walmart, Target, and Petco specs.</p>
+          <h3>Display &amp; Backer Cards</h3>
+          <p>Hang-sell backer cards, blister packs, and floor-display packaging engineered to Walmart, Target, and Petco vendor requirements.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════ WEDGE 3 — BEAUTY / COSMETICS ════════════════ -->
+<!-- ═══════════ VERTICAL 3 — BEAUTY / COSMETICS ═══════════════ -->
 <section class="section" id="beauty">
   <div class="container">
     <div class="wedge-spotlight" style="direction: ltr;">
       <div class="wedge-spotlight-body">
-        <span class="eyebrow">Wedge 03 — Beauty &amp; Personal Care</span>
+        <span class="eyebrow">Vertical 03 — Beauty &amp; Personal Care</span>
         <h2>The finish matters as much as the formula</h2>
         <p class="lead">
-          Cosmetics packaging lives or dies on tactility and shelf presence. We produce soft-touch laminated cartons, embossed rigid boxes, and foil-stamped beauty sets — paired with ECG color for brands where the unboxing is part of the brand story.
+          Beauty packaging lives and dies on tactility and shelf presence. We produce soft-touch laminated cartons, embossed rigid set-up boxes, and hot-foil beauty sets — in brands like Philips where the unboxing experience is inseparable from the product.
         </p>
         <div class="capability-tags">
           <span class="tag tag--accent">Soft-touch lamination</span>
@@ -861,7 +868,7 @@
         </a>
       </div>
       <div class="wedge-spotlight-img">
-        <img src="images/products/6M0A4357.jpg" alt="Luxury cosmetics packaging with soft-touch finish" loading="lazy">
+        <img src="images/products/6M0A4409.jpg" alt="Premium beauty and personal care packaging with soft-touch finish" loading="lazy">
       </div>
     </div>
   </div>
@@ -905,15 +912,15 @@
 <div class="logos-section">
   <div class="container">
     <p class="logos-label">Packaging produced for</p>
-    <div class="logos-strip">
-      <img src="images/logos/target.svg" alt="Target" height="28">
-      <img src="images/logos/walmart.svg" alt="Walmart" height="28">
-      <img src="images/logos/best-buy.svg" alt="Best Buy" height="28">
-      <img src="images/logos/petco.svg" alt="Petco" height="28">
-      <img src="images/logos/home-depot.svg" alt="Home Depot" height="28">
-      <img src="images/logos/staples.svg" alt="Staples" height="28">
-      <img src="images/logos/cvs.svg" alt="CVS" height="28">
-      <img src="images/logos/walgreens.svg" alt="Walgreens" height="28">
+    <div class="logos-grid">
+      <div class="logos-grid-item"><img src="images/logos/target.svg" alt="Target"></div>
+      <div class="logos-grid-item"><img src="images/logos/walmart.svg" alt="Walmart"></div>
+      <div class="logos-grid-item"><img src="images/logos/best-buy.svg" alt="Best Buy"></div>
+      <div class="logos-grid-item"><img src="images/logos/petco.svg" alt="Petco"></div>
+      <div class="logos-grid-item"><img src="images/logos/lovevery.svg" alt="Lovevery"></div>
+      <div class="logos-grid-item"><img src="images/logos/ikea.svg" alt="IKEA"></div>
+      <div class="logos-grid-item"><img src="images/logos/philips.svg" alt="Philips"></div>
+      <div class="logos-grid-item"><img src="images/logos/cvs.svg" alt="CVS"></div>
     </div>
   </div>
 </div>
@@ -993,6 +1000,7 @@
     <div class="footer-links">
       <a href="#ecg">ECG Technology</a>
       <a href="#artist">Artist Editions</a>
+      <a href="#toys">Toys &amp; Games</a>
       <a href="#beauty">Beauty</a>
       <a href="#process">How We Work</a>
       <a href="mailto:hello@sinso.us">Contact</a>

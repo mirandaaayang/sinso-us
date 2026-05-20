@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 48" width="180" height="48">
+  <!-- Shield symbol (simplified) -->
+  <g transform="translate(0,4)">
+    <ellipse cx="18" cy="20" rx="14" ry="18" fill="#00A0E9"/>
+    <ellipse cx="18" cy="16" rx="3.5" ry="3.5" fill="white"/>
+    <ellipse cx="18" cy="20" rx="3.5" ry="3.5" fill="white"/>
+    <ellipse cx="18" cy="24" rx="3.5" ry="3.5" fill="white"/>
+  </g>
+  <text x="40" y="33" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#00A0E9" letter-spacing="1">PHILIPS</text>
+</svg>
