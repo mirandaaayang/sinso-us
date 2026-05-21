@@ -327,6 +327,7 @@
       transition: width 1s ease-out;
     }
     .fill-ecg { background: linear-gradient(90deg, #0062CC, #4DA3FF); width: 85%; }
+    .fill-ecg-mid { background: #94A3B8; width: 72%; }
     .fill-cmyk { background: #CBD5E1; width: 52%; }
 
     .ecg-specs {
@@ -708,15 +709,15 @@
     <div class="ecg-grid">
       <div>
         <span class="eyebrow">Color Technology</span>
-        <h2>85% of visible color — not just 52%</h2>
+        <h2>Most ECG presses add colors on top of CMYK. Ours never touches it.</h2>
         <p class="lead" style="margin-top:18px;">
-          Standard CMYK printing reproduces about half of what the human eye sees. Our Heidelberg XL75 8-color ECG (Extended Color Gamut) press adds orange, green, and violet ink stations — hitting colors in packaging that standard presses simply cannot match.
+          ECG is a broad term — most printers use it to mean CMYK with extra spot inks layered on top. Our workflow is structurally different: we start from your RGB file and convert directly to seven inks, skipping CMYK conversion entirely. That single difference is why our colors land closer to your original design than any CMYK-routed press can reach.
         </p>
 
         <div class="spectrum-compare">
           <div class="spectrum-row">
             <div class="spectrum-labels">
-              <span class="spectrum-name">ECG — 8 colors (CMYK + OGV)</span>
+              <span class="spectrum-name">Sinso — RGB-native, 7-ink workflow</span>
               <span class="spectrum-pct" style="color:var(--accent)">85%</span>
             </div>
             <div class="spectrum-bar-track">
@@ -725,7 +726,16 @@
           </div>
           <div class="spectrum-row">
             <div class="spectrum-labels">
-              <span class="spectrum-name">Standard CMYK — 4 colors</span>
+              <span class="spectrum-name">Typical ECG — CMYK + spot inks</span>
+              <span class="spectrum-pct" style="color:var(--text-2)">~72%</span>
+            </div>
+            <div class="spectrum-bar-track">
+              <div class="spectrum-bar-fill fill-ecg-mid"></div>
+            </div>
+          </div>
+          <div class="spectrum-row">
+            <div class="spectrum-labels">
+              <span class="spectrum-name">Standard CMYK — 4 inks</span>
               <span class="spectrum-pct" style="color:var(--text-3)">52%</span>
             </div>
             <div class="spectrum-bar-track">
@@ -739,25 +749,25 @@
             <span class="ecg-spec-icon">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            Brilliant oranges, grass greens, deep violets — in a single pass
+            No CMYK conversion in the path — your RGB file is the color reference
           </div>
           <div class="ecg-spec">
             <span class="ecg-spec-icon">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            No spot color plates needed — fewer setups, lower cost at scale
+            Brighter oranges, deeper blues, truer greens — the colors CMYK compression removes
           </div>
           <div class="ecg-spec">
             <span class="ecg-spec-icon">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            G7 certified color control — consistent run-to-run
+            G7 Master certified — every press run signed off against your approved proof
           </div>
           <div class="ecg-spec">
             <span class="ecg-spec-icon">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            Pairs with matte, soft-touch, gloss, and spot-UV finishes
+            The workflow is the moat — custom software, trained operators, and color science you can't buy off a press spec sheet
           </div>
         </div>
       </div>
