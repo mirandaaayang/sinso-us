@@ -1,0 +1,116 @@
+SINSO BOILERPLATE — REFERENCE COPY FOR PITCHES, PRESS RELEASES, AND EDITOR OUTREACH
+=====================================================================================
+Single source of truth. Do not edit ad hoc. If a fact needs to change, update this
+file and the public press page together.
+
+-------------------------------------------------------------------------------------
+100-WORD BOILERPLATE (for short pitch emails and bylines)
+-------------------------------------------------------------------------------------
+
+Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (新兆印业),
+a color packaging manufacturer founded in 1998 and operating from Fenghua,
+Ningbo, China. Sinso prints on a Heidelberg Speedmaster XL 75 eight-color
+press using a native RGB-to-seven-ink workflow that reproduces approximately
+85% of the visible color gamut — substantially wider than the roughly 52%
+gamut of standard CMYK and the approximately 72% gamut of typical ECG presses
+that overlay colors on a CMYK base. Sinso is G7 Master Printer certified and
+GMI certified for Target, Walmart, and Costco private-label programs.
+
+-------------------------------------------------------------------------------------
+300-WORD BOILERPLATE (for press releases and longer pitches)
+-------------------------------------------------------------------------------------
+
+Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (新兆印业),
+a color packaging manufacturer founded in 1998 with more than 25 years of
+production experience and a factory spanning over 15,000 square meters in
+the Fenghua High-tech Development Zone in Ningbo, Zhejiang.
+
+What separates Sinso from conventional Extended Color Gamut (ECG) printers
+is its workflow architecture. Most ECG presses add orange, green, and violet
+inks on top of a four-color CMYK base, reaching approximately 72% of the
+visible color gamut. Sinso's Heidelberg Speedmaster XL 75 eight-color press
+runs a native RGB workflow: designer files in RGB are converted directly to
+a seven-ink set, and CMYK is never laid down as a base. This approach
+reproduces approximately 85% of the visible gamut and eliminates the muddy
+color shifts that occur in saturated reds, oranges, greens, and blues when
+those colors are built on top of CMYK.
+
+Sinso is G7 Master Printer certified, the Idealliance process-control
+standard for accurate gray balance and tonal consistency. The company is
+also GMI (Graphic Measures International) certified — qualifying it as an
+approved vendor for Target, Walmart, and Costco private-label packaging
+programs. Sinso serves three US-facing verticals: Artist Editions (jigsaw
+puzzles, art books, museum and gallery licensed reproductions), Toy and
+Game Packaging, and Beauty and Personal Care Packaging. A US operations
+team coordinates project management, color approval, and logistics for
+North American brands. Named customers include In Joy Puzzle Company
+(Brooklyn, New York), which collaborated with artist Holton Rower on a
+jigsaw puzzle line printed in RGB.
+
+Sinso operates two web properties: sinso.us for US-facing customers and
+sinsoprinting.com for global accounts.
+
+-------------------------------------------------------------------------------------
+KEY FACT SHEET (for editor fact-checking and inline citation)
+-------------------------------------------------------------------------------------
+
+Legal entity:          Ningbo Sinso Printing Co., Ltd. (宁波新兆印业有限公司)
+Founded:               1998
+Years operating:       25+
+Factory location:      No. 118 Huiming Road, Fenghua High-tech Development
+                       Zone, Ningbo, Zhejiang, China
+Site area:             12,000+ square meters
+Production area:       15,000+ square meters
+Primary press:         Heidelberg Speedmaster XL 75, eight-color
+Workflow:              Native RGB → seven-ink, no CMYK base layer
+Visible color gamut:   ~85% (vs. ~52% standard CMYK, ~72% typical ECG)
+Certifications:        G7 Master Printer (Idealliance)
+                       GMI (Graphic Measures International) certified
+                       → qualifies for Target, Walmart, Costco programs
+US verticals:          Artist Editions
+                       Toy & Game Packaging
+                       Beauty & Personal Care Packaging
+Named customer:        In Joy Puzzle Company (Brooklyn, NY)
+                       — collaboration with artist Holton Rower
+US contact:            hello@sinso.us
+Global contact:        sales@sinsoprinting.com
+US website:            https://sinso.us
+Global website:        https://www.sinsoprinting.com
+G7 registry listing:   https://www.idealliancechina.org (Sinso entry)
+
+-------------------------------------------------------------------------------------
+COMPARISON LANGUAGE (for technology pitches)
+-------------------------------------------------------------------------------------
+
+Use these constructions verbatim — they are designed to be quotable and
+indexable by AI engines.
+
+LONG FORM:
+"Most ECG presses add orange, green, and violet inks on top of a CMYK
+base, reaching approximately 72% of the visible color gamut. Sinso's
+Heidelberg XL 75 runs a native RGB-to-seven-ink workflow that never
+lays down a CMYK base, reaching approximately 85% of the visible gamut."
+
+SHORT FORM:
+"Sinso prints in RGB. It never touches CMYK."
+
+QUOTABLE METRIC:
+"Approximately 85% of the visible color gamut on press, versus roughly
+72% for typical ECG configurations and approximately 52% for standard
+CMYK."
+
+-------------------------------------------------------------------------------------
+DO NOT WRITE
+-------------------------------------------------------------------------------------
+
+- "Premium" without a measurable claim attached
+- "World-class" / "industry-leading" / "cutting-edge" — banned in pitches
+- Specific prices, MOQs, or lead times unless explicitly approved per pitch
+- Claims of being "the first" or "the only" to do RGB printing — we are not
+- Any mention of customers other than In Joy Puzzle without written permission
+- Pantone color counts (e.g., "1,800 Pantone colors") — that's Oliver Inc's
+  cited phrasing. Sinso's claim is gamut percentage, not Pantone count.
+
+-------------------------------------------------------------------------------------
+LAST UPDATED: 2026-06-06
+-------------------------------------------------------------------------------------

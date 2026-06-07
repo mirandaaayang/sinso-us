@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press — Sinso | Media Kit, Boilerplate, Editorial Contact</title>
+    <meta name="description" content="Sinso press kit: media contact, company boilerplate, key facts, high-resolution logos and product photography, and editorial interview availability.">
+
+    <link rel="canonical" href="https://sinso.us/press">
+    <link rel="alternate" hreflang="en-us" href="https://sinso.us/press">
+    <link rel="alternate" hreflang="x-default" href="https://sinso.us/press">
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sinso">
+    <meta property="og:title" content="Press — Sinso | Media Kit, Boilerplate, Editorial Contact">
+    <meta property="og:description" content="Media contact, company boilerplate, key facts, and high-resolution assets for editorial use.">
+    <meta property="og:url" content="https://sinso.us/press">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Press — Sinso | Media Kit, Boilerplate, Editorial Contact">
+    <meta name="twitter:description" content="Media contact, company boilerplate, and high-resolution assets for editorial use.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://sinso.us/press#presspage",
+      "url": "https://sinso.us/press",
+      "name": "Sinso Press Kit",
+      "description": "Editorial resources for journalists and trade publications covering Sinso: media contact, company boilerplate, key facts, and high-resolution assets.",
+      "mainEntity": { "@id": "https://sinso.us/#organization" },
+      "isPartOf": { "@id": "https://sinso.us/#organization" }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+    /* ─── Reset ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Tokens ─────────────────────────────────────────── */
+    :root {
+      --navy:   #080F1C;
+      --navy-2: #111827;
+      --accent: #003670;
+      --accent-light: #E6EDF5;
+      --text:   #111827;
+      --text-2: #6B7280;
+      --text-3: #9CA3AF;
+      --bg:     #FFFFFF;
+      --bg-soft:#F7F8FA;
+      --border: #E5E7EB;
+      --radius: 10px;
+      --radius-lg: 18px;
+      --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --max-w: 1100px;
+      --section-py: 96px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 64px;
+    }
+
+    /* ─── Layout helpers ─────────────────────────────────── */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .section { padding: var(--section-py) 0; }
+    .section--soft { background: var(--bg-soft); }
+    .section--dark { background: var(--navy); color: #fff; }
+
+    /* ─── Typography ─────────────────────────────────────── */
+    h1, h2, h3, h4 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+    }
+    h1 { font-size: clamp(2.6rem, 5.5vw, 4rem); font-weight: 800; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); }
+    h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text-2);
+      max-width: 600px;
+    }
+
+    /* ─── Nav ─────────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 9px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .nav-cta:hover { background: #004fa8; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-right: 20px;
+    }
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+      opacity: 0.7;
+      transition: opacity 0.15s;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    /* ─── Footer ──────────────────────────────────────────── */
+    .footer {
+      background: #050C18;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 40px 0;
+    }
+    .footer-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.03em;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ─── Page content ────────────────────────────────────── */
+    main h1 { margin-bottom: 28px; }
+    main h2 { font-size: 1.5rem; margin-top: 48px; margin-bottom: 14px; }
+    main h3 { font-size: 1.1rem; margin-top: 32px; margin-bottom: 10px; }
+    main p  { margin-bottom: 18px; color: var(--text-2); }
+    main p strong { color: var(--text); }
+    main ul { padding-left: 24px; margin-bottom: 18px; }
+    main ul li { color: var(--text-2); margin-bottom: 6px; }
+    main a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    main a:hover { opacity: 0.8; }
+    main code { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: 0.88em; }
+
+    @media (max-width: 600px) {
+      .nav-inner { padding: 0 20px; }
+    }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Sinso<span>.</span></a>
+    <div class="nav-links">
+      <a href="/about">About</a>
+      <a href="/press">Press</a>
+    </div>
+    <a href="mailto:hello@sinso.us?subject=Packaging%20Inquiry" class="nav-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Get a Sample
+    </a>
+  </div>
+</nav>
+
+<main>
+
+    <section style="max-width: 760px; margin: 0 auto; padding: 64px 24px;">
+
+        <h1>Press</h1>
+
+        <p>Editorial resources for journalists and trade publications. For interview requests, product samples, factory access, or high-resolution assets not listed below, contact us directly.</p>
+
+        <h2>Media contact</h2>
+
+        <p>
+            <strong>Miranda Yang</strong><br>
+            US Operations Lead, Sinso<br>
+            Email: <a href="mailto:hello@sinso.us">hello@sinso.us</a><br>
+            Response time: within one business day, US Pacific time
+        </p>
+
+        <p>For pitch follow-ups, use the subject prefix <code>[PRESS]</code>.</p>
+
+        <h2>Company boilerplate</h2>
+
+        <h3>100-word version (for short pitches and bylines)</h3>
+
+        <p style="background: #f7f7f7; padding: 20px; border-left: 3px solid #222;">
+            Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (新兆印业), a color packaging manufacturer founded in 1998 and operating from Fenghua, Ningbo, China. Sinso prints on a Heidelberg Speedmaster XL 75 eight-color press using a native RGB-to-seven-ink workflow that reproduces approximately 85% of the visible color gamut — substantially wider than the roughly 52% gamut of standard CMYK and the approximately 72% gamut of typical ECG presses that overlay colors on a CMYK base. Sinso is G7 Master Printer certified and GMI certified for Target, Walmart, and Costco private-label programs.
+        </p>
+
+        <h3>300-word version (for press releases and longer pitches)</h3>
+
+        <p style="background: #f7f7f7; padding: 20px; border-left: 3px solid #222;">
+            Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (新兆印业), a color packaging manufacturer founded in 1998 with more than 25 years of production experience and a factory spanning over 15,000 square meters in the Fenghua High-tech Development Zone in Ningbo, Zhejiang.
+            <br><br>
+            What separates Sinso from conventional Extended Color Gamut (ECG) printers is its workflow architecture. Most ECG presses add orange, green, and violet inks on top of a four-color CMYK base, reaching approximately 72% of the visible color gamut. Sinso's Heidelberg Speedmaster XL 75 eight-color press runs a native RGB workflow: designer files in RGB are converted directly to a seven-ink set, and CMYK is never laid down as a base. This approach reproduces approximately 85% of the visible gamut and eliminates the muddy color shifts that occur in saturated reds, oranges, greens, and blues when those colors are built on top of CMYK.
+            <br><br>
+            Sinso is G7 Master Printer certified, the Idealliance process-control standard for accurate gray balance and tonal consistency. The company is also GMI (Graphic Measures International) certified — qualifying it as an approved vendor for Target, Walmart, and Costco private-label packaging programs. Sinso serves three US-facing verticals: Artist Editions (jigsaw puzzles, art books, museum and gallery licensed reproductions), Toy and Game Packaging, and Beauty and Personal Care Packaging. A US operations team coordinates project management, color approval, and logistics for North American brands. Named customers include In Joy Puzzle Company (Brooklyn, New York), which collaborated with artist Holton Rower on a jigsaw puzzle line printed in RGB.
+        </p>
+
+        <h2>Key facts</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 24px 0;">
+            <tbody>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Legal entity</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">Ningbo Sinso Printing Co., Ltd. (宁波新兆印业有限公司)</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Founded</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">1998</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Headquarters</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">Ningbo, Zhejiang, China</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Factory address</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">No. 118 Huiming Road, Fenghua High-tech Development Zone</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Production area</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">15,000+ sq m</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Primary press</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">Heidelberg Speedmaster XL 75, eight-color</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Color workflow</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">Native RGB-to-seven-ink, no CMYK base</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Visible color gamut</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">~85% (vs. ~52% CMYK, ~72% typical ECG)</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Certifications</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">G7 Master Printer, GMI</td></tr>
+                <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><strong>Retailer qualifications</strong></td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">Target, Walmart, Costco (via GMI)</td></tr>
+                <tr><td style="padding: 8px 12px;"><strong>Named customer</strong></td><td style="padding: 8px 12px;">In Joy Puzzle Company (Brooklyn, NY) — Holton Rower collaboration</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Assets for editorial use</h2>
+
+        <p>The following assets are available on request. Email <a href="mailto:hello@sinso.us">hello@sinso.us</a> with subject <code>[PRESS ASSETS]</code> and specify which items you need.</p>
+
+        <ul>
+            <li>Sinso logo, vector (SVG) and raster (PNG transparent, 300 DPI)</li>
+            <li>Factory exterior and press-room photography, high-resolution</li>
+            <li>Heidelberg XL 75 in operation, high-resolution</li>
+            <li>Sample product photography: artist edition puzzles, toy boxes, beauty cartons</li>
+            <li>RGB vs. CMYK comparison chart (vector + raster)</li>
+            <li>Color gamut visualization (CIE Lab diagram showing Sinso seven-ink gamut against sRGB and CMYK)</li>
+            <li>Miranda's headshot (US Operations Lead)</li>
+            <li>In Joy Puzzle / Holton Rower collaboration sample images (rights cleared for editorial use)</li>
+        </ul>
+
+        <h2>Third-party verification</h2>
+
+        <ul>
+            <li><a href="https://www.idealliancechina.org" rel="noopener">Idealliance China G7 Master Printer registry</a> — verify Sinso's G7 certification</li>
+            <li>GMI certification — verifiable through Graphic Measures International on request</li>
+            <li><a href="https://www.sinsoprinting.com" rel="noopener">sinsoprinting.com</a> — global operation, multi-language (EN, KR, JP, DE, FR, 中文)</li>
+        </ul>
+
+        <h2>Interview availability</h2>
+
+        <p>Miranda is available for interviews on the following topics:</p>
+
+        <ul>
+            <li>RGB-native workflows vs. CMYK-based ECG: why the workflow architecture matters</li>
+            <li>Color management in licensed artwork reproduction</li>
+            <li>GMI certification and the qualification process for major US retailers</li>
+            <li>Operating a US-coordinated, China-manufactured packaging supply chain</li>
+            <li>Color packaging for boutique brands vs. mass-retail private label</li>
+        </ul>
+
+        <p>Lead time for scheduled interviews: typically 3-5 business days. For breaking-news commentary on color or print technology, faster turnaround is available — email with subject prefix <code>[URGENT PRESS]</code>.</p>
+
+        <h2>Editorial policy</h2>
+
+        <p>Sinso does not pay for editorial coverage. Sinso does not request copy approval beyond verification of technical facts and direct quotations. Sinso does not exclusively partner with any single publication.</p>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Sinso<span>.</span></div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/press">Press</a>
+      <a href="mailto:hello@sinso.us">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 Sinso US · Ningbo Sinso Printing Co., Ltd.</div>
+  </div>
+</footer>
+
+</body>
+</html>
