@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technology — 7-Color ECG Printing for High-Fidelity Packaging | Sinso</title>
-  <meta name="description" content="Sinso runs 7-color ECG (Expanded Color Gamut) printing — CMYK plus Orange, Green, and Violet — achieving 95%+ Pantone coverage and ΔE < 2 color accuracy on packaging where color is load-bearing.">
-  <link rel="canonical" href="https://sinso.us/technology">
+  <title>ECG Benchmarking: 7-Color vs. CMYK on High-Saturation Packaging | Sinso</title>
+  <meta name="description" content="Press metrics, substrate coverage, and the consistency case for running high-saturation packaging through a single 7-color ECG vendor process.">
+  <link rel="canonical" href="https://sinso.us/case-study/ecg-benchmarking">
 
   <!-- ============================================================
        JSON-LD: TechArticle
@@ -14,34 +14,22 @@
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Print What You Actually Designed",
-    "description": "How Sinso's 7-color ECG press achieves 95%+ Pantone coverage and ΔE < 2 color accuracy on packaging, and when standard CMYK is the wrong process for the job.",
-    "author": {
-      "@type": "Organization",
-      "name": "Sinso",
-      "url": "https://sinso.us"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Sinso",
-      "url": "https://sinso.us"
-    },
-    "datePublished": "2026-06-06",
+    "headline": "ECG Benchmarking: 7-Color vs. CMYK on High-Saturation Packaging",
+    "description": "Press metrics, substrate coverage, and the consistency argument for running complex color SKUs through a single 7-color ECG vendor process.",
+    "url": "https://sinso.us/case-study/ecg-benchmarking",
+    "datePublished": "2026-06-09",
     "dateModified": "2026-06-09",
     "inLanguage": "en-US",
-    "about": [
-      { "@type": "Thing", "name": "Extended Color Gamut printing" },
-      { "@type": "Thing", "name": "7-color ECG packaging" },
-      { "@type": "Thing", "name": "CMYK offset printing" }
-    ],
+    "author": { "@type": "Organization", "name": "Sinso", "url": "https://sinso.us" },
+    "publisher": { "@type": "Organization", "name": "Sinso", "url": "https://sinso.us" },
     "isPartOf": {
-      "@type": "WebSite",
-      "name": "Sinso",
-      "url": "https://sinso.us"
+      "@type": "CollectionPage",
+      "name": "Sinso Resources",
+      "url": "https://sinso.us/resources"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://sinso.us/technology"
+      "@id": "https://sinso.us/case-study/ecg-benchmarking"
     }
   }
   </script>
@@ -150,66 +138,69 @@
 
 <main style="max-width: 820px; margin: 64px auto; padding: 0 32px; line-height: 1.65;">
 
+  <p style="margin-bottom: 40px;"><a href="/resources" style="color: #003670; font-size: 0.9em; text-decoration: none;">← Resources</a></p>
+
   <header style="margin-bottom: 48px;">
-    <p style="font-size: 0.85em; letter-spacing: 0.12em; text-transform: uppercase; color: #003670; margin-bottom: 12px;">Technology</p>
-    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">Print What You Actually Designed</h1>
+    <p style="font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #003670; margin-bottom: 10px;">Technical Reference · 2026</p>
+    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">ECG Benchmarking: 7-Color vs. CMYK on High-Saturation Packaging</h1>
     <p style="font-size: 1.1em; color: #555; max-width: 680px;">
-      Most packaging prints darker, duller, and less accurate than the design file. That's not a calibration issue — it's a structural limitation of standard 4-color CMYK printing. Sinso solves this at the press level.
+      Deep-dive proof for peer printers benchmarking and buyers who need to justify the decision internally.
     </p>
   </header>
 
-  <p style="margin-bottom: 32px;">
-    We run 7-color ECG (Expanded Color Gamut) printing — CMYK plus Orange, Green, and Violet ink channels — as our base process. The result is 95%+ Pantone coverage and ΔE &lt; 2 color accuracy, built for packaging where color is load-bearing: luxury goods, beauty and food cartons, large-format brand color fields. For commodity print, standard CMYK is sufficient. For work where the shelf moment matters, it isn't.
-  </p>
+  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">The problem with CMYK</h2>
+  <p>Standard CMYK uses four inks and reproduces roughly 60% of Pantone spot colors. Saturated oranges, vivid greens, and deep violets fall outside its gamut. For brand packaging with a signature color, CMYK forces a choice: accept color drift, or pay for individual spot ink runs per color — each adding plate costs and press setup time.</p>
 
-  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">Standard CMYK vs. Sinso 7-Color ECG</h2>
+  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">The process</h2>
+  <p>Sinso runs Heidelberg Speedmaster XL 75 multi-unit presses with [TBD — RIP software] for 7-channel color separation. Each job is profiled against a press-specific ICC profile built for the target substrate. The input is the client's native RGB file; the RIP handles the conversion. Clients do not need to pre-convert to CMYK.</p>
+  <p style="margin-top: 16px;"><strong>Certification:</strong> [TBD]</p>
+
+  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">Benchmarks</h2>
   <table style="width: 100%; border-collapse: collapse; font-size: 0.95em;">
     <thead>
       <tr style="background: #f7f8fa; text-align: left;">
-        <th style="padding: 14px 18px; border-bottom: 2px solid #ddd;"></th>
+        <th style="padding: 14px 18px; border-bottom: 2px solid #ddd;">Metric</th>
         <th style="padding: 14px 18px; border-bottom: 2px solid #ddd;">Standard CMYK</th>
         <th style="padding: 14px 18px; border-bottom: 2px solid #ddd;">Sinso 7-Color ECG</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Ink channels</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">4</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">7</td>
-      </tr>
-      <tr>
         <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Pantone coverage</td>
         <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">~60%</td>
         <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">95%+</td>
       </tr>
       <tr>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Color accuracy (ΔE)</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Variable, often &gt;4</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">ΔE &lt; 2</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Average ΔE (saturated colors)</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">&gt;4</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">&lt;2</td>
       </tr>
       <tr>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Screen-to-print shift</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">High on saturated colors</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Minimal</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Spot ink add-ons required</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Per color</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">None</td>
       </tr>
       <tr>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Spot color add-on</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Required per color</td>
-        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Not needed</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Substrates profiled</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">[TBD]</td>
+        <td style="padding: 12px 18px; border-bottom: 1px solid #eee;">[TBD]</td>
       </tr>
     </tbody>
   </table>
 
-  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">Equipment and certification</h2>
-  <p style="margin-bottom: 12px;"><strong>Equipment:</strong> Heidelberg Speedmaster XL 75, [TBD — RIP software], press-specific ICC profiling on every run.</p>
-  <p><strong>Certification:</strong> G7 Master Printer (Idealliance); GMI-certified vendor for Target and Walmart; [TBD — ISO 20654 or equivalent].</p>
+  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">The consistency requirement</h2>
+  <p>ECG color output is process-specific. The translation from an RGB file to physical ink depends on RIP algorithm, ink formulation, press ICC profiles, and substrate calibration — all vendor-specific. Two printers both running 7-color ECG will produce different output from the same file.</p>
+  <p style="margin-top: 16px;">This means splitting a SKU across vendors reintroduces color inconsistency. For cross-run consistency — reorders, seasonal variants, multiple SKU sizes in the same line — one vendor, one process. Sinso manages this end-to-end.</p>
+
+  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">Ideal applications</h2>
+  <p>7-color ECG is the right process when: brand color is a saturated Pantone that CMYK consistently misses; packaging is displayed alongside other SKUs where color matching is visible side-by-side; the brief involves luxury goods, beauty or food cartons, art editions, or large-area spot color fields; or the brand is supplying to retailers with strict color approval processes.</p>
 
   <p style="margin-top: 48px;">
-    <a href="/case-study/ecg-benchmarking" style="color: #003670; font-weight: 500; text-decoration: none;">See the technical benchmarks →</a>
+    <a href="/faq" style="color: #003670; font-weight: 500; text-decoration: none;">Common questions about ECG printing →</a>
   </p>
 
   <p style="margin-top: 32px; padding: 20px; background: #f7f8fa; border-radius: 8px;">
-    See it on your packaging: <a href="mailto:hello@sinso.us?subject=Technology%20Question" style="color: #003670; font-weight: 500;">hello@sinso.us</a>. Physical sample in 7–10 days.
+    Ready to run a benchmark on your artwork? <a href="mailto:hello@sinso.us?subject=ECG%20Benchmark%20Inquiry" style="color: #003670; font-weight: 500;">hello@sinso.us</a>
   </p>
 
 </main>

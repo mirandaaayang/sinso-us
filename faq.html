@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ — Sinso ECG Color Packaging</title>
-  <meta name="description" content="Frequently asked questions about Sinso's RGB-native ECG printing, certifications, project flow, and factory operations.">
+  <meta name="description" content="Frequently asked questions about ECG printing, color accuracy, certifications, project flow, and factory operations at Sinso.">
   <link rel="canonical" href="https://sinso.us/faq">
 
   <script type="application/ld+json">
@@ -14,18 +14,50 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is ECG printing?",
+        "name": "What is ECG printing, and why haven't I heard of it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ECG stands for Extended Color Gamut printing. It uses more than the four standard CMYK inks — usually adding orange, green, and violet — so the press can reproduce colors that fall outside what CMYK can reach."
+          "text": "ECG (Expanded Color Gamut) is a printing standard that adds ink channels beyond standard CMYK — typically Orange, Green, and Violet — to reproduce a wider range of colors. It's been an ISO standard (ISO 20654) since 2014 but remains uncommon: the equipment investment is higher, the workflow requires specialized expertise, and most print buyers have never been offered it. If your current printer hasn't mentioned it, they likely don't run it."
         }
       },
       {
         "@type": "Question",
-        "name": "How is Sinso's ECG different from typical ECG printing?",
+        "name": "What's the difference between RGB and ECG? Are they the same thing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most ECG presses lay OGV inks on top of a CMYK base layer. Sinso runs a native RGB workflow on a Heidelberg Speedmaster XL 75 — there is no CMYK base. That difference is why we reach roughly 85% of the visible color gamut versus ~72% for typical hybrid ECG."
+          "text": "No — they operate at different layers. RGB is a color model used by screens and design software, describing color as combinations of red, green, and blue light. ECG is a printing capability standard describing how wide a gamut a press can reproduce in physical ink. The connection: a 7-color ECG press can faithfully translate an RGB design file into print because its gamut is large enough to cover most of what a screen displays. Standard CMYK cannot make that claim."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is 7-color ECG different from CMYK plus spot colors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both can hit specific Pantone targets, but the economics differ. Spot color printing adds a dedicated ink station per color — each additional color increases plate costs and press setup. It works for one or two brand colors on simple layouts but breaks down on photography or complex gradients. 7-color ECG uses a fixed ink set covering 95%+ of Pantone as a baseline, with no per-color surcharges and no press reconfiguration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if ECG printing is right for my product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Three questions to ask: Does your brand have a signature color — especially an orange, green, teal, or purple — that consistently looks wrong in print? Is your packaging displayed next to other SKUs where color matching is visible side-by-side? Are you currently paying for spot ink runs to hit one or two critical colors? If yes to any of these, ECG likely pays for itself. If your packaging is primarily text and neutral tones, standard CMYK is probably sufficient."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I use one vendor for an entire SKU?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because ECG output is tied to a specific vendor's process — their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to change how I send files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Supply your native RGB file as you normally would. Our RIP handles the conversion to 7-color ink. If you've been pre-converting files to CMYK before sending to your printer, you can stop — supplying RGB preserves the full color information and gives our profiling the best input to work with."
         }
       },
       {
@@ -70,18 +102,10 @@
       },
       {
         "@type": "Question",
-        "name": "Where is the factory?",
+        "name": "What substrates can you print on?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China. The site covers more than 12,000 sqm with 15,000+ sqm of production floor."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long has Sinso been operating?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ningbo Sinso Printing Co., Ltd. was founded in 1998. We have 25+ years of continuous operation."
+          "text": "SBS, FBB, kraft, recycled board, and specialty coated stocks. If you have a specific spec in mind, send it with the brief."
         }
       },
       {
@@ -110,26 +134,26 @@
       },
       {
         "@type": "Question",
-        "name": "What substrates can you print on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SBS, FBB, kraft, recycled board, and specialty coated stocks. If you have a specific spec in mind, send it with the brief."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you handle the artwork conversion to RGB-native separations?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Most artwork arrives in either RGB or CMYK. Our prepress team generates the native RGB separations for ECG jobs as part of the standard prepress workflow."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Who do I contact in the US?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "hello@sinso.us. Our US operations lead manages briefs, quotes, proofs, and project status from the US side, in direct coordination with the Ningbo factory."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the factory?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China. The site covers more than 12,000 sqm with 15,000+ sqm of production floor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long has Sinso been operating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ningbo Sinso Printing Co., Ltd. was founded in 1998. We have 25+ years of continuous operation."
         }
       }
     ]
@@ -246,11 +270,13 @@
   </header>
 
   <section style="margin-bottom: 48px;">
-    <h2 style="font-size: 1.4em; margin: 0 0 18px;">Technology</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What is ECG printing?</summary><p style="margin-top: 12px; color: #444;">ECG stands for Extended Color Gamut printing. It uses more than the four standard CMYK inks — usually adding orange, green, and violet — so the press can reproduce colors that fall outside what CMYK can reach.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How is Sinso's ECG different from typical ECG printing?</summary><p style="margin-top: 12px; color: #444;">Most ECG presses lay OGV inks on top of a CMYK base layer. Sinso runs a native RGB workflow on a Heidelberg Speedmaster XL 75 — there is no CMYK base. That difference is why we reach roughly 85% of the visible color gamut versus ~72% for typical hybrid ECG.</p></details>
+    <h2 style="font-size: 1.4em; margin: 0 0 18px;">ECG &amp; Color</h2>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What is ECG printing, and why haven't I heard of it?</summary><p style="margin-top: 12px; color: #444;">ECG (Expanded Color Gamut) is a printing standard that adds ink channels beyond standard CMYK — typically Orange, Green, and Violet — to reproduce a wider range of colors. It's been an ISO standard (ISO 20654) since 2014 but remains uncommon: the equipment investment is higher, the workflow requires specialized expertise, and most print buyers have never been offered it. If your current printer hasn't mentioned it, they likely don't run it.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What's the difference between RGB and ECG? Are they the same thing?</summary><p style="margin-top: 12px; color: #444;">No — they operate at different layers. RGB is a color model used by screens and design software, describing color as combinations of red, green, and blue light. ECG is a printing capability standard describing how wide a gamut a press can reproduce in physical ink. The connection: a 7-color ECG press can faithfully translate an RGB design file into print because its gamut is large enough to cover most of what a screen displays. Standard CMYK cannot make that claim.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How is 7-color ECG different from CMYK plus spot colors?</summary><p style="margin-top: 12px; color: #444;">Both can hit specific Pantone targets, but the economics differ. Spot color printing adds a dedicated ink station per color — each additional color increases plate costs and press setup. It works for one or two brand colors on simple layouts but breaks down on photography or complex gradients. 7-color ECG uses a fixed ink set covering 95%+ of Pantone as a baseline, with no per-color surcharges and no press reconfiguration.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How do I know if ECG printing is right for my product?</summary><p style="margin-top: 12px; color: #444;">Three questions to ask: Does your brand have a signature color — especially an orange, green, teal, or purple — that consistently looks wrong in print? Is your packaging displayed next to other SKUs where color matching is visible side-by-side? Are you currently paying for spot ink runs to hit one or two critical colors? If yes to any of these, ECG likely pays for itself. If your packaging is primarily text and neutral tones, standard CMYK is probably sufficient.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What press do you run?</summary><p style="margin-top: 12px; color: #444;">A Heidelberg Speedmaster XL 75 in 8-color configuration, with inline coater.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Can you handle the artwork conversion to RGB-native separations?</summary><p style="margin-top: 12px; color: #444;">Yes. Most artwork arrives in either RGB or CMYK. Our prepress team generates the native RGB separations for ECG jobs as part of the standard prepress workflow.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Do I need to change how I send files?</summary><p style="margin-top: 12px; color: #444;">No. Supply your native RGB file as you normally would. Our RIP handles the conversion to 7-color ink. If you've been pre-converting files to CMYK before sending to your printer, you can stop — supplying RGB preserves the full color information and gives our profiling the best input to work with.</p></details>
   </section>
 
   <section style="margin-bottom: 48px;">
@@ -264,6 +290,7 @@
 
   <section style="margin-bottom: 48px;">
     <h2 style="font-size: 1.4em; margin: 0 0 18px;">Project mechanics</h2>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Why should I use one vendor for an entire SKU?</summary><p style="margin-top: 12px; color: #444;">Because ECG output is tied to a specific vendor's process — their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How fast can you turn a physical sample?</summary><p style="margin-top: 12px; color: #444;">7 to 10 days from receipt of files and brief. Samples are airshipped to the US.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How does the project flow work?</summary><p style="margin-top: 12px; color: #444;">Brief and file submission → physical sample airshipped in 7–10 days → G7-calibrated digital proof reviewed and approved → production press run with inline color measurement → delivery FOB Ningbo, or DDP on request.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Do you publish pricing?</summary><p style="margin-top: 12px; color: #444;">No. Quotes depend on substrate, finishing, run length, and finishing operations. Send a brief to hello@sinso.us and we respond within 24 hours.</p></details>
