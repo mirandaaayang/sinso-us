@@ -116,6 +116,17 @@
     @media (max-width: 640px) {
       .nav-inner { padding: 0 20px; }
     }
+    .eq-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .eq-card img { width: 100%; height: auto; display: block; border-radius: 6px; }
+    .eq-caption { margin-top: 10px; font-size: 0.9em; font-weight: 600; color: #111827; }
+    .eq-role { font-size: 0.8em; color: #003670; margin-top: 3px; font-weight: 500; }
+    @media (max-width: 768px) { .eq-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .eq-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -150,21 +161,100 @@
 
   <h2 style="font-size: 1.5em; margin: 48px 0 18px;">Production stages</h2>
   <ol style="padding-left: 0; list-style: none;">
-    <li style="margin-bottom: 24px;"><strong>01 — Prepress.</strong> File preparation, color separation, and G7-calibrated digital proofing. RGB-native separations are generated here for ECG jobs; CMYK files are handled on parallel workflow.</li>
-    <li style="margin-bottom: 24px;"><strong>02 — Printing.</strong> Heidelberg Speedmaster XL 75 in 8-color configuration. Inline color measurement on every run. G7 Master Printer-certified press operators sign off against the approved proof, not by eye.</li>
+    <li style="margin-bottom: 24px;"><strong>01 — Prepress.</strong> File preparation, G7-calibrated digital proofing, and CTP platemaking on a Kodak Trendsetter platesetter. ECG jobs use 7-channel ink separation profiled per substrate; CMYK runs on a parallel workflow.</li>
+    <li style="margin-bottom: 24px;"><strong>02 — Printing.</strong> Three Heidelberg Speedmaster presses: XL 75 (8-color, the 7-color ECG press), CD 74 (7-color, conventional CMYK and spot), and XL 105 (5-color, large-format). Inline color measurement on every run; G7 Master Printer-certified operators sign off against the approved proof, not by eye.</li>
     <li style="margin-bottom: 24px;"><strong>03 — Coating.</strong> Aqueous, UV, soft-touch lamination, matte/gloss varnish, spot UV. Coatings can be applied inline on the XL 75 or off-line for finishes that require curing.</li>
     <li style="margin-bottom: 24px;"><strong>04 — Die-cutting.</strong> Folding cartons, set-up boxes, display units, blister card backers. Tooling produced in-house; sample dies turn within the 7–10 day proof window.</li>
-    <li style="margin-bottom: 24px;"><strong>05 — Binding and assembly.</strong> Gluing, foil stamping, embossing/debossing, magnetic-closure rigid box assembly, window patching, and final QC against the approved sample.</li>
+    <li style="margin-bottom: 24px;"><strong>05 — Binding and assembly.</strong> Gluing, foil stamping, embossing/debossing, magnetic-closure rigid box assembly, window patching, and machine collation for card decks and booklets. Finished sheets pass through 100% automated sheet inspection before final QC sign-off against the approved sample.</li>
   </ol>
+
+  <h2 style="font-size: 1.5em; margin: 48px 0 18px;">Equipment</h2>
+  <p style="margin-bottom: 24px;">Every color-critical stage runs on our own floor — prepress, press, finishing, and inspection.</p>
+  <div class="eq-grid">
+
+    <div class="eq-card">
+      <img src="/images/equipment/kodak-trendsetter-ctp-platesetter.jpg"
+           alt="Fully automatic Kodak Trendsetter CTP platesetter in Sinso's prepress department"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Kodak Trendsetter CTP Platesetter</p>
+      <p class="eq-role">01 · Prepress</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/heidelberg-xl75-8-color-ecg-press.jpg"
+           alt="Heidelberg Speedmaster XL 75 8-color press with inline coater — Sinso's 7-color ECG press, Ningbo factory"
+           width="1200" height="765" loading="lazy">
+      <p class="eq-caption">Heidelberg Speedmaster XL 75 (8+1)</p>
+      <p class="eq-role">02 · Printing — the 7-color ECG press</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/heidelberg-cd74-7-color-press.jpg"
+           alt="Heidelberg Speedmaster CD 74 7-color press with coater at Sinso"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Heidelberg Speedmaster CD 74 (7+1)</p>
+      <p class="eq-role">02 · Printing — conventional CMYK + spot</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/heidelberg-xl105-5-color-press.jpg"
+           alt="Heidelberg Speedmaster XL 105 5-color large-format press with coater at Sinso"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Heidelberg Speedmaster XL 105 (5+1)</p>
+      <p class="eq-role">02 · Printing — large-format</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/automatic-flute-laminator.jpg"
+           alt="Automatic flute laminating line mounting litho-printed sheets to corrugated"
+           width="1200" height="750" loading="lazy">
+      <p class="eq-caption">Automatic Flute Laminator</p>
+      <p class="eq-role">03 · Coating &amp; mounting</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/automatic-die-cutting-machine.jpg"
+           alt="Fully automatic die-cutting machine for folding cartons and blister backers"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Automatic Die-Cutting Machine</p>
+      <p class="eq-role">04 · Die-cutting</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/high-speed-folder-gluer.jpg"
+           alt="Fully automatic high-speed folder-gluer on Sinso's carton finishing line"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">High-Speed Folder-Gluer</p>
+      <p class="eq-role">05 · Binding &amp; assembly</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/card-collating-machine.jpg"
+           alt="Collating machine for game card decks and multi-page booklets"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Card Collating Machine</p>
+      <p class="eq-role">05 · Binding &amp; assembly</p>
+    </div>
+
+    <div class="eq-card">
+      <img src="/images/equipment/automated-sheet-inspection-machine.jpg"
+           alt="Automated sheet inspection machine for print quality control"
+           width="1200" height="800" loading="lazy">
+      <p class="eq-caption">Automated Sheet Inspection Machine</p>
+      <p class="eq-role">Quality control</p>
+    </div>
+
+  </div>
 
   <h2 style="font-size: 1.5em; margin: 48px 0 18px;">Press and finishing</h2>
   <table style="width: 100%; border-collapse: collapse; font-size: 0.95em;">
     <tbody>
       <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500; width: 38%;">Primary press</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Heidelberg Speedmaster XL 75, 8-color, with inline coater</td></tr>
+      <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Supporting presses</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Heidelberg Speedmaster CD 74 (7-color + coater), Heidelberg Speedmaster XL 105 (5-color + coater)</td></tr>
       <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Color workflow</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">7-color ECG (CMYK + Orange, Green, Violet) and conventional CMYK both supported</td></tr>
       <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Substrates</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">SBS, FBB, kraft, recycled board, specialty coated stocks</td></tr>
       <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Finishing</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Spot UV, soft-touch, hot-foil stamping, embossing/debossing, window patching</td></tr>
-      <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Box construction</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Folding cartons, rigid set-up boxes, magnetic-closure gift boxes, blister backers, display units</td></tr>
+      <tr><td style="padding: 12px 18px; border-bottom: 1px solid #eee; font-weight: 500;">Box construction</td><td style="padding: 12px 18px; border-bottom: 1px solid #eee;">Folding cartons, rigid set-up boxes, magnetic-closure gift boxes, blister backers, display units, litho-laminated corrugated (display and retail packaging; outer shipper cartons remain partner-supplied)</td></tr>
     </tbody>
   </table>
 
