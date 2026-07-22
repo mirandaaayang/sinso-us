@@ -6,7 +6,6 @@ Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (founded 1998), 
 
 - [Technology](/technology) — 7-color ECG process explanation, CMYK comparison, press specs, and the ~80% Pantone at ΔE 2.5 benchmark, backed by CTV ECG certification.
 - [Capabilities](/capabilities) — Full confirmed capability list: coatings, lamination, foil, structural converting, inserts and fitments, substrates, press fleet, and project flow.
-- [Certifications](/certifications) — All credentials held: G7 Master Printer, GMI, ISO 9001:2015 (CN09/21763), ISO 14001, FSC Chain of Custody (BV-COC-129082), SMETA, Disney FAMA, and CTV ECG. Registry codes and verification contacts included.
 - [Industries](/industries) — Three verticals: Artist & Collector Editions, Games & Puzzles, and Retail Packaging (including toy lines, gift sets, and beauty and personal care).
 - [FAQ](/faq) — Answers to common buyer questions on ECG printing, file prep, certifications, project flow, and facility.
 - [Resources](/resources) — Case studies and technical references including ECG benchmarking data and the In Joy × Holton Rower artist-collaboration puzzle case study.
