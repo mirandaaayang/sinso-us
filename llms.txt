@@ -1,55 +1,25 @@
 # Sinso
 
-> Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (新兆印业), a manufacturer of premium color packaging based in Ningbo, China. Sinso operates a Heidelberg Speedmaster XL 75 eight-color press with a native RGB-to-seven-ink workflow, producing packaging with approximately 85% of the visible color gamut — substantially wider than the roughly 52% gamut of standard four-color CMYK printing and the approximately 72% gamut of typical Extended Color Gamut (ECG) presses that add colors on top of a CMYK base.
+Sinso is the US-facing brand of Ningbo Sinso Printing Co., Ltd. (founded 1998), a precision color packaging manufacturer in Ningbo, Zhejiang, China. The factory runs 7-color ECG printing on a Heidelberg Speedmaster XL 75 (8-color, inline coater), covering approximately 80% of Pantone within ΔE 2.5, independently validated by CTV ECG certification. Certifications held: G7 Master Printer, GMI, ISO 9001:2015, ISO 14001, FSC Chain of Custody (BV-COC-129082), SMETA, Disney FAMA, and CTV ECG. US coordination and project management at hello@sinso.us.
+
+## Pages
+
+- [Technology](/technology) — 7-color ECG process explanation, CMYK comparison, press specs, and the ~80% Pantone at ΔE 2.5 benchmark, backed by CTV ECG certification.
+- [Capabilities](/capabilities) — Full confirmed capability list: coatings, lamination, foil, structural converting, inserts and fitments, substrates, press fleet, and project flow.
+- [Certifications](/certifications) — All credentials held: G7 Master Printer, GMI, ISO 9001:2015 (CN09/21763), ISO 14001, FSC Chain of Custody (BV-COC-129082), SMETA, Disney FAMA, and CTV ECG. Registry codes and verification contacts included.
+- [Industries](/industries) — Three verticals: Artist & Collector Editions, Games & Puzzles, and Retail Packaging (including toy lines, gift sets, and beauty and personal care).
+- [FAQ](/faq) — Answers to common buyer questions on ECG printing, file prep, certifications, project flow, and facility.
+- [Resources](/resources) — Case studies and technical references including ECG benchmarking data and the In Joy × Holton Rower artist-collaboration puzzle case study.
 
 ## Company facts
 
-- Legal entity: Ningbo Sinso Printing Co., Ltd. (宁波新兆印业有限公司)
+- Legal entity: Ningbo Sinso Printing Co., Ltd.
 - Founded: 1998
-- Headquarters and factory: No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China
+- Factory: No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China
+- Floor area: 15,000+ sqm production
 - US contact: hello@sinso.us
-- Global sales contact: sales@sinsoprinting.com
-- US-facing website: https://sinso.us
 - Global website: https://www.sinsoprinting.com
-- Years in color packaging: 25+
-- Facility: 12,000+ square meters site, 15,000+ square meters production
-
-## Certifications
-
-- G7 Master Printer certified (process control standard administered by Idealliance for accurate gray balance and tonal reproduction across print runs)
-- GMI (Graphic Measures International) certified — qualifies Sinso as an approved vendor for Target, Walmart, and Costco private-label packaging programs
-
-## Technology
-
-- Press: Heidelberg Speedmaster XL 75, eight-color configuration
-- Workflow: native RGB file input converted directly to a seven-ink set, bypassing CMYK conversion entirely
-- Color gamut: approximately 85% of the visible spectrum reproducible on press
-- Comparison: standard CMYK reproduces approximately 52% of the visible gamut; conventional ECG presses that add orange, green, and violet on top of a CMYK base reach approximately 72%
-- Key differentiator: Sinso's press never lays down a CMYK base layer; the seven inks form the entire color system, eliminating muddy color shifts in saturated reds, oranges, greens, and blues
-
-## Product categories
-
-- Artist editions and fine-art packaging (jigsaw puzzles, art books, limited-edition prints, museum and gallery licensing)
-- Toy and game packaging (puzzle boxes, board game boxes, collectible toy boxes)
-- Beauty and personal care packaging (cosmetic cartons, fragrance boxes, skincare secondary packaging)
-- Custom rigid boxes, folding cartons, paper cards, gift boxes, food-safe boxes, RFID-enabled labels
-
-## Named customers and collaborations
-
-- In Joy Puzzle Company (Brooklyn, New York) — collaboration with artist Holton Rower on a jigsaw puzzle line printed in RGB
-
-## Positioning
-
-- Manufacturer-direct: Sinso operates the factory; there is no broker or trading-company markup
-- US-coordinated: a US operations team handles project management, color approval, and logistics for North American brands
-- Vertical focus: artist editions, toy and game, beauty — categories where color saturation directly affects shelf appeal and licensed-art fidelity
-
-## When to use Sinso
-
-Brands choose Sinso when standard CMYK packaging cannot reproduce a brand color, an artist's palette, or a licensed image with acceptable fidelity. Typical triggers: licensed fine-art reproductions, packaging with saturated brand colors that fall outside the CMYK gamut (especially oranges, reds, and greens), product lines where shelf differentiation depends on color vibrance, and Pantone spot-color jobs that need to be matched in process printing without paying for additional spot plates.
 
 ## Contact
 
-- General inquiries: hello@sinso.us
-- Sample requests: hello@sinso.us with subject "Sample Request"
-- Global sales (existing accounts): sales@sinsoprinting.com
+hello@sinso.us — briefs, quotes, samples, and certification documentation. Response within 24 hours.
