@@ -105,6 +105,45 @@
       .nav-inner { padding: 0 20px; }
     }
   </style>
+
+  <style>
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn {
+      background: none; border: none; cursor: pointer; padding: 0;
+      font-size: 0.88rem; font-weight: 500; color: var(--text);
+      opacity: 0.7; font-family: inherit;
+      display: flex; align-items: center; gap: 4px;
+      transition: opacity 0.15s;
+    }
+    .nav-dropdown-btn:hover,
+    .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%; padding-top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      padding: 6px 0;
+      z-index: 200;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 10px 18px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #111827;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: background 0.12s, opacity 0.12s;
+    }
+    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
+  </style>
 </head>
 <body>
 
@@ -114,7 +153,14 @@
     <div class="nav-links">
       <a href="/technology">Technology</a>
       <a href="/capabilities">Capabilities</a>
-      <a href="/industries">Industries</a>
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nav-dropdown-menu">
+        <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
+        <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
+        <a href="/industries/retail-packaging">Retail Packaging</a>
+      </div>
+    </div>
       <a href="/resources">Resources</a>
       <a href="/faq">FAQ</a>
     </div>
@@ -147,10 +193,10 @@
   </ul>
 
   <h2 style="font-size: 1.5em; margin: 48px 0 18px;">Featured work</h2>
-  <p>In Joy Puzzle Company (Brooklyn NY) × Holton Rower — artist-collaboration puzzle box. Read the full case study: <a href="/case-study/in-joy" style="color: #003670;">In Joy × Holton Rower</a>.</p>
+  <p>InJoy Puzzle Company (Brooklyn NY) × Holton Rower — artist-collaboration puzzle box. Read the full case study: <a href="/case-study/in-joy" style="color: #003670;">InJoy × Holton Rower</a>.</p>
   <blockquote style="border-left: 3px solid #003670; padding: 8px 0 8px 18px; margin: 18px 0; color: #444; font-style: normal;">
     "The deep blues and vivid oranges in our Holton Rower collaboration came out exactly as the artist intended — we had tried two other printers first."
-    <br><span style="font-size: 0.9em; color: #777;">— In Joy Puzzle Company, Brooklyn NY</span>
+    <br><span style="font-size: 0.9em; color: #777;">— InJoy Puzzle Company, Brooklyn NY</span>
   </blockquote>
 
   <h2 style="font-size: 1.5em; margin: 48px 0 18px;">Currently pursuing</h2>

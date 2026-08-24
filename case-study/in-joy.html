@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>In Joy × Holton Rower — Artist Edition Puzzle Packaging | Sinso</title>
-  <meta name="description" content="How Sinso reproduced a Holton Rower drip painting on folding carton packaging — after two prior printers had failed to match the artist's colors in standard CMYK.">
+  <title>InJoy × Holton Rower — Artist Edition Puzzle | Sinso</title>
+  <meta name="description" content="How Sinso reproduced a Holton Rower hand pour painting on a limited-edition puzzle — deep blues, saturated oranges, and continuous color gradients where two prior printers had failed in standard CMYK.">
   <link rel="canonical" href="https://sinso.us/case-study/in-joy">
 
   <!-- ============================================================
@@ -15,8 +15,8 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "In Joy Puzzle Company × Holton Rower — Artist edition puzzle packaging",
-    "description": "Reproducing a Holton Rower painting on puzzle packaging where two prior printers had failed to match the artist's intended color using standard CMYK.",
+    "headline": "InJoy Puzzle Company × Holton Rower — Artist edition puzzle",
+    "description": "Reproducing a Holton Rower hand pour painting on a limited-edition puzzle where two prior printers had failed to match the artist's colors in standard CMYK.",
     "url": "https://sinso.us/case-study/in-joy",
     "datePublished": "2026-06-06",
     "dateModified": "2026-06-09",
@@ -116,6 +116,45 @@
       .nav-inner { padding: 0 20px; }
     }
   </style>
+
+  <style>
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn {
+      background: none; border: none; cursor: pointer; padding: 0;
+      font-size: 0.88rem; font-weight: 500; color: var(--text);
+      opacity: 0.7; font-family: inherit;
+      display: flex; align-items: center; gap: 4px;
+      transition: opacity 0.15s;
+    }
+    .nav-dropdown-btn:hover,
+    .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%; padding-top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      padding: 6px 0;
+      z-index: 200;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 10px 18px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #111827;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: background 0.12s, opacity 0.12s;
+    }
+    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
+  </style>
 </head>
 <body>
 
@@ -125,7 +164,14 @@
     <div class="nav-links">
       <a href="/technology">Technology</a>
       <a href="/capabilities">Capabilities</a>
-      <a href="/industries">Industries</a>
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nav-dropdown-menu">
+        <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
+        <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
+        <a href="/industries/retail-packaging">Retail Packaging</a>
+      </div>
+    </div>
       <a href="/resources">Resources</a>
       <a href="/faq">FAQ</a>
     </div>
@@ -142,23 +188,23 @@
 
   <header style="margin-bottom: 48px;">
     <p style="font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #003670; margin-bottom: 10px;">Case Study · Artist Editions · 2025</p>
-    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">In Joy Puzzle Company × Holton Rower</h1>
+    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">InJoy Puzzle Company × Holton Rower</h1>
     <p style="font-size: 1.1em; color: #555; max-width: 680px;">
-      Two printers had already tried and failed to reproduce a Holton Rower drip painting on folding carton. This is how we did it.
+      Two printers had already tried and failed to reproduce a Holton Rower hand pour painting on a limited-edition puzzle. This is how Sinso solved it.
     </p>
   </header>
 
   <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">The brief</h2>
-  <p>In Joy Puzzle Company (Brooklyn, NY) collaborates with contemporary artists to release limited-edition puzzles. For their Holton Rower collaboration, the box itself needed to reproduce a Rower drip painting at gallery fidelity — deep blues, saturated oranges, and continuous color gradients across a folding carton.</p>
+  <p>InJoy Puzzle Company (Brooklyn, NY) wanted to release a limited-edition puzzle in collaboration with artist Holton Rower. The puzzle print needed to reproduce a Rower hand pour painting at gallery fidelity: deep blues, saturated oranges, and continuous color gradients across the entire puzzle surface.</p>
 
   <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">Why CMYK failed</h2>
-  <p>Two earlier printers had attempted the job in conventional CMYK. The deep blues flattened to navy. The vivid oranges shifted toward muddy red. The gradient transitions banded visibly. CMYK simply cannot reach those points in the visible gamut — no amount of profile tuning closes that gap.</p>
+  <p>Two earlier printers had attempted the job in conventional CMYK. The deep blues flattened to navy. The vivid oranges shifted toward muddy red. The gradient transitions banded visibly. CMYK cannot reach those points in the visible gamut. No amount of profile tuning closes that gap.</p>
 
   <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">What Sinso did</h2>
-  <p>The artwork was processed for 7-color ECG separation on the Heidelberg Speedmaster XL 75, using a press-specific ICC profile built for the substrate. A G7-calibrated digital proof was reviewed by the customer before plates were made. The final press run was measured inline against the approved proof.</p>
+  <p>Sinso printed the puzzle. The artwork was processed for 7-color ECG separation on the Heidelberg Speedmaster XL 75, using a press-specific ICC profile built for the substrate. A G7-calibrated digital proof was reviewed by InJoy before plates were made. The final press run was measured inline against the approved proof. Die cutting was handled at a separate Ningbo factory.</p>
 
   <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 48px 0 18px;">The result</h2>
-  <p>In Joy's own words: "The deep blues and vivid oranges in our Holton Rower collaboration came out exactly as the artist intended — we had tried two other printers first."</p>
+  <p>InJoy's own words: "The deep blues and vivid oranges in our Holton Rower collaboration came out exactly as the artist intended. We had tried two other printers first."</p>
 
   <p style="margin-top: 48px; padding: 20px; background: #f7f8fa; border-radius: 8px;">
     Have a project that needs this approach? <a href="mailto:hello@sinso.us?subject=New%20Project%20Inquiry" style="color: #003670; font-weight: 500;">hello@sinso.us</a>
