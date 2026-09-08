@@ -1,0 +1,60 @@
+/* Sinso design system — consolidated tokens.
+   Canonical source: index.html / about.html / press.html :root block.
+   Secondary-page raw hex (#eee, #666/#555/#444, #f7f8fa, #888) all resolve
+   onto these tokens — that drift is retired here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+:root {
+  --navy: #080F1C;
+  --navy-2: #111827;
+  --accent: #003670;
+  --accent-hover: #004fa8;
+  --accent-light: #E6EDF5;
+  --text: #111827;
+  --text-2: #6B7280;
+  --text-3: #9CA3AF;
+  --bg: #FFFFFF;
+  --bg-soft: #F7F8FA;
+  --border: #E5E7EB;
+  --radius: 10px;
+  --radius-lg: 18px;
+  --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --max-w: 1100px;
+  --footer-bg: #050C18;
+}
+
+.ds-reset, .ds-reset *, .ds-reset *::before, .ds-reset *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ds-reset img { display: block; max-width: 100%; }
+.ds-reset a { color: inherit; text-decoration: none; }
+
+.ds-root {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.ds-root h1, .ds-root h2, .ds-root h3, .ds-root h4 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+.ds-root h1 { font-size: clamp(2.6rem, 5.5vw, 4rem); font-weight: 800; }
+.ds-root h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); }
+.ds-root h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; }
+
+.ds-lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-2);
+  max-width: 600px;
+}

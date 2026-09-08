@@ -1,0 +1,12 @@
+{
+  "projectId": "f868a9cd-7bc3-4e9d-b3c7-fc4b98ca169e",
+  "shape": "package",
+  "pkg": "@sinso/design-system",
+  "globalName": "SinsoDS",
+  "cssEntry": "dist/styles.css",
+  "buildCmd": "npm run build",
+  "overrides": {
+    "Nav": { "cardMode": "single", "primaryStory": "Default" }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

@@ -1,0 +1,15 @@
+/* Sinso design system — single stylesheet entry.
+   Ships as dist/styles.css; import this alongside the JS bundle. */
+@import './tokens.css';
+@import './components/Container/Container.css';
+@import './components/Section/Section.css';
+@import './components/Eyebrow/Eyebrow.css';
+@import './components/Tag/Tag.css';
+@import './components/Button/Button.css';
+@import './components/Nav/Nav.css';
+@import './components/Footer/Footer.css';
+@import './components/PageHeader/PageHeader.css';
+@import './components/Hero/Hero.css';
+@import './components/Card/Card.css';
+@import './components/Quote/Quote.css';
+@import './components/StatBar/StatBar.css';

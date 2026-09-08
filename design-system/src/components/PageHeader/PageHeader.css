@@ -1,0 +1,23 @@
+.ds-page-header {
+  margin-bottom: 48px;
+  font-family: var(--font-body);
+}
+.ds-page-header-eyebrow {
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.ds-page-header-heading {
+  font-family: var(--font-head);
+  font-size: 2.4em;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  color: var(--text);
+}
+.ds-page-header-lead {
+  font-size: 1.1em;
+  color: var(--text-2);
+  max-width: 680px;
+}

@@ -1,0 +1,3 @@
+.ds-section { padding: 96px 0; }
+.ds-section--soft { background: var(--bg-soft); }
+.ds-section--dark { background: var(--navy); color: #fff; }

@@ -1,0 +1,40 @@
+.ds-footer {
+  background: var(--footer-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 40px 0;
+  font-family: var(--font-body);
+}
+.ds-footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.ds-footer-logo {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ds-footer-logo span { color: var(--accent); }
+.ds-footer-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.ds-footer-links a {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.ds-footer-links a:hover { color: rgba(255, 255, 255, 0.8); }
+.ds-footer-copy {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.25);
+}

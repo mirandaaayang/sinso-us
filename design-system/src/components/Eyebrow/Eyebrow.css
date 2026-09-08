@@ -1,0 +1,11 @@
+.ds-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.ds-section--dark .ds-eyebrow { color: rgba(255, 255, 255, 0.55); }

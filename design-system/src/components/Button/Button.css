@@ -1,0 +1,38 @@
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s, transform 0.1s, border-color 0.15s, color 0.15s;
+}
+
+.ds-btn--primary {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+}
+.ds-btn--primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+.ds-btn--ghost {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.ds-btn--ghost:hover { border-color: rgba(255, 255, 255, 0.5); color: #fff; }
+
+.ds-btn--cta {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 9px 20px;
+  border-radius: 6px;
+}
+.ds-btn--cta:hover { background: var(--accent-hover); }
