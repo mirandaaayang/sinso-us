@@ -190,21 +190,21 @@
     }
     .btn-secondary:hover { border-color: rgba(255,255,255,0.8); }
 
-    /* Stat band */
-    .stat-band {
+    /* Logo strip */
+    .logo-strip {
       background: #fff; border-bottom: 1px solid var(--border);
-      padding: 28px 0;
+      padding: 32px 0;
     }
-    .stat-band-inner {
+    .logo-strip-inner {
       max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
-      display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center;
+      display: flex; flex-wrap: wrap; gap: 32px 48px;
+      align-items: center; justify-content: center;
     }
-    .stat-item { display: flex; flex-direction: column; gap: 2px; }
-    .stat-value {
-      font-family: var(--font-head); font-size: 1.35rem; font-weight: 800;
-      color: var(--navy); letter-spacing: -0.02em; line-height: 1;
+    .logo-strip-img {
+      height: 36px; width: auto; object-fit: contain;
+      opacity: 0.75; filter: grayscale(20%);
     }
-    .stat-label { font-size: 0.78rem; color: #6B7280; }
+    .logo-strip-img--square { height: 44px; }
 
     /* Page wrapper */
     .page-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
@@ -348,7 +348,7 @@
       .section { padding: 48px 0; }
       .page-wrap { padding: 0 20px; }
       .hero-inner { padding: 0 20px; }
-      .stat-band-inner { padding: 0 20px; gap: 20px 32px; }
+      .logo-strip-inner { padding: 0 20px; gap: 20px 32px; }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -402,33 +402,15 @@
   </div>
 </section>
 
-<!-- ═══════════ STAT BAND ═════════════════════════════════ -->
-<div class="stat-band">
-  <div class="stat-band-inner">
-    <div class="stat-item">
-      <span class="stat-value">25+</span>
-      <span class="stat-label">years in operation</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">FAMA</span>
-      <span class="stat-label">Disney authorized</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">GMI</span>
-      <span class="stat-label">Target &amp; Walmart certified</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">FSC</span>
-      <span class="stat-label">Chain of custody (BV-COC-129082)</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">SMETA</span>
-      <span class="stat-label">social &amp; ethical audit</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">7-10 days</span>
-      <span class="stat-label">physical sample, airshipped</span>
-    </div>
+<!-- ═══════════ LOGO STRIP ════════════════════════════════ -->
+<div class="logo-strip">
+  <div class="logo-strip-inner">
+    <img src="/images/logos/disney.png"      alt="Disney"      class="logo-strip-img">
+    <img src="/images/logos/lovevery.svg"    alt="Lovevery"    class="logo-strip-img">
+    <img src="/images/logos/hape.png"        alt="Hape"        class="logo-strip-img logo-strip-img--square">
+    <img src="/images/logos/target.svg"      alt="Target"      class="logo-strip-img logo-strip-img--square">
+    <img src="/images/logos/john-lewis.svg"  alt="John Lewis"  class="logo-strip-img">
+    <img src="/images/logos/morrisons.svg"   alt="Morrisons"   class="logo-strip-img">
   </div>
 </div>
 
@@ -437,7 +419,7 @@
   <div class="page-wrap">
     <div class="gallery-grid">
       <div class="gallery-item"><img src="/images/products/6M0A4317.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4359.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/products/disney_wooden_toy.jpg" alt="Disney Wooden Toys Frozen Arendelle Castle Set packaging" loading="lazy"></div>
       <div class="gallery-item"><img src="/images/products/6M0A4363.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
       <div class="gallery-item"><img src="/images/products/6M0A4365.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
       <div class="gallery-item"><img src="/images/products/6M0A4379.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
