@@ -128,38 +128,31 @@
       .nav-inner { padding: 0 20px; }
     }
 
+    /* ── Hero ── */
+    .hero { background: var(--navy); color: #fff; padding: 80px 0 72px; }
+    .hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .eyebrow {
+      display: inline-block; font-size: 0.78em; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800; letter-spacing: -0.025em; line-height: 1.1;
+      margin: 0 0 24px; max-width: 780px;
+    }
+    .hero-lead {
+      font-size: 1.1em; line-height: 1.7; color: rgba(255,255,255,0.8);
+      max-width: 680px; margin: 0 0 28px;
+    }
+    .hero .tag { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.9); }
+    .hero .tag--accent { background: rgba(255,255,255,0.25); color: #fff; }
+
     /* ── Page layout ── */
     .page-wrap {
       max-width: var(--max-w);
       margin: 0 auto;
       padding: 64px 32px 96px;
-    }
-    .page-header {
-      max-width: 760px;
-      margin-bottom: 56px;
-    }
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.78em;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    .page-header h1 {
-      font-family: var(--font-head);
-      font-size: clamp(1.9rem, 3.5vw, 2.6rem);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-      margin: 0 0 20px;
-      color: var(--navy);
-    }
-    .page-header p {
-      font-size: 1.1em;
-      line-height: 1.7;
-      color: #444;
-      max-width: 680px;
     }
 
     /* ── Logo strip ── */
@@ -280,20 +273,22 @@
   </div>
 </nav>
 
-<div class="page-wrap">
-
-  <header class="page-header">
-    <p class="eyebrow">Industries · Retail Packaging</p>
-    <h1>Retail Packaging: gift sets, beauty, and consumer goods</h1>
-    <p>Our factory has been producing retail-compliant folding cartons for 25 years. Gift sets, beauty and personal care, and consumer goods go into Target, Walmart, and specialty retailers. ECG color is available for the lines where shelf impact matters; conventional CMYK runs on the same press when it doesn't.</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px;">
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Industries · Retail Packaging</span>
+    <h1>Retail Packaging</h1>
+    <p class="hero-lead">We've been producing retail-compliant folding cartons for 25 years. Gift sets, beauty and personal care, and consumer goods going into Target, Walmart, and specialty retailers. ECG color for the lines where shelf impact matters; conventional CMYK on the same press when it doesn't.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
       <span class="tag tag--accent">GMI Certified</span>
       <span class="tag">Gift Sets</span>
       <span class="tag">Beauty Cartons</span>
       <span class="tag">Consumer Goods</span>
       <span class="tag">FSC Board</span>
     </div>
-  </header>
+  </div>
+</section>
+
+<div class="page-wrap">
 
   <!-- ── Logo strip ── -->
   <div class="logos-section">
