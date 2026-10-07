@@ -193,6 +193,9 @@
       transform: scale(1.04);
     }
 
+    .tag { display: inline-block; padding: 5px 13px; background: #EEF2F8; color: #1E3A5F; font-size: 0.8rem; font-weight: 500; border-radius: 20px; }
+    .tag--accent { background: var(--accent); color: #fff; }
+
     @media (max-width: 900px) {
       .gallery-grid { grid-template-columns: repeat(3, 1fr); }
       .page-wrap { padding: 48px 24px 80px; }
@@ -283,6 +286,13 @@
     <p class="eyebrow">Industries · Retail Packaging</p>
     <h1>Retail Packaging: gift sets, beauty, and consumer goods</h1>
     <p>Our factory has been producing retail-compliant folding cartons for 25 years. Gift sets, beauty and personal care, and consumer goods go into Target, Walmart, and specialty retailers. ECG color is available for the lines where shelf impact matters; conventional CMYK runs on the same press when it doesn't.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px;">
+      <span class="tag tag--accent">GMI Certified</span>
+      <span class="tag">Gift Sets</span>
+      <span class="tag">Beauty Cartons</span>
+      <span class="tag">Consumer Goods</span>
+      <span class="tag">FSC Board</span>
+    </div>
   </header>
 
   <!-- ── Logo strip ── -->
