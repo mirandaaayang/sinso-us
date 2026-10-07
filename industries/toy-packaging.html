@@ -38,34 +38,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Do you make the toys too?",
+        "name": "What is your MOQ for toy packaging?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No - we focus on the packaging. Printing, finishing, and converting run in our own Ningbo factory. For other components your program needs, we have a robust local supply chain."
+          "text": "MOQ varies by structure, substrate, and finishing. Include your dieline with the brief for a per-structure number."
         }
       },
       {
         "@type": "Question",
-        "name": "What compliance documentation do you provide for toy packaging?",
+        "name": "What is the production lead time after proof approval?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Heavy-metals testing, transit testing documentation, and ink-safety documentation are available on request. Audit reports are available to qualified buyers on request."
+          "text": "Physical samples airship in 7-10 days from file receipt. Full production lead time depends on structure, run length, and finishing operations. Include your target date in the brief."
         }
       },
       {
         "@type": "Question",
-        "name": "Can you replace plastic blisters and windows with paper?",
+        "name": "Can you ship packaging to our assembly site in Guangdong or Vietnam?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Paper windows can replace standard PET windows in most folding carton constructions. Paperboard and molded-pulp trays are available as alternatives to thermoformed PET inserts. Some deep-draw blister shapes require thermoforming; those can be replaced with paperboard tray-and-sleeve constructions in most cases."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which components come from partners?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Printing, finishing, and converting are in-house at our Ningbo factory. Any partner-supplied components are identified on the quote so sourcing teams know exactly what is in-house and what is not."
+          "text": "Yes. Include your factory address and program details in the brief and we will quote it."
         }
       },
       {
@@ -73,7 +65,7 @@
         "name": "How do we qualify Sinso as a vendor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Audit reports and certification documents are available to qualified buyers on request. Factory visits are welcome. Contact hello@sinso.us to begin."
+          "text": "Audit reports, ISO certificates, and individual compliance documents are available to qualified buyers on request. Factory visits are welcome."
         }
       }
     ]
@@ -265,18 +257,42 @@
     .audience-block p { font-size: 0.9rem; color: #444; line-height: 1.65; margin: 0 0 12px; }
     .audience-block p:last-child { margin-bottom: 0; }
 
-    /* Channel table */
-    .channel-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    .channel-table th {
-      background: var(--navy); color: #fff;
-      font-family: var(--font-head); font-weight: 600;
-      padding: 12px 16px; text-align: left;
+    /* Channel cards */
+    .channel-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
     }
-    .channel-table th:first-child { border-radius: 8px 0 0 0; }
-    .channel-table th:last-child { border-radius: 0 8px 0 0; }
-    .channel-table td { padding: 14px 16px; border-bottom: 1px solid #E5E7EB; vertical-align: top; }
-    .channel-table tr:last-child td { border-bottom: none; }
-    .channel-table tr:nth-child(even) td { background: var(--bg-soft); }
+    .channel-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 14px; padding: 28px 28px 24px;
+    }
+    .channel-card-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: var(--bg-soft); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .channel-card-icon svg { display: block; }
+    .channel-card h3 {
+      font-family: var(--font-head); font-size: 1.05rem; font-weight: 700;
+      color: var(--navy); margin: 0 0 3px;
+    }
+    .channel-card-sub {
+      font-size: 0.8rem; color: #9CA3AF; margin-bottom: 16px;
+    }
+    .channel-pressure {
+      display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px;
+      padding-bottom: 12px; border-bottom: 1px solid #F3F4F6;
+    }
+    .pressure-label {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); white-space: nowrap;
+    }
+    .pressure-text {
+      font-size: 0.88rem; font-weight: 600; color: var(--navy);
+    }
+    .channel-card p {
+      font-size: 0.875rem; color: #4B5563; line-height: 1.65; margin: 0;
+    }
+    @media (max-width: 640px) { .channel-grid { grid-template-columns: 1fr; } }
 
     /* Two-col layout */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
@@ -449,7 +465,6 @@
         <h3>Finishes and structures on demand</h3>
         <p>Hot foil, cold foil, spot UV, soft-touch lamination, embossing, debossing, window patching, crash-lock and auto-bottom constructions. Sample book available on request - physical samples of finishes on the actual substrates we run.</p>
         <p>Board selection: bleached SBS for clean whites and high-contrast graphics; recycled CCNB for brands with sustainability requirements. Both run on the same press and finishing line.</p>
-        <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Sample%20Book" style="color: var(--accent); font-weight: 500; font-size: 0.9rem;">Request a free sample book →</a>
       </div>
 
       <div class="audience-block">
@@ -457,7 +472,6 @@
         <h3>Procurement-ready documentation</h3>
         <p>Quotes include substrate, coating, ink configuration, board weight, adhesive and fastener specs as separate line items. The spec sheet names every material - no surprises during approval or reorder.</p>
         <p>Audit reports, ISO certificates, and individual compliance documents (heavy-metals, transit, ink safety) available on request for vendor qualification. Factory visits welcome.</p>
-        <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Vendor%20Qualification" style="color: var(--accent); font-weight: 500; font-size: 0.9rem;">Request audit documentation →</a>
       </div>
 
       <div class="audience-block">
@@ -465,51 +479,88 @@
         <h3>FAMA authorization and color control</h3>
         <p>Sinso is Disney FAMA-authorized. G7-calibrated proofs are issued before plates are made and compared against licensor-approved artwork. The same ICC profile runs on every reorder so approved colors don't drift.</p>
         <p>We support the full licensor approval sequence: pre-production color proof, physical production sample, and inline press measurement on the production run.</p>
-        <a href="/capabilities#certifications" style="color: var(--accent); font-weight: 500; font-size: 0.9rem;">See all certifications →</a>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════════ CHANNEL TABLE ════════════════════════════ -->
+<!-- ═══════════ CHANNEL CARDS ════════════════════════════ -->
 <section class="section">
   <div class="page-wrap">
     <div class="section-head">
       <h2>Where each channel puts the pressure</h2>
     </div>
-    <div style="overflow-x: auto;">
-      <table class="channel-table">
-        <thead>
-          <tr>
-            <th>Channel</th>
-            <th>What matters most</th>
-            <th>How Sinso handles it</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Mass retail</strong><br><span style="color: #6B7280; font-size: 0.85rem;">Target, Walmart</span></td>
-            <td>Cost per unit and reorder consistency</td>
-            <td>GMI-certified vendor; same G7-calibrated ICC profile on every reorder; standard gloss lamination where premium finishes aren't needed</td>
-          </tr>
-          <tr>
-            <td><strong>Premium and specialty</strong><br><span style="color: #6B7280; font-size: 0.85rem;">independent toy, gift, museum shops</span></td>
-            <td>Finish quality and sustainability</td>
-            <td>Soft-touch lamination, foil, plastic-free paper windows, FSC-certified board; full finishing line in-house</td>
-          </tr>
-          <tr>
-            <td><strong>Licensed</strong><br><span style="color: #6B7280; font-size: 0.85rem;">character and entertainment IP</span></td>
-            <td>Licensor approval and color match</td>
-            <td>Disney FAMA authorization; G7-calibrated proofs; ECG for signature character colors - oranges, greens, and violets that CMYK shifts</td>
-          </tr>
-          <tr>
-            <td><strong>E-commerce</strong><br><span style="color: #6B7280; font-size: 0.85rem;">DTC and marketplace fulfillment</span></td>
-            <td>Surviving transit to the end consumer</td>
-            <td>Transit testing documentation available on request; board weight and structural specs quoted against your drop and stack requirements</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="channel-grid">
+
+      <!-- Mass retail -->
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <h3>Mass retail</h3>
+        <div class="channel-card-sub">Target, Walmart</div>
+        <div class="channel-pressure">
+          <span class="pressure-label">Pressure</span>
+          <span class="pressure-text">Cost per unit · Reorder consistency</span>
+        </div>
+        <p>GMI-certified vendor. Same G7-calibrated ICC profile on every reorder. Standard gloss lamination where premium finishes aren't needed.</p>
+      </div>
+
+      <!-- Premium & specialty -->
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3>Premium &amp; specialty</h3>
+        <div class="channel-card-sub">Independent, gift, museum shops</div>
+        <div class="channel-pressure">
+          <span class="pressure-label">Pressure</span>
+          <span class="pressure-text">Finish quality · Sustainability</span>
+        </div>
+        <p>Soft-touch lamination, foil, plastic-free paper windows, FSC-certified board. Full finishing line in-house.</p>
+      </div>
+
+      <!-- Licensed -->
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Licensed</h3>
+        <div class="channel-card-sub">Character &amp; entertainment IP</div>
+        <div class="channel-pressure">
+          <span class="pressure-label">Pressure</span>
+          <span class="pressure-text">Licensor approval · Color accuracy</span>
+        </div>
+        <p>FAMA-authorized. G7 proofs matched against approved artwork. ECG for character oranges, greens, and violets that CMYK shifts.</p>
+      </div>
+
+      <!-- E-commerce -->
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3>E-commerce</h3>
+        <div class="channel-card-sub">DTC &amp; marketplace fulfillment</div>
+        <div class="channel-pressure">
+          <span class="pressure-label">Pressure</span>
+          <span class="pressure-text">Transit survival</span>
+        </div>
+        <p>Board weight and structure quoted against your drop and stack requirements. Transit testing documentation available on request.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -578,53 +629,23 @@
     <div style="max-width: 760px; margin: 0 auto;">
 
       <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Do you make the toys too?</summary>
-        <p>We focus on the packaging. Printing, finishing, and converting run in our own Ningbo factory. For other components your program needs - such as shipper cartons - we have a robust local supply chain. Any partner-supplied components are identified on the quote.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
         <summary style="font-weight: 500; cursor: pointer;">What is your MOQ for toy packaging?</summary>
-        <p>MOQ depends on structure, substrate, and finishing. Contact <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20MOQ" style="color: var(--accent);">hello@sinso.us</a> with your dieline and spec - we respond within 24 hours.</p>
+        <p>Varies by structure, substrate, and finishing. Include your dieline with the brief for a per-structure number.</p>
       </details>
 
       <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">What is your production lead time after proof approval?</summary>
-        <p>Physical samples are airshipped in 7-10 days from file receipt. Production lead time after proof approval depends on structure, run length, and finishing operations. Contact us with your spec for a firm timeline.</p>
+        <summary style="font-weight: 500; cursor: pointer;">What is the production lead time after proof approval?</summary>
+        <p>Physical samples airship in 7-10 days from file receipt. Full production lead time depends on structure, run length, and finishing. Include your target date in the brief.</p>
       </details>
 
       <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Can you quote itemized by component?</summary>
-        <p>Yes. Quotes include substrate, coating, ink configuration, board weight, adhesive and fastener specs as separate line items. Contact <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Quote" style="color: var(--accent);">hello@sinso.us</a> with your dieline or spec sheet.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Are you Disney FAMA authorized? What does it cover?</summary>
-        <p>Yes - Sinso is Disney FAMA (Facility and Merchandise Authorization) authorized. For specific scope and current authorization details, contact <a href="mailto:hello@sinso.us?subject=FAMA%20Authorization%20Inquiry" style="color: var(--accent);">hello@sinso.us</a>.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Can you ship packaging to our toy factory in Guangdong or Vietnam?</summary>
-        <p>Contact us with your factory address and program details - we can quote shipping to assembly sites. Reach us at <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Logistics" style="color: var(--accent);">hello@sinso.us</a>.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">What compliance documentation do you provide?</summary>
-        <p>Heavy-metals testing, transit testing documentation, and ink-safety documentation are available on request. Audit reports (SMETA / Sedex) and all certification documents are available to qualified buyers on request. See the full list at <a href="/capabilities#certifications" style="color: var(--accent);">certifications</a>.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Can you replace plastic blisters and windows with paper?</summary>
-        <p>Most constructions can move to plastic-free or reduced-plastic designs. Paper windows can replace standard PET windows. Paperboard and molded-pulp trays replace thermoformed PET inserts in most cases. Deep-draw blister shapes that hold irregular forms are harder to replace directly - tray-and-sleeve is an option in most cases. We can advise on a structure-by-structure basis.</p>
-      </details>
-
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Which components come from partners?</summary>
-        <p>Printing, finishing, and converting are in-house at our Ningbo factory. Any partner-supplied components are identified on the quote, so sourcing teams know exactly what is in-house and what is not before the program starts.</p>
+        <summary style="font-weight: 500; cursor: pointer;">Can you ship packaging to our assembly site in Guangdong or Vietnam?</summary>
+        <p>Yes. Include your factory address and program details in the brief and we will quote it.</p>
       </details>
 
       <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
         <summary style="font-weight: 500; cursor: pointer;">How do we qualify Sinso as a vendor?</summary>
-        <p>Audit reports, ISO certificates, and individual compliance documents are available to qualified buyers on request. Factory visits are welcome. Contact <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Vendor%20Qualification" style="color: var(--accent);">hello@sinso.us</a> to begin the process.</p>
+        <p>Audit reports, ISO certificates, and compliance documents to qualified buyers on request. Factory visits are welcome.</p>
       </details>
 
     </div>
