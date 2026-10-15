@@ -56,42 +56,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is ECG printing, and why haven't I heard of it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "ECG (Expanded Color Gamut) is a printing standard that adds ink channels beyond standard CMYK - typically Orange, Green, and Violet - to reproduce a wider range of colors. It's been an ISO standard (ISO 20654) since 2014 but remains uncommon: the equipment investment is higher, the workflow requires specialized expertise, and most print buyers have never been offered it. If your current printer hasn't mentioned it, they likely don't run it."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What's the difference between RGB and ECG? Are they the same thing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No - they operate at different layers. RGB is a color model used by screens and design software, describing color as combinations of red, green, and blue light. ECG is a printing capability standard describing how wide a gamut a press can reproduce in physical ink. The connection: a 7-color ECG press can faithfully translate an RGB design file into print because its gamut is large enough to cover most of what a screen displays. Standard CMYK cannot make that claim."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is 7-color ECG different from CMYK plus spot colors?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Both can hit specific Pantone targets, but the economics differ. Spot color printing adds a dedicated ink station per color - each additional color increases plate costs and press setup. It works for one or two brand colors on simple layouts but breaks down on photography or complex gradients. 7-color ECG uses a fixed ink set covering 82% of Pantone within ΔE 2.5 as a baseline, with no per-color surcharges and no press reconfiguration. For the most extreme saturated colors outside that range, a spot ink plate can be added."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I know if ECG printing is right for my product?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Three questions to ask: Does your brand have a signature color - especially an orange, green, teal, or purple - that consistently looks wrong in print? Is your packaging displayed next to other SKUs where color matching is visible side-by-side? Are you currently paying for spot ink runs to hit one or two critical colors? If yes to any of these, ECG likely pays for itself. If your packaging is primarily text and neutral tones, standard CMYK is probably sufficient."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Why should I use one vendor for an entire SKU?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Because ECG output is tied to a specific vendor's process - their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if ECG is right for my product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ECG earns its keep when your product sells on bright, saturated color (slime, toys, beauty, pet products where that pop of color is part of what you're selling); when your palette is light and soft (pastels and pale tints can look dusty or grey in CMYK); when you're printing licensed products where a key color falls outside what CMYK can hit; or when you have a large family of SKUs where every box needs to match the next one on the shelf."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if ECG is not right for my product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your design uses just one or two flat colors, a single spot ink is simpler. If your colors already print well in CMYK — earth tones, muted neutrals, natural photography — there's no need to pay for range you won't use. And if a large solid area has to match an exact Pantone across the whole face, a dedicated spot ink will give you the smoothest result."
         }
       },
       {
@@ -148,6 +132,30 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Sinso runs lean by design. The US operations lead is your single point of contact for briefs, quotes, proofs, timelines, and anything that needs a judgment call — no account manager layer in between. On the production side, you have direct access to the Ningbo team: the same people running the press and finishing line, not a customer service function. That structure keeps decisions fast and context from getting lost in translation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you ship to our contract manufacturer instead of our warehouse?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We ship packaging wherever it gets filled: a co-packer in the US, a factory elsewhere in Asia, a 3PL, a port, or a final address. One production run can be split across several destinations. Most programs ship by sea; air freight is available when timing calls for it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does packaging ship flat or assembled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Either. Folding cartons usually ship flat to keep freight costs down. Rigid boxes, windowed builds and multi-component packs can be assembled and kitted at our Ningbo factory before shipping, which typically costs less than doing it in the US."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you put together packaging with non-paper components?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Components we don't make ourselves — such as thermoformed trays, hardware and closures — come through our supply chain and are assembled with the printed pieces at our factory. You get one finished package and one point of contact."
         }
       },
       {
@@ -333,15 +341,95 @@
     <h1 style="font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">Frequently asked questions</h1>
   </header>
 
-  <section style="margin-bottom: 48px;">
+  <section id="ecg" style="margin-bottom: 48px;">
     <h2 style="font-size: 1.4em; margin: 0 0 18px;">ECG &amp; Color</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What is ECG printing, and why haven't I heard of it?</summary><p style="margin-top: 12px; color: #444;">ECG (Expanded Color Gamut) adds ink channels beyond CMYK - Orange, Green, and Violet - to reproduce a wider color range in press printing. It's an ISO standard (ISO 20654) but uncommon because the equipment investment is higher and the workflow requires specialized press knowledge. Full explanation: <a href="/technology" style="color: #003670;">Technology page</a>.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What's the difference between RGB and ECG? Are they the same thing?</summary><p style="margin-top: 12px; color: #444;">Different layers. RGB is a screen color model; ECG is a printing capability standard. A 7-color ECG press can faithfully translate an RGB design file into print because its gamut covers most of what a screen displays - standard CMYK cannot. See <a href="/technology" style="color: #003670;">Technology</a> for a full comparison.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How is 7-color ECG different from CMYK plus spot colors?</summary><p style="margin-top: 12px; color: #444;">Both can hit Pantone targets, but ECG uses a fixed 7-ink set covering ~82% of Pantone within ΔE 2.5 as a baseline - no per-color surcharges or press reconfiguration. Spot color adds a dedicated ink station per color, which works for one or two brand colors but breaks down on photography or complex gradients. Details at <a href="/technology" style="color: #003670;">Technology</a>.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How do I know if ECG printing is right for my product?</summary><p style="margin-top: 12px; color: #444;">Three signals: Does your brand have a saturated color (orange, green, teal, purple) that looks wrong in print? Is it displayed next to other SKUs where color matching is visible? Are you paying for spot ink runs? If yes to any, ECG likely pays. If your packaging is primarily text and neutrals, standard CMYK is sufficient. See <a href="/technology" style="color: #003670;">Technology</a>.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What press do you run?</summary><p style="margin-top: 12px; color: #444;">Sinso's ECG work runs on the Heidelberg Speedmaster XL 75 - an 8-color press running a 7-ink-color workflow, leaving one unit for PMS spot color - with inline coater. Conventional CMYK and large-format jobs run on the Heidelberg Speedmaster CD 74 (7-color) and XL 105 (5-color) presses under the same G7-calibrated workflow.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What file formats do you accept for prepress?</summary><p style="margin-top: 12px; color: #444;">Sinso prefers native design files over pre-exported PDFs. Send a packaged Adobe InDesign file (INDD with all linked images and fonts collected), or an Adobe Illustrator file (.ai with embedded or collected links). If a PDF is the only option, use PDF/X-4 with fonts embedded and all images at 300 dpi minimum at final print size. Standard bleed is 3 mm on all sides with a 3 mm safe zone inside trim; include a dieline from your structural supplier for any custom die shape. For color, RGB source images give Sinso's ECG profiling more to work with than pre-converted CMYK files; Pantone colors should be specified by swatch number rather than built from process values.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Why should I use one vendor for an entire SKU?</summary><p style="margin-top: 12px; color: #444;">Because ECG output is tied to a specific vendor's process - their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
+      <summary style="font-weight: 500; cursor: pointer;">How do I know if ECG is right for my product?</summary>
+      <p style="margin-top: 12px; color: #444;">ECG earns its keep in a few specific situations.</p>
+      <p style="margin-top: 14px; color: #444;"><strong>When your colors need it:</strong></p>
+      <ul style="margin: 8px 0 0 0; padding-left: 20px; color: #444; line-height: 1.7;">
+        <li><strong>Your product sells on bright, saturated color.</strong> Think slime, toys, beauty, or pet products, where that pop of color is part of what you're selling. CMYK often makes these shades look flat or muddy.
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 4px;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #ec6b3c; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #ff5000; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Vivid orange</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #3f9f62; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #00b74f; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Bright green</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #5c3f93; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #4a00a8; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Violet</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #3361a8; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #0047c4; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Reflex blue</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8em; color: #999; margin: 4px 0 8px; font-style: italic;">Colors shown are on-screen approximations. We're happy to send a printed proof.</p>
+        </li>
+        <li style="margin-top: 10px;"><strong>Your palette is light and soft.</strong> Pastels and pale tints can come out looking a little dusty or grey in CMYK. ECG keeps them clean and fresh.
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 4px;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #bcb3c9; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #c9b3ea; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Lavender</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #adc6b6; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #9fe0b6; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Mint</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #e3bfae; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #ffbe9c; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Peach</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <div style="display: flex; gap: 3px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #acc1d2; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">CMYK</span></div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 3px;"><div style="width: 44px; height: 44px; background: #9fcdf2; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px;"></div><span style="font-size: 0.68em; color: #888;">ECG</span></div>
+              </div>
+              <span style="font-size: 0.78em; color: #555; text-align: center;">Baby blue</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8em; color: #999; margin: 4px 0 8px; font-style: italic;">Colors shown are on-screen approximations. We're happy to send a printed proof.</p>
+        </li>
+      </ul>
+      <p style="margin-top: 14px; color: #444;"><strong>When your business needs it:</strong></p>
+      <ul style="margin: 8px 0 0 0; padding-left: 20px; color: #444; line-height: 1.7;">
+        <li><strong>You're printing licensed products.</strong> Licensors check character and brand colors closely. If a key color falls outside what CMYK can hit, ECG can be the difference between a smooth approval and a costly reprint.</li>
+        <li><strong>You have a large family of SKUs.</strong> When you're managing dozens of variants, ECG helps every box match the next one on the shelf, and lets those variants share press time.</li>
+      </ul>
+    </details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
+      <summary style="font-weight: 500; cursor: pointer;">How do I know if ECG is not right for my product?</summary>
+      <ul style="margin-top: 12px; padding-left: 20px; color: #444; line-height: 1.7;">
+        <li><strong>Your design uses just one or two flat colors.</strong> A single spot ink is simpler and more affordable.</li>
+        <li><strong>Your colors already print well in CMYK.</strong> Earth tones, muted neutrals, and natural photography look great in standard four-color, so there's no need to pay for range you won't use.</li>
+        <li><strong>A large solid area has to match an exact Pantone.</strong> If your brand guidelines call for a certified spot color across a big flat area, a dedicated spot ink will give you the smoothest result.</li>
+      </ul>
+    </details>
   </section>
 
   <section style="margin-bottom: 48px;">
@@ -355,6 +443,9 @@
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How does the project flow work?</summary><p style="margin-top: 12px; color: #444;">Brief and file submission → physical prototype airshipped in 7–10 days → approval and deposit → production (3 weeks ex-factory) → delivery FOB Ningbo or DDP. Ocean freight from Ningbo: ~45 days to US West Coast, ~60 days East Coast, ~30–35 days Northern Europe. Share your target in-hands date in the brief and we'll work back from there.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Do you provide design and engineering services?</summary><p style="margin-top: 12px; color: #444;">Our prepress and structural engineering team can advise on structure, materials, and finishing options from a manufacturing standpoint — what's achievable, what's cost-effective, and what works for a given channel or format. What we don't replicate is brand-side design: your visual identity and creative direction belong with whoever knows your brand. Come to us with a brief and no dieline, and we can get you there. Come with a finished design, and we'll make it print.</p></details>
     <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Who will I be working with?</summary><p style="margin-top: 12px; color: #444;">Sinso runs lean by design. The US operations lead is your single point of contact for briefs, quotes, proofs, timelines, and anything that needs a judgment call — no account manager layer in between. On the production side, you have direct access to the Ningbo team: the same people running the press and finishing line, not a customer service function. That structure keeps decisions fast and context from getting lost in translation.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Can you ship to our contract manufacturer instead of our warehouse?</summary><p style="margin-top: 12px; color: #444;">Yes. We ship packaging wherever it gets filled: a co-packer in the US, a factory elsewhere in Asia, a 3PL, a port, or a final address. One production run can be split across several destinations. Most programs ship by sea; air freight is available when timing calls for it.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Does packaging ship flat or assembled?</summary><p style="margin-top: 12px; color: #444;">Either. Folding cartons usually ship flat to keep freight costs down. Rigid boxes, windowed builds and multi-component packs can be assembled and kitted at our Ningbo factory before shipping, which typically costs less than doing it in the US.</p></details>
+    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Can you put together packaging with non-paper components?</summary><p style="margin-top: 12px; color: #444;">Yes. Components we don't make ourselves, such as thermoformed trays, hardware and closures, come through our supply chain and are assembled with the printed pieces at our factory. You get one finished package and one point of contact.</p></details>
   </section>
 
   <section style="margin-bottom: 48px;">
