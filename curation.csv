@@ -1,0 +1,220 @@
+file_name,source_folder,type,format,structure_id,page,quality,flags,decision
+backer-card_004.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,over-cap
+backer-card_005.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,over-cap
+backer-card_006.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,selected
+backer-card_007.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,over-cap
+backer-card_008.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,4,,over-cap
+backer-card_009.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,selected
+backer-card_010.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,selected
+backer-card_011.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,3,,selected
+backer-card_012.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,duplicate-of:backer-card_007.jpg
+backer-card_013.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,rejected:user
+backer-card_014.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,selected
+backer-card_015.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,toy-packaging,4,,selected
+backer-card_016.jpg,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,over-cap
+backer-card_beautiful-custom-drawer_001.png,Paper Card/Backer Card,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,,selected
+backer-card_beautiful-custom-drawer_002.png,Paper Card/Backer Card,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,low-res,excluded:low-res
+backer-card_copper-button_003.png,Paper Card/Backer Card,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,3,low-res,excluded:low-res
+blister-card_001.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_die-cut-display,retail-packaging,5,,over-cap
+blister-card_002.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_die-cut-display,retail-packaging,5,,selected
+blister-card_003.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_die-cut-display,retail-packaging,4,,over-cap
+blister-card_004.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_flat-hang-hole,retail-packaging,4,,over-cap
+blister-card_005.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_flat-hang-hole,retail-packaging,4,,over-cap
+blister-card_006.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_flat-hang-hole,retail-packaging,5,,selected
+blister-card_007.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_die-cut-hang-hole,retail-packaging,5,,selected
+blister-card_008.jpg,Paper Card/Blister Card,Card,Blister card,blister-card_die-cut-display,retail-packaging,5,,selected
+greeting-card_sleeve_001.jpg,Paper Card/Greeting Card,Box,Folding carton,folding-carton_sleeve-band,retail-packaging,4,,over-cap
+greeting-card_sleeve_002.jpg,Paper Card/Greeting Card,Box,Folding carton,folding-carton_sleeve-band,retail-packaging,4,,over-cap
+header-card_001.jpg,Paper Card/Header Card,Card,Header card,header-card_tent-fold,retail-packaging,5,,selected
+header-card_002.jpg,Paper Card/Header Card,Card,Header card,header-card_die-cut-hang-hole,retail-packaging,4,,selected
+insert-card_001.jpg,Paper Card/Insert Card,Card,Insert card,insert-card_flat-printed,retail-packaging,5,,selected
+insert-card_002.jpg,Paper Card/Insert Card,Card,Insert card,insert-card_die-cut-carrier,retail-packaging,5,,selected
+insert-card_003.jpg,Paper Card/Insert Card,Card,Insert card,insert-card_flat-printed,retail-packaging,5,,selected
+insert-card_004.jpg,Paper Card/Insert Card,Card,Insert card,insert-card_die-cut-carrier,retail-packaging,5,,selected
+consumer-box_001.jpg,Paper Packaging Box/Consumer Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,,selected
+consumer-box_002.jpg,Paper Packaging Box/Consumer Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,,selected
+consumer-box_003.jpg,Paper Packaging Box/Consumer Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,over-cap
+consumer-box_004.jpg,Paper Packaging Box/Consumer Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,selected
+consumer-box_005.jpg,Paper Packaging Box/Consumer Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,selected
+cosmetic-box_pvc-durable-square-eye-shadows_001.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,selected
+cosmetic-box_pvc-durable-square-eye-shadows_002.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,variant-of:cosmetic-box_pvc-durable-square-eye-shadows_001.png
+cosmetic-box_makeup-high-quality_003.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,variant-of:cosmetic-box_pvc-durable-square-eye-shadows_001.png
+cosmetic-box_makeup-high-quality_004.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,variant-of:cosmetic-box_pvc-durable-square-eye-shadows_001.png
+cosmetic-box_24-inch-custom-makeup_005.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,rejected:user
+cosmetic-box_24-inch-custom-makeup_006.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,rejected:user
+cosmetic-box_recyclable-corrugated-makeup_007.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,3,low-res,excluded:low-res
+cosmetic-box_recyclable-corrugated-makeup_008.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,selected
+cosmetic-box_009.png,Paper Packaging Box/Cosmetic Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,4,,duplicate-of:cosmetic-box_pvc-durable-square-eye-shadows_001.png
+food-box_disposable-commercial-delivery-frozen-logo_001.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,rejected:user
+food-box_disposable-commercial-delivery-frozen-logo_002.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,rejected:user
+food-box_disposable-commercial-delivery-frozen-logo_003.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_disposable-commercial-delivery-frozen-logo_004.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_disposable-commercial-delivery-frozen-logo_005.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_disposable-commercial-delivery-frozen-logo_006.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_24-inch-clear-lid-vegetable_007.png,Paper Packaging Box/Food Packaging Box,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,,variant-of:custom-box_24-inch-vegetable_005.png
+food-box_white-corrugated-hot_008.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,selected
+food-box_luxury-cardboard-frozen_009.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_002.png
+food-box_creative_010.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_cute-logo_011.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,4,low-res,over-cap
+food-box_cute-cardboard-frozen_012.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_cute-cardboard-frozen_013.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_002.png
+food-box_white-fast-frozen_014.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_cute-cardboard-frozen_013.png
+food-box_white-large-dry_015.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,over-cap
+food-box_white-large-dry_016.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,low-res,excluded:low-res
+food-box_commercial-corrugated-shipping_017.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_002.png
+food-box_commercial-corrugated-shipping_018.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+food-box_black-logo_019.png,Paper Packaging Box/Food Packaging Box,Box,Corrugated mailer,corrugated-mailer_open-top,retail-packaging,4,,selected
+food-box_020.png,Paper Packaging Box/Food Packaging Box,Box,Folding carton,folding-carton_straight-tuck,retail-packaging,5,,variant-of:food-box_disposable-commercial-delivery-frozen-logo_001.png
+custom-box_brown-large-delivery_001.png,Paper Packaging Box/Customized Paper Box,Box,Display tray / PDQ,display-tray_pdq,toy-packaging,3,low-res,selected
+custom-box_black-display_002.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,low-res,excluded:low-res
+custom-box_black-display_003.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,low-res,excluded:low-res
+custom-box_black-display_004.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_flat-no-hole,retail-packaging,3,low-res,excluded:low-res
+custom-box_24-inch-vegetable_005.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_flat-no-hole,retail-packaging,4,,over-cap
+custom-box_commercial-custom-delivery_006.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,4,low-res,over-cap
+custom-box_shelf-display-tray-logo_007.png,Paper Packaging Box/Customized Paper Box,Box,Display tray / PDQ,display-tray_pdq,toy-packaging,4,low-res,selected
+custom-box_shelf-display-tray-logo_008.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,4,low-res,over-cap
+custom-box_custom-corrugated_009.png,Paper Packaging Box/Customized Paper Box,Box,Display tray / PDQ,display-tray_pdq,retail-packaging,4,,selected
+custom-box_custom-corrugated_010.png,Paper Packaging Box/Customized Paper Box,Box,Display tray / PDQ,display-tray_pdq,retail-packaging,4,,selected
+custom-box_small-folding-window_011.png,Paper Packaging Box/Customized Paper Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,selected
+custom-box_small-folding-window_012.png,Paper Packaging Box/Customized Paper Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,variant-of:custom-box_small-folding-window_011.png
+custom-box_red-color-corrugated_013.png,Paper Packaging Box/Customized Paper Box,Box,Display tray / PDQ,display-tray_pdq,retail-packaging,3,low-res,selected
+custom-box_red-color-corrugated_014.png,Paper Packaging Box/Customized Paper Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,over-cap
+custom-box_custom-corrugated_015.png,Paper Packaging Box/Customized Paper Box,Box,Corrugated mailer,corrugated-mailer_open-top,retail-packaging,4,,duplicate-of:food-box_black-logo_019.png
+custom-box_custom-corrugated_016.png,Paper Packaging Box/Customized Paper Box,Box,Window box,window-box_tuck-end,toy-packaging,4,low-res,duplicate-of:gift-box_small-clear-lid-home_014.png
+custom-box_custom-printing-accessory_017.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,low-res,excluded:low-res
+custom-box_custom-printing-accessory_018.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,low-res,excluded:low-res
+custom-box_recyclable-custom-home_019.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,over-cap
+custom-box_recyclable-custom-home_020.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,low-res,variant-of:custom-box_recyclable-custom-home_019.png
+custom-box_red-color-printing-makeup_021.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,duplicate-of:backer-card_006.jpg
+custom-box_red-color-printing-makeup_022.png,Paper Packaging Box/Customized Paper Box,Card,Backer card,backer-card_die-cut-hang-hole,retail-packaging,5,,duplicate-of:backer-card_004.jpg
+custom-box_recyclable-corrugated_023.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,over-cap
+custom-box_recyclable-corrugated_024.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+custom-box_recyclable-corrugated_025.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:custom-box_recyclable-corrugated_024.png
+custom-box_printing-high-quality_026.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_flat-tuck,retail-packaging,4,,over-cap
+custom-box_printing-high-quality_027.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_flat-tuck,retail-packaging,4,low-res,variant-of:custom-box_printing-high-quality_026.png
+custom-box_custom-carton-home_028.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,over-cap
+custom-box_custom-carton-home_029.png,Paper Packaging Box/Customized Paper Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,variant-of:custom-box_custom-carton-home_028.png
+gift-box_folding-custom-drawer_001.jpg,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,,duplicate-of:consumer-box_001.jpg
+gift-box_folding-custom-drawer_002.jpg,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,selected
+gift-box_folding-custom-drawer_003.jpg,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,variant-of:gift-box_folding-custom-drawer_002.jpg
+gift-box_folding-custom-drawer_004.jpg,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,over-cap
+gift-box_recyclable-clear-lid-accessory_005.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_hang-hole,toy-packaging,5,,selected
+gift-box_recyclable-clear-lid-accessory_006.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_hang-hole,toy-packaging,5,,variant-of:gift-box_recyclable-clear-lid-accessory_005.png
+gift-box_clear-lid-home-high-quality_007.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,selected
+gift-box_clear-lid-home-high-quality_008.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,variant-of:gift-box_clear-lid-home-high-quality_007.png
+gift-box_clear-lid-home-high-quality_009.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,selected
+gift-box_recyclable-folding_010.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,selected
+gift-box_recyclable-corrugated-decor_011.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,selected
+gift-box_recyclable-corrugated-decor_012.png,Paper Packaging Box/Gift Packaging Box,Box,Display tray / PDQ,display-tray_pdq,toy-packaging,4,,selected
+gift-box_recyclable-corrugated-decor_013.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,duplicate-of:gift-box_clear-lid-home-high-quality_009.png
+gift-box_small-clear-lid-home_014.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,4,,over-cap
+gift-box_custom-small-surprise_015.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_custom-small-surprise_016.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_custom-small-surprise_015.png
+gift-box_red-color-custom_017.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_red-color-custom_018.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_red-color-custom_017.png
+gift-box_black-large_019.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,variant-of:gift-box_folding-custom-drawer_002.jpg
+gift-box_cute_020.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_cute_021.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,selected
+gift-box_cute_022.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_cute_020.png
+gift-box_creative-silver-foil_023.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,selected
+gift-box_creative-silver-foil_024.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,duplicate-of:gift-box_black-large_019.png
+gift-box_premium-corrugated_025.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,duplicate-of:gift-box_recyclable-folding_010.png
+gift-box_premium-corrugated_026.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,duplicate-of:gift-box_clear-lid-home-high-quality_009.png
+gift-box_premium-disney-large_027.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,selected
+gift-box_premium-disney-large_028.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_cute_020.png
+gift-box_premium-disney-large_029.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,duplicate-of:gift-box_cute_022.png
+gift-box_premium-disney-large_030.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_premium-folding_031.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,selected
+gift-box_premium-folding_032.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:pet-box_small-corrugated-window_002.png
+gift-box_premium-folding_033.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,rejected:user
+gift-box_beautiful-cardboard-corporate_034.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,selected
+gift-box_beautiful-cardboard-corporate_035.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-cardboard-corporate_034.png
+gift-box_beautiful-cardboard-corporate_036.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-cardboard-corporate_034.png
+gift-box_beautiful-cardboard-corporate_037.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-cardboard-corporate_034.png
+gift-box_battery_038.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+gift-box_battery_039.png,Paper Packaging Box/Gift Packaging Box,Card,Blister card,blister-card_die-cut-hang-hole,retail-packaging,5,,selected
+gift-box_battery_040.png,Paper Packaging Box/Gift Packaging Box,Card,Blister card,blister-card_die-cut-hang-hole,retail-packaging,5,,variant-of:gift-box_battery_039.png
+gift-box_battery_041.png,Paper Packaging Box/Gift Packaging Box,Card,Blister card,blister-card_die-cut-hang-hole,retail-packaging,5,,variant-of:gift-box_battery_040.png
+gift-box_eco-friendlyt_042.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+gift-box_beautiful-small_043.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,selected
+gift-box_beautiful-small_044.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_hang-hole,toy-packaging,5,,selected
+gift-box_beautiful-small_045.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_hang-hole,toy-packaging,5,,variant-of:gift-box_beautiful-small_044.png
+gift-box_eco-friendly_046.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_eco-friendly_047.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_eco-friendly_046.png
+gift-box_creative-small_048.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,3,,over-cap
+gift-box_luxury-cardboard-watch_049.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,selected
+gift-box_luxury-cardboard-watch_050.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,duplicate-of:gift-box_black-large_019.png
+gift-box_creative_051.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,variant-of:consumer-box_004.jpg
+gift-box_safe-custom_052.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,toy-packaging,5,,selected
+gift-box_safe-custom_053.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_safe-custom_054.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_creative-factory-supply_055.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,4,,over-cap
+gift-box_creative-factory-supply_056.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,4,,variant-of:gift-box_creative-factory-supply_055.png
+gift-box_creative-factory-supply_057.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,over-cap
+gift-box_luxury-small-fruit_058.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+gift-box_luxury-small-fruit_059.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_luxury-small-fruit_058.png
+gift-box_luxury-large-valentines_060.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,selected
+gift-box_luxury-large-valentines_061.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,duplicate-of:gift-box_creative-silver-foil_023.png
+gift-box_beautiful-small-christmas_062.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,rejected:user
+gift-box_beautiful-small-christmas_063.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_062.png
+gift-box_beautiful-small-christmas_064.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_062.png
+gift-box_beautiful-small-christmas_065.png,Paper Packaging Box/Gift Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_062.png
+gift-box_luxury-cardboard_066.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,4,,selected
+gift-box_luxury-corrugated-essential-oil_067.png,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,duplicate-of:gift-box_luxury-cardboard-watch_049.png
+gift-box_luxury-corrugated-essential-oil_068.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,selected
+gift-box_luxury-corrugated-essential-oil_069.png,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:gift-box_luxury-corrugated-essential-oil_068.png
+gift-box_070.jpg,Paper Packaging Box/Gift Packaging Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:gift-box_luxury-corrugated-essential-oil_068.png
+gift-box_071.jpg,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,variant-of:gift-box_folding-custom-drawer_002.jpg
+gift-box_072.jpg,Paper Packaging Box/Gift Packaging Box,Box,Rigid set-up box,rigid-set-up-box_lid-base,retail-packaging,5,,variant-of:gift-box_071.jpg
+pet-box_001.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,selected
+pet-box_small-corrugated-window_002.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:custom-box_red-color-corrugated_014.png
+pet-box_003.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,over-cap
+pet-box_004.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,duplicate-of:pet-box_001.png
+pet-box_005.jpg,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,over-cap
+pet-box_006.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:pet-box_003.png
+pet-box_007.png,Paper Packaging Box/Pet Packaging Box,Box,Window box,window-box_hang-hole,retail-packaging,5,,duplicate-of:pet-box_001.png
+seasonal-box_recyclable_001.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:gift-box_beautiful-small-christmas_062.png
+seasonal-box_recyclable_002.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_063.png
+seasonal-box_recyclable_003.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+seasonal-box_custom-halloween-high-quality_004.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,selected
+seasonal-box_custom-halloween-high-quality_005.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:seasonal-box_custom-halloween-high-quality_004.png
+seasonal-box_custom-halloween-high-quality_006.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:seasonal-box_custom-halloween-high-quality_004.png
+seasonal-box_recyclable-folding-holiday_007.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:seasonal-box_custom-halloween-high-quality_004.png
+seasonal-box_recyclable-folding-holiday_008.png,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,variant-of:seasonal-box_custom-halloween-high-quality_004.png
+seasonal-box_safe-corrugated-christmas_009.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:gift-box_beautiful-small-christmas_064.png
+seasonal-box_safe-corrugated-christmas_010.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:gift-box_beautiful-small-christmas_063.png
+seasonal-box_safe-corrugated-christmas_011.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:gift-box_beautiful-small-christmas_062.png
+seasonal-box_luxury-christmas_012.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,4,,over-cap
+seasonal-box_luxury-silver-foil-christmas_013.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_063.png
+seasonal-box_luxury-silver-foil-christmas_014.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:gift-box_beautiful-small-christmas_065.png
+seasonal-box_luxury-christmas_015.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,variant-of:gift-box_beautiful-small-christmas_065.png
+seasonal-box_luxury-christmas_016.png,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,duplicate-of:seasonal-box_luxury-silver-foil-christmas_014.png
+seasonal-box_017.jpg,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_hang-hole,toy-packaging,5,,variant-of:gift-box_beautiful-small_044.png
+seasonal-box_018.jpg,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,over-cap
+seasonal-box_019.jpg,Paper Packaging Box/Seasonal Box,Box,Window box,window-box_tuck-end,retail-packaging,5,,over-cap
+seasonal-box_020.jpg,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+seasonal-box_021.jpg,Paper Packaging Box/Seasonal Box,Box,Folding carton,folding-carton_tuck-end,retail-packaging,5,,over-cap
+stationery-box_001.jpg,Paper Packaging Box/Stationery Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,selected
+stationery-box_002.jpg,Paper Packaging Box/Stationery Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_recyclable-vegetable_001.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,duplicate-of:gift-box_luxury-small-fruit_059.png
+toy-box_recyclable-vegetable_002.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,duplicate-of:gift-box_luxury-small-fruit_058.png
+toy-box_printing-high-quality_003.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,selected
+toy-box_printing-high-quality_004.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:toy-box_printing-high-quality_003.png
+toy-box_printing-high-quality_005.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:toy-box_printing-high-quality_003.png
+toy-box_custom-printing-fruit_006.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_custom-printing-vegetable_007.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_white-fast-display_008.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_white-fast-display_009.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_custom-small-surprise_015.png
+toy-box_white-fast-display_010.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,duplicate-of:gift-box_custom-small-surprise_015.png
+toy-box_cute-cardboard_011.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_cute-cardboard_012.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_creative-disposable_013.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_creative-disposable_014.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_creative-disposable_015.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:toy-box_custom-printing-vegetable_007.png
+toy-box_cute-hot-logo_016.png,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,selected
+toy-box_017.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_018.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_eco-friendly_046.png
+toy-box_019.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
+toy-box_020.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:toy-box_custom-printing-vegetable_007.png
+toy-box_021.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,variant-of:gift-box_safe-custom_053.png
+toy-box_022.jpg,Paper Packaging Box/Toys Packaging Box,Box,Folding carton,folding-carton_tuck-end,toy-packaging,5,,over-cap
