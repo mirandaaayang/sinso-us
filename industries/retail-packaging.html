@@ -26,18 +26,6 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Retail Packaging Printing",
-    "description": "Folding cartons and rigid boxes for retail packaging - gift sets, beauty and personal care, and consumer goods. GMI-certified for Target and Walmart vendor programs. G7 Master Printer certified.",
-    "url": "https://sinso.us/industries/retail-packaging",
-    "provider": { "@type": "Organization", "name": "Sinso", "url": "https://sinso.us" },
-    "areaServed": "US",
-    "serviceType": "Color Packaging Printing"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sinso.us"},
@@ -160,8 +148,8 @@
     .logos-label { text-align: center; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 40px; }
     .logos-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 36px 48px; max-width: 960px; margin: 0 auto; }
     .logos-grid-item { display: flex; justify-content: center; align-items: center; flex: 0 0 auto; }
-    .logos-grid-item img { height: 36px; width: auto; max-width: 120px; filter: grayscale(1) opacity(0.4); transition: filter 0.2s, transform 0.2s; object-fit: contain; }
-    .logos-grid-item img:hover { filter: grayscale(0) opacity(1); transform: scale(1.07); }
+    .logos-grid-item img { height: 36px; width: auto; max-width: 120px; filter: opacity(0.75); transition: filter 0.2s, transform 0.2s; object-fit: contain; }
+    .logos-grid-item img:hover { filter: opacity(1); transform: scale(1.07); }
 
     /* ── Gallery grid ── */
     .gallery-grid {
@@ -232,6 +220,47 @@
     .tag { display: inline-block; padding: 5px 13px; background: #EEF2F8; color: #1E3A5F; font-size: 0.8rem; font-weight: 500; border-radius: 20px; }
     .tag--accent { background: var(--accent); color: #fff; }
 
+    /* ── Sections ── */
+    .section { padding: 80px 0; }
+    .section--soft { background: #F8F9FB; }
+    .section-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .section-head { margin-bottom: 40px; }
+    .section-head h2 { font-family: var(--font-head); font-size: 1.7rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; letter-spacing: -0.02em; }
+    .section-head p { color: #555; font-size: 0.95rem; line-height: 1.65; margin: 0; max-width: 560px; }
+
+    /* Channel cards */
+    .channel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .channel-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+    .channel-card-icon { width: 40px; height: 40px; border-radius: 8px; background: #EEF2F8; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .channel-card h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; margin: 0 0 3px; color: var(--navy); }
+    .channel-card-sub { font-size: 0.78rem; color: #888; margin-bottom: 12px; }
+    .pressure-row { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 10px; font-size: 0.82rem; }
+    .pressure-label { background: #FEF3C7; color: #92400E; font-weight: 600; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; white-space: nowrap; margin-top: 2px; }
+    .channel-card p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
+
+    /* Audience blocks */
+    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .audience-block { padding: 28px; background: #fff; border: 1px solid var(--border); border-radius: 12px; }
+    .audience-block-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
+    .audience-block h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--navy); margin: 0 0 10px; }
+    .audience-block p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
+
+    /* FAQ */
+    .faq-list { border-top: 1px solid var(--border); }
+    .faq-list details { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-list summary { font-weight: 600; cursor: pointer; font-family: var(--font-head); font-size: 0.95rem; color: var(--navy); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: '+'; font-size: 1.2rem; font-weight: 400; color: #aaa; flex-shrink: 0; }
+    .faq-list details[open] summary::after { content: '−'; }
+    .faq-list details p { margin: 14px 0 4px; font-size: 0.9rem; color: #444; line-height: 1.7; }
+
+    @media (max-width: 760px) {
+      .channel-grid { grid-template-columns: 1fr; }
+      .audience-grid { grid-template-columns: 1fr; }
+      .section-wrap { padding: 0 20px; }
+      .section { padding: 56px 0; }
+    }
+
     @media (max-width: 900px) {
       .gallery-grid { grid-template-columns: repeat(3, 1fr); }
       .page-wrap { padding: 48px 24px 80px; }
@@ -288,6 +317,34 @@
     gtag('js', new Date());
     gtag('config', 'G-WQMYX2KM0G');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://sinso.us/#organization",
+    "name": "Sinso",
+    "legalName": "Ningbo Sinso Printing Co., Ltd.",
+    "alternateName": ["Sinso Printing", "Ningbo Sinso Printing"],
+    "url": "https://sinso.us",
+    "logo": "https://sinso.us/images/favicon.svg",
+    "foundingDate": "1998",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 118 Huiming Road, Fenghua High-tech Development Zone",
+      "addressLocality": "Ningbo",
+      "addressRegion": "Zhejiang",
+      "addressCountry": "CN"
+    },
+    "email": "hello@sinso.us",
+    "sameAs": [
+      "https://www.sinsoprinting.com",
+      "https://sinsoprinting.en.made-in-china.com",
+      "https://www.linkedin.com/company/sinso-printing",
+      "https://v.douyin.com/SDY17XM/"
+    ],
+    "award": "Bronze, CTV Excellence category, Asian Print Awards 2026"
+  }
+  </script>
 </head>
 <body>
 
@@ -307,6 +364,7 @@
       </div>
     </div>
       <a href="/resources">Resources</a>
+      <a href="/press">Press</a>
       <a href="/faq">FAQ</a>
     </div>
     <a href="mailto:hello@sinso.us?subject=Retail%20Packaging%20Inquiry" class="nav-cta">
@@ -441,10 +499,134 @@
 })();
 </script>
 
+<!-- ══ CHANNEL REQUIREMENTS ══════════════════════════════════════ -->
+<section class="section section--soft">
+  <div class="section-wrap">
+    <div class="section-head">
+      <h2>What your channel requires</h2>
+      <p>Retail channels don't share the same compliance checklist. Here's where the pressure lands for each.</p>
+    </div>
+    <div class="channel-grid">
+
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <h3>Mass retail</h3>
+        <div class="channel-card-sub">Target, Walmart, Costco</div>
+        <div class="pressure-row"><span class="pressure-label">Pressure</span> Vendor compliance · Color consistency across reorders</div>
+        <p>GMI certification covers the color management, structural tolerances, and audit documentation these programs require. Same G7-calibrated ICC profile run to run, so your planogram facing matches the approved sample at every reorder.</p>
+      </div>
+
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <h3>Beauty &amp; personal care</h3>
+        <div class="channel-card-sub">Cosmetics, skincare, wellness</div>
+        <div class="pressure-row"><span class="pressure-label">Pressure</span> Shelf presence · Exact color match to product</div>
+        <p>Cosmetic packaging lives or dies on the accuracy of its color — the carton's warm-beige needs to match the product inside. ECG runs these shades with a wider gamut than CMYK, and soft-touch lamination or spot UV give the tactile cues the category expects.</p>
+      </div>
+
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3>Gift &amp; seasonal</h3>
+        <div class="channel-card-sub">Gift sets, holiday, occasion</div>
+        <div class="pressure-row"><span class="pressure-label">Pressure</span> Perceived value · Short runs · Hard deadlines</div>
+        <p>Rigid set-up boxes, magnetic closures, foil, and soft-touch lamination handled in-house. Seasonal lines have fixed windows — we build those timelines in from brief to delivery, not as an afterthought.</p>
+      </div>
+
+      <div class="channel-card">
+        <div class="channel-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" rx="2"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3>E-commerce &amp; retail dual-channel</h3>
+        <div class="channel-card-sub">Amazon, DTC, plus brick-and-mortar</div>
+        <div class="pressure-row"><span class="pressure-label">Pressure</span> Transit integrity · Unboxing · Shelf-ready presentation</div>
+        <p>Packaging that ships direct-to-consumer needs to survive freight without a shipper. We design for transit integrity on the structural side, and for unboxing impact on the graphic side — without compromising the shelf-facing when the same SKU runs in retail.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUILT FOR RETAIL BUYERS ══════════════════════════════════ -->
+<section class="section">
+  <div class="section-wrap">
+    <div class="section-head">
+      <h2>Built for how retail brands buy</h2>
+    </div>
+    <div class="audience-grid">
+
+      <div class="audience-block">
+        <div class="audience-block-label">For brand managers</div>
+        <h3>Shelf impact you can prove before you commit</h3>
+        <p>We run ECG proof-of-concepts on your existing artwork before you authorize a production run. See the color delta on your specific SKU — not a generic gamut comparison — so the shelf-impact conversation with your team is grounded in your actual packaging.</p>
+      </div>
+
+      <div class="audience-block">
+        <div class="audience-block-label">For packaging engineers</div>
+        <h3>Dieline review and structural samples first</h3>
+        <p>Send us your dieline and we'll flag structural issues — glue flap clearances, score placement, tuck tolerances — before tooling is cut. Physical samples of finishes on the actual substrates we run, not supplier swatches. Every quote breaks out board weight, coating, and compliance line by line.</p>
+      </div>
+
+      <div class="audience-block">
+        <div class="audience-block-label">For sustainability leads</div>
+        <h3>FSC board, recycled content, PPWR compliance</h3>
+        <p>FSC-certified board is standard. We can document recycled content percentages and help you map packaging against EU PPWR requirements for sales into Europe. Plastic-free window options are available on folding cartons and window boxes. <a href="/resources/ppwr-packaging-compliance" style="color: var(--accent);">Read our PPWR guide →</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════ -->
+<section class="section section--soft">
+  <div class="section-wrap" style="max-width: 780px;">
+    <div class="section-head">
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <details>
+        <summary>How do we qualify Sinso as a Target or Walmart vendor?</summary>
+        <p>We're a GMI-certified vendor, which means our quality management and color process documentation meet the baseline both programs require. We can provide audit reports, ISO certificates (ISO 9001, ISO 14001), and facility information to your sourcing or compliance team on request. Factory visits are welcome — contact us to arrange one.</p>
+      </details>
+
+      <details>
+        <summary>How consistent is color across reorders?</summary>
+        <p>We run every press to a G7-calibrated ICC profile and measure inline throughout the run. That profile is locked to your job file, not reset between orders. The practical result: a reorder six months later hits the same density targets as the original. If you've had reorder drift with other printers, we're happy to do a comparison sample against your current approved before you commit.</p>
+      </details>
+
+      <details>
+        <summary>Can you produce shelf-ready packaging (SRP) alongside the inner carton?</summary>
+        <p>Yes. We produce corrugated display trays and PDQ units in-house using the same litho-lamination workflow as the inner carton, so the graphic treatment is consistent across both. Include your SRP spec in the brief and we'll quote them together.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 64px; font-size: 0.85em; color: #666;">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-    <div>© 2026 Sinso · Ningbo Sinso Printing Co., Ltd.</div>
+    <div>© 2026 Sinso · <a href="https://www.sinsoprinting.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ningbo Sinso Printing Co., Ltd.</a> · founded 1998</div>
     <div style="display: flex; gap: 20px;">
+      <a href="/press" style="color: #666;">Press</a>
       <a href="/about" style="color: #666;">About</a>
       <a href="mailto:hello@sinso.us" style="color: #666;">hello@sinso.us</a>
       <a href="https://www.linkedin.com/company/sinso-printing" target="_blank" rel="noopener" style="color: #666; display: inline-flex; align-items: center; gap: 5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>

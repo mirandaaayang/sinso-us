@@ -14,4 +14,10 @@
   <url><loc>https://sinso.us/case-study/ecg-benchmarking</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://sinso.us/faq</loc><lastmod>2026-10-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://sinso.us/about</loc><lastmod>2026-10-06</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://sinso.us/press</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
