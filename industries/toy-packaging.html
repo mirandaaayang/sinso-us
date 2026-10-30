@@ -227,8 +227,23 @@
       transition: transform 0.3s ease;
     }
     .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-item[hidden] { display: none; }
     @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 600px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+
+    /* Filter chips */
+    .gallery-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .gallery-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 14px; border-radius: 20px;
+      border: 1.5px solid var(--border); background: #fff; color: #374151;
+      font-size: 0.82rem; font-weight: 500; font-family: var(--font-body);
+      cursor: pointer; transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .gallery-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .chip-count { background: rgba(0,0,0,0.12); border-radius: 10px; padding: 1px 6px; font-size: 0.75em; }
+    .gallery-chip[aria-pressed="true"] .chip-count { background: rgba(255,255,255,0.25); }
+    .gallery-count { font-size: 0.82rem; color: #6B7280; margin: 0 0 14px; }
 
     /* Audience blocks */
     .audience-grid {
@@ -513,22 +528,65 @@
 <!-- ═══════════ GALLERY ═══════════════════════════════════ -->
 <section class="section">
   <div class="page-wrap">
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="/images/products/6M0A4317.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/disney_wooden_toy.jpg" alt="Disney Wooden Toys Frozen Arendelle Castle Set packaging" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4363.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4365.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4379.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4381.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4386.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4388.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4389.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4390.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4392.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
-      <div class="gallery-item"><img src="/images/products/6M0A4395.jpg" alt="Toy packaging printed by Sinso" loading="lazy"></div>
+    <div class="gallery-filters" role="group" aria-label="Filter by packaging format">
+      <button class="gallery-chip" data-filter="all" aria-pressed="true">All <span class="chip-count">16</span></button>
+      <button class="gallery-chip" data-filter="folding-carton" aria-pressed="false">Folding carton <span class="chip-count">6</span></button>
+      <button class="gallery-chip" data-filter="window-box" aria-pressed="false">Window box <span class="chip-count">6</span></button>
+      <button class="gallery-chip" data-filter="display-tray---pdq" aria-pressed="false">Display tray / PDQ <span class="chip-count">3</span></button>
+      <button class="gallery-chip" data-filter="backer-card" aria-pressed="false">Backer card <span class="chip-count">1</span></button>
+    </div>
+    <p class="gallery-count" aria-live="polite" aria-atomic="true">Showing 16 items</p>
+    <div class="gallery-grid" id="gallery-toy">
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/gift-box_cute_021.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/gift-box_premium-disney-large_027.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/gift-box_beautiful-small_044.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/stationery-box_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/toy-box_printing-high-quality_003.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/toy/toy-box_cute-hot-logo_016.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_recyclable-clear-lid-accessory_005.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_clear-lid-home-high-quality_007.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_clear-lid-home-high-quality_009.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_recyclable-folding_010.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_recyclable-corrugated-decor_011.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/toy/gift-box_safe-custom_052.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/toy/custom-box_brown-large-delivery_001.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/toy/custom-box_shelf-display-tray-logo_007.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/toy/gift-box_recyclable-corrugated-decor_012.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/toy/backer-card_015.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var chips = document.querySelectorAll('.gallery-chip');
+  var items = document.querySelectorAll('#gallery-toy .gallery-item');
+  var countEl = document.querySelector('.gallery-count');
+
+  function applyFilter(filter) {
+    var n = 0;
+    items.forEach(function(item) {
+      var show = filter === 'all' || item.dataset.format === filter;
+      item.hidden = !show;
+      if (show) n++;
+    });
+    countEl.textContent = filter === 'all' ? 'Showing ' + n + ' items' : 'Showing ' + n + ' items · ' + filter.replace(/-/g, ' ');
+    chips.forEach(function(c) {
+      c.setAttribute('aria-pressed', c.dataset.filter === filter ? 'true' : 'false');
+    });
+    var url = new URL(location.href);
+    if (filter === 'all') { url.searchParams.delete('filter'); } else { url.searchParams.set('filter', filter); }
+    history.replaceState(null, '', url.toString());
+  }
+
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() { applyFilter(this.dataset.filter); });
+  });
+
+  var init = new URL(location.href).searchParams.get('filter');
+  if (init) applyFilter(init);
+})();
+</script>
 
 <!-- ═══════════ PLASTIC-FREE OPTIONS ══════════════════════ -->
 <section class="section section--soft">

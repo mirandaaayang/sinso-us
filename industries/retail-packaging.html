@@ -185,6 +185,49 @@
     .gallery-item:hover img {
       transform: scale(1.04);
     }
+    .gallery-item[hidden] { display: none; }
+
+    /* ── Filter chips ── */
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .gallery-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: #374151;
+      font-size: 0.82rem;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .gallery-chip[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .chip-count {
+      background: rgba(0,0,0,0.12);
+      border-radius: 10px;
+      padding: 1px 6px;
+      font-size: 0.75em;
+    }
+    .gallery-chip[aria-pressed="true"] .chip-count {
+      background: rgba(255,255,255,0.25);
+    }
+    .gallery-count {
+      font-size: 0.82rem;
+      color: #6B7280;
+      margin: 0 0 14px;
+    }
 
     .tag { display: inline-block; padding: 5px 13px; background: #EEF2F8; color: #1E3A5F; font-size: 0.8rem; font-weight: 500; border-radius: 20px; }
     .tag--accent { background: var(--accent); color: #fff; }
@@ -306,28 +349,97 @@
     </div>
   </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="/images/products/6M0A4295.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4311.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4313.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4321.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4324.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4327.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4339.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4341.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4367.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4406.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4409.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4286.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4302.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4308.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4334.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4346.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4397.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item"><img src="/images/products/6M0A4403.jpg" alt="Retail packaging by Sinso" loading="lazy"></div>
+  <!-- ── Filterable gallery ── -->
+  <div class="gallery-section" style="margin-top: 48px;">
+    <div class="gallery-filters" role="group" aria-label="Filter by packaging format">
+    <button class="gallery-chip" data-filter="all" aria-pressed="true">All <span class="chip-count">40</span></button>
+    <button class="gallery-chip" data-filter="folding-carton" aria-pressed="false">Folding carton <span class="chip-count">9</span></button>
+    <button class="gallery-chip" data-filter="backer-card" aria-pressed="false">Backer card <span class="chip-count">6</span></button>
+    <button class="gallery-chip" data-filter="window-box" aria-pressed="false">Window box <span class="chip-count">6</span></button>
+    <button class="gallery-chip" data-filter="blister-card" aria-pressed="false">Blister card <span class="chip-count">5</span></button>
+    <button class="gallery-chip" data-filter="rigid-set-up-box" aria-pressed="false">Rigid set-up box <span class="chip-count">4</span></button>
+    <button class="gallery-chip" data-filter="insert-card" aria-pressed="false">Insert card <span class="chip-count">4</span></button>
+    <button class="gallery-chip" data-filter="display-tray---pdq" aria-pressed="false">Display tray / PDQ <span class="chip-count">3</span></button>
+    <button class="gallery-chip" data-filter="header-card" aria-pressed="false">Header card <span class="chip-count">2</span></button>
+    <button class="gallery-chip" data-filter="corrugated-mailer" aria-pressed="false">Corrugated mailer <span class="chip-count">1</span></button>
+    </div>
+    <p class="gallery-count" aria-live="polite" aria-atomic="true">Showing 40 items</p>
+    <div class="gallery-grid" id="gallery-retail">
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_002.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_pvc-durable-square-eye-shadows_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_recyclable-corrugated-makeup_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/food-box_white-corrugated-hot_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_beautiful-cardboard-corporate_034.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-cardboard_066.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-corrugated-essential-oil_068.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/seasonal-box_custom-halloween-high-quality_004.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_006.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_009.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_010.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_011.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_014.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_beautiful-custom-drawer_001.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_004.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_005.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/custom-box_small-folding-window_011.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_premium-folding_031.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_beautiful-small_043.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/pet-box_001.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_002.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_006.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_007.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_008.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/gift-box_battery_039.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_folding-custom-drawer_002.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_creative-silver-foil_023.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-cardboard-watch_049.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-large-valentines_060.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_001.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_002.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_003.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_004.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_009.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_010.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_red-color-corrugated_013.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_001.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_002.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
+    <div class="gallery-item" data-format="corrugated-mailer"><img src="/images/gallery/retail/food-box_black-logo_019.webp" alt="Corrugated mailer packaging by Sinso" loading="lazy"></div>
+    </div>
   </div>
 
 </div>
+
+<script>
+(function() {
+  var chips = document.querySelectorAll('.gallery-chip');
+  var items = document.querySelectorAll('#gallery-retail .gallery-item');
+  var countEl = document.querySelector('.gallery-count');
+
+  function applyFilter(filter) {
+    var n = 0;
+    items.forEach(function(item) {
+      var show = filter === 'all' || item.dataset.format === filter;
+      item.hidden = !show;
+      if (show) n++;
+    });
+    countEl.textContent = filter === 'all' ? 'Showing ' + n + ' items' : 'Showing ' + n + ' items · ' + filter.replace(/-/g, ' ');
+    chips.forEach(function(c) {
+      c.setAttribute('aria-pressed', c.dataset.filter === filter ? 'true' : 'false');
+    });
+    var url = new URL(location.href);
+    if (filter === 'all') { url.searchParams.delete('filter'); } else { url.searchParams.set('filter', filter); }
+    history.replaceState(null, '', url.toString());
+  }
+
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() { applyFilter(this.dataset.filter); });
+  });
+
+  var init = new URL(location.href).searchParams.get('filter');
+  if (init) applyFilter(init);
+})();
+</script>
 
 <footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 64px; font-size: 0.85em; color: #666;">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
