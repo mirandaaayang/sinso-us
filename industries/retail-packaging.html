@@ -34,6 +34,70 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "We're moving our line from another printer. Can you match the packaging already on shelf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, and it's a common place to start. Send us current production samples along with your files. We measure them, match to the numbers, and send a sample of your artwork from our press within 7–10 days so you can set it next to what's on shelf. Once you approve it, that sample becomes your color standard, and every reorder is measured against it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the carton match the color of the product inside?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Send us the product, or a swatch of it, with your artwork. Shades like warm beige, coral and plum are where CMYK tends to drift. 7-color ECG covers about 82% of Pantone within ΔE 2.5, so most product shades can be matched without a spot color. For large solid areas we may still recommend a Pantone spot, and we'll tell you up front."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When do we need to start to make holiday?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start from your in-store or ship date and work backward: sample (7–10 days), your approval rounds, production, then ocean freight from Ningbo. Send us the date first, and we'll lay out the calendar with you before artwork is final, so seasonal timing is planned rather than squeezed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we get a premium look without paying for a rigid box?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A folding carton with soft-touch lamination, foil or spot UV often reads as premium on shelf at a fraction of the cost. Rigid set-up boxes earn their price when the box is kept, the product is heavy, or you want a magnetic closure. We're happy to quote both so you can compare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "We sell online now and just landed our first retail account. What changes about our packaging?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually more than people expect: the retailer's packaging spec, a front panel that reads from across the aisle, hang or peg formats, case packs, and durability for store handling. We work through your retailer's requirements with you and turn them into a spec before anything is printed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can one supplier handle our cartons, hang cards and display trays?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Folding cartons, rigid boxes, backer, blister and header cards, inserts and display trays all run through the same measured color workflow. Your line stays consistent across formats, and you manage one vendor and one approval process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What color standard do you print to, and how do you hold it from batch to batch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We manage color by measurement, then confirm it by eye. Most factories judge a press run visually. We track ink volume and dot gain on press and test each paper batch before it runs, so a reorder measures like the first run. If your retail program sets a target (some require ΔE ≤ 2.8 on 75% or more of four-color areas), we build to it. If it doesn't, we set one with you: our internal standard is ΔE ≤ 2.5, followed by a visual check against your approved sample. When brands have split production across suppliers, other factories have been asked to match our output."
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +108,12 @@
       --accent: #003670;
       --text: #111827;
       --border: #E5E7EB;
+      --bg-soft: #F8F9FB;
       --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
       --font-body: 'Inter', sans-serif;
       --max-w: 1100px;
     }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
       font-family: var(--font-body);
       color: var(--text);
@@ -56,68 +122,59 @@
       -webkit-font-smoothing: antialiased;
     }
     .nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
     .nav-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 32px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      height: 64px; display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo {
-      font-family: var(--font-head);
-      font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: -0.03em;
-      color: var(--navy);
-      text-decoration: none;
+      font-family: var(--font-head); font-weight: 800; font-size: 1.2rem;
+      letter-spacing: -0.03em; color: var(--navy); text-decoration: none;
     }
     .nav-logo span { color: var(--accent); }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      margin-right: 20px;
-    }
+    .nav-links { display: flex; align-items: center; gap: 28px; margin-right: 20px; }
     .nav-links a {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--text);
-      opacity: 0.7;
-      text-decoration: none;
-      transition: opacity 0.15s;
+      font-size: 0.88rem; font-weight: 500; color: var(--text);
+      opacity: 0.7; text-decoration: none; transition: opacity 0.15s;
     }
     .nav-links a:hover { opacity: 1; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn {
+      background: none; border: none; cursor: pointer; padding: 0;
+      font-size: 0.88rem; font-weight: 500; color: var(--text);
+      opacity: 0.7; font-family: inherit;
+      display: flex; align-items: center; gap: 4px; transition: opacity 0.15s;
+    }
+    .nav-dropdown-btn:hover, .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; padding-top: 14px;
+      left: 50%; transform: translateX(-50%);
+      background: #fff; border: 1px solid #E5E7EB; border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1); min-width: 220px;
+      padding: 6px 0; z-index: 200;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block; padding: 10px 18px;
+      font-size: 0.88rem; font-weight: 500; color: #111827;
+      text-decoration: none; opacity: 0.8; transition: background 0.12s, opacity 0.12s;
+    }
+    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
     .nav-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--accent);
-      color: #fff;
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 500;
-      padding: 9px 20px;
-      border-radius: 6px;
-      border: none;
-      text-decoration: none;
-      transition: background 0.15s;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      font-family: var(--font-body); font-size: 0.85rem; font-weight: 500;
+      padding: 9px 20px; border-radius: 6px; border: none;
+      text-decoration: none; transition: background 0.15s;
     }
     .nav-cta:hover { background: #004fa8; }
-    @media (max-width: 640px) {
-      .nav-inner { padding: 0 20px; }
-    }
+    @media (max-width: 640px) { .nav-inner { padding: 0 20px; } }
 
-    /* ── Hero ── */
+    /* Hero */
     .hero { background: var(--navy); color: #fff; padding: 80px 0 72px; }
     .hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
     .eyebrow {
@@ -132,183 +189,119 @@
     }
     .hero-lead {
       font-size: 1.1em; line-height: 1.7; color: rgba(255,255,255,0.8);
-      max-width: 680px; margin: 0 0 28px;
+      max-width: 680px; margin: 0 0 36px;
     }
-    .hero .tag { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.9); }
-    .hero .tag--accent { background: rgba(255,255,255,0.25); color: #fff; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--navy);
+      font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+      padding: 12px 24px; border-radius: 6px; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #e8edf5; }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      font-family: var(--font-body); font-size: 0.9rem; font-weight: 500;
+      padding: 12px 24px; border-radius: 6px; text-decoration: none;
+      transition: border-color 0.15s;
+    }
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.8); }
 
-    /* ── Page layout ── */
-    .page-wrap {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 64px 32px 96px;
+    /* Logo strip */
+    .logo-strip { background: #fff; border-bottom: 1px solid var(--border); padding: 32px 0; }
+    .logo-strip-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      display: flex; flex-wrap: wrap; gap: 32px 48px;
+      align-items: center; justify-content: center;
     }
+    .logo-strip-img { height: 36px; width: auto; max-width: 130px; object-fit: contain; }
 
-    /* ── Logo strip ── */
-    .logos-section { padding: 64px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .logos-label { text-align: center; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 40px; }
-    .logos-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 36px 48px; max-width: 960px; margin: 0 auto; }
-    .logos-grid-item { display: flex; justify-content: center; align-items: center; flex: 0 0 auto; }
-    .logos-grid-item img { height: 36px; width: auto; max-width: 120px; filter: opacity(0.75); transition: filter 0.2s, transform 0.2s; object-fit: contain; }
-    .logos-grid-item img:hover { filter: opacity(1); transform: scale(1.07); }
+    /* Page wrapper */
+    .page-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
 
-    /* ── Gallery grid ── */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .gallery-item {
-      border-radius: 10px;
-      overflow: hidden;
-      aspect-ratio: 3/4;
-      background: #f0f2f4;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.35s ease;
-    }
-    .gallery-item:hover img {
-      transform: scale(1.04);
-    }
+    /* Gallery */
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .gallery-item { border-radius: 10px; overflow: hidden; aspect-ratio: 3/4; background: #f0f2f4; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
     .gallery-item[hidden] { display: none; }
 
-    /* ── Filter chips ── */
-    .gallery-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
+    /* Filter chips */
+    .gallery-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
     .gallery-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 6px 14px;
-      border-radius: 20px;
-      border: 1.5px solid var(--border);
-      background: #fff;
-      color: #374151;
-      font-size: 0.82rem;
-      font-weight: 500;
-      font-family: var(--font-body);
-      cursor: pointer;
-      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 14px; border-radius: 20px;
+      border: 1.5px solid var(--border); background: #fff; color: #374151;
+      font-size: 0.82rem; font-weight: 500; font-family: var(--font-body);
+      cursor: pointer; transition: background 0.15s, border-color 0.15s, color 0.15s;
     }
-    .gallery-chip[aria-pressed="true"] {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-    .chip-count {
-      background: rgba(0,0,0,0.12);
-      border-radius: 10px;
-      padding: 1px 6px;
-      font-size: 0.75em;
-    }
-    .gallery-chip[aria-pressed="true"] .chip-count {
-      background: rgba(255,255,255,0.25);
-    }
-    .gallery-count {
-      font-size: 0.82rem;
-      color: #6B7280;
-      margin: 0 0 14px;
-    }
+    .gallery-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .chip-count { background: rgba(0,0,0,0.12); border-radius: 10px; padding: 1px 6px; font-size: 0.75em; }
+    .gallery-chip[aria-pressed="true"] .chip-count { background: rgba(255,255,255,0.25); }
+    .gallery-count { font-size: 0.82rem; color: #6B7280; margin: 0 0 14px; }
 
-    .tag { display: inline-block; padding: 5px 13px; background: #EEF2F8; color: #1E3A5F; font-size: 0.8rem; font-weight: 500; border-radius: 20px; }
-    .tag--accent { background: var(--accent); color: #fff; }
-
-    /* ── Sections ── */
-    .section { padding: 80px 0; }
-    .section--soft { background: #F8F9FB; }
+    /* Sections */
+    .section { padding: 72px 0; }
+    .section--soft { background: var(--bg-soft); }
     .section-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
     .section-head { margin-bottom: 40px; }
-    .section-head h2 { font-family: var(--font-head); font-size: 1.7rem; font-weight: 800; color: var(--navy); margin: 0 0 10px; letter-spacing: -0.02em; }
-    .section-head p { color: #555; font-size: 0.95rem; line-height: 1.65; margin: 0; max-width: 560px; }
+    .section-head h2 {
+      font-family: var(--font-head); font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+      font-weight: 800; letter-spacing: -0.02em; color: var(--navy); margin: 0 0 12px;
+    }
+    .section-head p { font-size: 0.95rem; color: #555; line-height: 1.7; margin: 0; max-width: 640px; }
 
-    /* Channel cards */
-    .channel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    .channel-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
-    .channel-card-icon { width: 40px; height: 40px; border-radius: 8px; background: #EEF2F8; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
-    .channel-card h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; margin: 0 0 3px; color: var(--navy); }
-    .channel-card-sub { font-size: 0.78rem; color: #888; margin-bottom: 12px; }
-    .pressure-row { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 10px; font-size: 0.82rem; }
-    .pressure-label { background: #FEF3C7; color: #92400E; font-weight: 600; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; white-space: nowrap; margin-top: 2px; }
-    .channel-card p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
-
-    /* Audience blocks */
-    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .audience-block { padding: 28px; background: #fff; border: 1px solid var(--border); border-radius: 12px; }
-    .audience-block-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
-    .audience-block h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--navy); margin: 0 0 10px; }
-    .audience-block p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
+    /* Needs grid */
+    .needs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+    .needs-block { border-top: 1px solid var(--border); padding: 28px 0; }
+    .needs-block h3 {
+      font-family: var(--font-head); font-size: 1rem; font-weight: 700;
+      color: var(--navy); margin: 0 0 4px;
+    }
+    .needs-block-sub { font-size: 0.8rem; color: #9CA3AF; margin-bottom: 8px; }
+    .needs-block-tags { font-size: 0.8rem; color: #555; margin-bottom: 10px; }
+    .needs-block p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
 
     /* FAQ */
-    .faq-list { border-top: 1px solid var(--border); }
-    .faq-list details { border-bottom: 1px solid var(--border); padding: 18px 0; }
-    .faq-list summary { font-weight: 600; cursor: pointer; font-family: var(--font-head); font-size: 0.95rem; color: var(--navy); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-    .faq-list summary::-webkit-details-marker { display: none; }
-    .faq-list summary::after { content: '+'; font-size: 1.2rem; font-weight: 400; color: #aaa; flex-shrink: 0; }
-    .faq-list details[open] summary::after { content: '−'; }
-    .faq-list details p { margin: 14px 0 4px; font-size: 0.9rem; color: #444; line-height: 1.7; }
+    details summary {
+      font-weight: 500; cursor: pointer; padding: 18px 0;
+      list-style: none; display: flex; justify-content: space-between; align-items: center;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after { content: '+'; font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 16px; }
+    details[open] summary::after { content: '−'; }
+    details p { padding: 0 0 18px; margin: 0; color: #444; line-height: 1.7; font-size: 0.95rem; }
+    .faq-wrap { max-width: 760px; }
+    .faq-item { border-bottom: 1px solid #eee; }
+    .faq-item:first-child { border-top: 1px solid #eee; }
+    .faq-more { margin-top: 24px; font-size: 0.9rem; }
+    .faq-more a { color: var(--accent); }
+
+    /* CTA block */
+    .cta-block {
+      background: var(--navy); color: #fff;
+      border-radius: 12px; padding: 48px; text-align: center;
+    }
+    .cta-block p { color: rgba(255,255,255,0.8); font-size: 1.05em; line-height: 1.6; margin: 0 0 24px; }
 
     @media (max-width: 760px) {
-      .channel-grid { grid-template-columns: 1fr; }
-      .audience-grid { grid-template-columns: 1fr; }
+      .needs-grid { grid-template-columns: 1fr; }
       .section-wrap { padding: 0 20px; }
-      .section { padding: 56px 0; }
+      .page-wrap { padding: 0 20px; }
     }
-
     @media (max-width: 900px) {
       .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-      .page-wrap { padding: 48px 24px 80px; }
     }
     @media (max-width: 600px) {
       .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-      .page-wrap { padding: 40px 20px 64px; }
+      .hero { padding: 56px 0 48px; }
+      .hero-inner { padding: 0 20px; }
+      .section { padding: 48px 0; }
+      .logo-strip-inner { padding: 0 20px; gap: 20px 32px; }
     }
-  </style>
-
-  <style>
-    .nav-dropdown { position: relative; display: flex; align-items: center; }
-    .nav-dropdown-btn {
-      background: none; border: none; cursor: pointer; padding: 0;
-      font-size: 0.88rem; font-weight: 500; color: var(--text);
-      opacity: 0.7; font-family: inherit;
-      display: flex; align-items: center; gap: 4px;
-      transition: opacity 0.15s;
-    }
-    .nav-dropdown-btn:hover,
-    .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
-    .nav-dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%; padding-top: 14px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #fff;
-      border: 1px solid #E5E7EB;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      min-width: 220px;
-      padding: 6px 0;
-      z-index: 200;
-    }
-    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
-    .nav-dropdown-menu a {
-      display: block;
-      padding: 10px 18px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: #111827;
-      text-decoration: none;
-      opacity: 0.8;
-      transition: background 0.12s, opacity 0.12s;
-    }
-    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQMYX2KM0G"></script>
@@ -348,7 +341,7 @@
     "award": "Bronze, CTV Excellence category, Asian Print Awards 2026"
   }
   </script>
-    <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
+  <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
 </head>
 <body>
 
@@ -359,14 +352,14 @@
       <a href="/technology">Technology</a>
       <a href="/capabilities">Capabilities</a>
       <div class="nav-dropdown">
-      <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="nav-dropdown-menu">
-        <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
-        <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
-        <a href="/industries/retail-packaging">Retail Packaging</a>
-        <a href="/industries/toy-packaging">Toy &amp; Licensed Packaging</a>
+        <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-dropdown-menu">
+          <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
+          <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
+          <a href="/industries/retail-packaging">Retail Packaging</a>
+          <a href="/industries/toy-packaging">Toy &amp; Licensed Packaging</a>
+        </div>
       </div>
-    </div>
       <a href="/resources">Resources</a>
       <a href="/news">News</a>
       <a href="/faq">FAQ</a>
@@ -378,99 +371,93 @@
   </div>
 </nav>
 
+<!-- ═══════════ HERO ═══════════════════════════════════════ -->
 <section class="hero">
-  <div class="hero-inner">
-    <span class="eyebrow">Industries · Retail Packaging</span>
-    <h1>Retail Packaging</h1>
+  <div class="hero-inner">    <h1>Retail Packaging</h1>
     <p class="hero-lead">We've been producing retail-compliant folding cartons for 25 years. Gift sets, beauty and personal care, and consumer goods going into Target, Walmart, and specialty retailers. ECG color for the lines where shelf impact matters; conventional CMYK on the same press when it doesn't.</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-      <span class="tag tag--accent">GMI Certified</span>
-      <span class="tag">Gift Sets</span>
-      <span class="tag">Beauty Cartons</span>
-      <span class="tag">Consumer Goods</span>
-      <span class="tag">FSC Board</span>
+    <div class="hero-ctas">
+      <a href="mailto:hello@sinso.us?subject=Retail%20Packaging%20Inquiry" class="btn-primary">Get a Sample</a>
+      <a href="/technology" class="btn-secondary">View Technology →</a>
     </div>
   </div>
 </section>
 
-<div class="page-wrap">
-
-  <!-- ── Logo strip ── -->
-  <div class="logos-section">
-    <div class="logos-grid">
-      <div class="logos-grid-item"><img src="/images/logos/walmart.svg"   alt="Walmart"></div>
-      <div class="logos-grid-item"><img src="/images/logos/target.svg"    alt="Target"></div>
-      <div class="logos-grid-item"><img src="/images/logos/best-buy.svg"  alt="Best Buy"></div>
-      <div class="logos-grid-item"><img src="/images/logos/walgreens.svg" alt="Walgreens"></div>
-      <div class="logos-grid-item"><img src="/images/logos/duracell.svg"  alt="Duracell"></div>
-      <div class="logos-grid-item"><img src="/images/logos/ikea.svg"      alt="IKEA"></div>
-      <div class="logos-grid-item"><img src="/images/logos/petco.png"     alt="Petco"></div>
-      <div class="logos-grid-item"><img src="/images/logos/wilko.svg"     alt="Wilko"></div>
-      <div class="logos-grid-item"><img src="/images/logos/cvs.svg"       alt="CVS"></div>
-      <div class="logos-grid-item"><img src="/images/logos/philips.svg"   alt="Philips"></div>
-    </div>
+<!-- ═══════════ LOGO STRIP ════════════════════════════════ -->
+<div class="logo-strip">
+  <div class="logo-strip-inner">
+    <img src="/images/logos/walmart.svg"   alt="Walmart"   class="logo-strip-img">
+    <img src="/images/logos/target.svg"    alt="Target"    class="logo-strip-img">
+    <img src="/images/logos/best-buy.svg"  alt="Best Buy"  class="logo-strip-img">
+    <img src="/images/logos/walgreens.svg" alt="Walgreens" class="logo-strip-img">
+    <img src="/images/logos/duracell.svg"  alt="Duracell"  class="logo-strip-img">
+    <img src="/images/logos/ikea.svg"      alt="IKEA"      class="logo-strip-img">
+    <img src="/images/logos/petco.png"     alt="Petco"     class="logo-strip-img">
+    <img src="/images/logos/wilko.svg"     alt="Wilko"     class="logo-strip-img">
+    <img src="/images/logos/cvs.svg"       alt="CVS"       class="logo-strip-img">
+    <img src="/images/logos/philips.svg"   alt="Philips"   class="logo-strip-img">
   </div>
+</div>
 
-  <!-- ── Filterable gallery ── -->
-  <div class="gallery-section" style="margin-top: 48px;">
+<!-- ═══════════ GALLERY ═══════════════════════════════════ -->
+<section class="section">
+  <div class="page-wrap">
     <div class="gallery-filters" role="group" aria-label="Filter by packaging format">
-    <button class="gallery-chip" data-filter="all" aria-pressed="true">All <span class="chip-count">40</span></button>
-    <button class="gallery-chip" data-filter="folding-carton" aria-pressed="false">Folding carton <span class="chip-count">9</span></button>
-    <button class="gallery-chip" data-filter="backer-card" aria-pressed="false">Backer card <span class="chip-count">6</span></button>
-    <button class="gallery-chip" data-filter="window-box" aria-pressed="false">Window box <span class="chip-count">6</span></button>
-    <button class="gallery-chip" data-filter="blister-card" aria-pressed="false">Blister card <span class="chip-count">5</span></button>
-    <button class="gallery-chip" data-filter="rigid-set-up-box" aria-pressed="false">Rigid set-up box <span class="chip-count">4</span></button>
-    <button class="gallery-chip" data-filter="insert-card" aria-pressed="false">Insert card <span class="chip-count">4</span></button>
-    <button class="gallery-chip" data-filter="display-tray---pdq" aria-pressed="false">Display tray / PDQ <span class="chip-count">3</span></button>
-    <button class="gallery-chip" data-filter="header-card" aria-pressed="false">Header card <span class="chip-count">2</span></button>
-    <button class="gallery-chip" data-filter="corrugated-mailer" aria-pressed="false">Corrugated mailer <span class="chip-count">1</span></button>
+      <button class="gallery-chip" data-filter="all" aria-pressed="true">All <span class="chip-count">40</span></button>
+      <button class="gallery-chip" data-filter="folding-carton" aria-pressed="false">Folding carton <span class="chip-count">9</span></button>
+      <button class="gallery-chip" data-filter="backer-card" aria-pressed="false">Backer card <span class="chip-count">6</span></button>
+      <button class="gallery-chip" data-filter="window-box" aria-pressed="false">Window box <span class="chip-count">6</span></button>
+      <button class="gallery-chip" data-filter="blister-card" aria-pressed="false">Blister card <span class="chip-count">5</span></button>
+      <button class="gallery-chip" data-filter="rigid-set-up-box" aria-pressed="false">Rigid set-up box <span class="chip-count">4</span></button>
+      <button class="gallery-chip" data-filter="insert-card" aria-pressed="false">Insert card <span class="chip-count">4</span></button>
+      <button class="gallery-chip" data-filter="display-tray---pdq" aria-pressed="false">Display tray / PDQ <span class="chip-count">3</span></button>
+      <button class="gallery-chip" data-filter="header-card" aria-pressed="false">Header card <span class="chip-count">2</span></button>
+      <button class="gallery-chip" data-filter="corrugated-mailer" aria-pressed="false">Corrugated mailer <span class="chip-count">1</span></button>
     </div>
     <p class="gallery-count" aria-live="polite" aria-atomic="true">Showing 40 items</p>
     <div class="gallery-grid" id="gallery-retail">
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_002.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_pvc-durable-square-eye-shadows_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_recyclable-corrugated-makeup_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/food-box_white-corrugated-hot_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_beautiful-cardboard-corporate_034.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-cardboard_066.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-corrugated-essential-oil_068.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/seasonal-box_custom-halloween-high-quality_004.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_006.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_009.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_010.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_011.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_014.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_beautiful-custom-drawer_001.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_004.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_005.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/custom-box_small-folding-window_011.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_premium-folding_031.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_beautiful-small_043.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/pet-box_001.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_002.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_006.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_007.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_008.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/gift-box_battery_039.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_folding-custom-drawer_002.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_creative-silver-foil_023.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-cardboard-watch_049.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-large-valentines_060.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_001.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_002.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_003.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_004.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_009.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_010.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_red-color-corrugated_013.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_001.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_002.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
-    <div class="gallery-item" data-format="corrugated-mailer"><img src="/images/gallery/retail/food-box_black-logo_019.webp" alt="Corrugated mailer packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/consumer-box_002.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_pvc-durable-square-eye-shadows_001.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/cosmetic-box_recyclable-corrugated-makeup_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/food-box_white-corrugated-hot_008.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_beautiful-cardboard-corporate_034.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-cardboard_066.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/gift-box_luxury-corrugated-essential-oil_068.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="folding-carton"><img src="/images/gallery/retail/seasonal-box_custom-halloween-high-quality_004.webp" alt="Folding carton packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_006.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_009.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_010.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_011.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_014.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="backer-card"><img src="/images/gallery/retail/backer-card_beautiful-custom-drawer_001.webp" alt="Backer card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_004.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/consumer-box_005.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/custom-box_small-folding-window_011.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_premium-folding_031.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/gift-box_beautiful-small_043.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="window-box"><img src="/images/gallery/retail/pet-box_001.webp" alt="Window box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_002.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_006.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_007.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/blister-card_008.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="blister-card"><img src="/images/gallery/retail/gift-box_battery_039.webp" alt="Blister card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_folding-custom-drawer_002.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_creative-silver-foil_023.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-cardboard-watch_049.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="rigid-set-up-box"><img src="/images/gallery/retail/gift-box_luxury-large-valentines_060.webp" alt="Rigid set-up box packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_001.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_002.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_003.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="insert-card"><img src="/images/gallery/retail/insert-card_004.webp" alt="Insert card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_009.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_custom-corrugated_010.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="display-tray---pdq"><img src="/images/gallery/retail/custom-box_red-color-corrugated_013.webp" alt="Display tray / PDQ packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_001.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="header-card"><img src="/images/gallery/retail/header-card_002.webp" alt="Header card packaging by Sinso" loading="lazy"></div>
+      <div class="gallery-item" data-format="corrugated-mailer"><img src="/images/gallery/retail/food-box_black-logo_019.webp" alt="Corrugated mailer packaging by Sinso" loading="lazy"></div>
     </div>
   </div>
-
-</div>
+</section>
 
 <script>
 (function() {
@@ -503,130 +490,120 @@
 })();
 </script>
 
-<!-- ══ CHANNEL REQUIREMENTS ══════════════════════════════════════ -->
+<!-- ═══════════ WHAT EACH CATEGORY NEEDS ═════════════════ -->
 <section class="section section--soft">
   <div class="section-wrap">
     <div class="section-head">
-      <h2>What your channel requires</h2>
-      <p>Retail channels don't share the same compliance checklist. Here's where the pressure lands for each.</p>
+      <h2>What Each Category Needs</h2>
+      <p>Every retail line is color-managed by data, not by eye: GMI-certified, G7-calibrated, and measured against a ΔE target at every reorder. Beyond that, the pressure depends on what's on the shelf.</p>
     </div>
-    <div class="channel-grid">
+    <div class="needs-grid">
 
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 0 1-8 0"/>
-          </svg>
-        </div>
-        <h3>Mass retail</h3>
-        <div class="channel-card-sub">Target, Walmart, Costco</div>
-        <div class="pressure-row"><span class="pressure-label">Pressure</span> Vendor compliance · Color consistency across reorders</div>
-        <p>GMI certification covers the color management, structural tolerances, and audit documentation these programs require. Same G7-calibrated ICC profile run to run, so your planogram facing matches the approved sample at every reorder.</p>
+      <div class="needs-block">
+        <h3>Beauty &amp; Personal Care</h3>
+        <div class="needs-block-sub">Cosmetics, skincare, wellness</div>
+        <div class="needs-block-tags">Exact color match · Tactile finish</div>
+        <p>ECG holds warm beiges and skin tones that CMYK flattens.<br>Soft-touch and spot UV in-house.</p>
       </div>
 
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-          </svg>
-        </div>
-        <h3>Beauty &amp; personal care</h3>
-        <div class="channel-card-sub">Cosmetics, skincare, wellness</div>
-        <div class="pressure-row"><span class="pressure-label">Pressure</span> Shelf presence · Exact color match to product</div>
-        <p>Cosmetic packaging lives or dies on the accuracy of its color — the carton's warm-beige needs to match the product inside. ECG runs these shades with a wider gamut than CMYK, and soft-touch lamination or spot UV give the tactile cues the category expects.</p>
+      <div class="needs-block">
+        <h3>Pet</h3>
+        <div class="needs-block-sub">Toys, accessories, supplies</div>
+        <div class="needs-block-tags">Shelf visibility · Photo color</div>
+        <p>Saturated brand colors and true-to-life animal photography.<br>Heavy-board cartons and hang-tab formats for peg display.</p>
       </div>
 
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-        </div>
-        <h3>Gift &amp; seasonal</h3>
-        <div class="channel-card-sub">Gift sets, holiday, occasion</div>
-        <div class="pressure-row"><span class="pressure-label">Pressure</span> Perceived value · Short runs · Hard deadlines</div>
-        <p>Rigid set-up boxes, magnetic closures, foil, and soft-touch lamination handled in-house. Seasonal lines have fixed windows — we build those timelines in from brief to delivery, not as an afterthought.</p>
+      <div class="needs-block">
+        <h3>Gift &amp; Seasonal</h3>
+        <div class="needs-block-sub">Gift sets, holiday, occasion</div>
+        <div class="needs-block-tags">Perceived value · Hard deadlines</div>
+        <p>Rigid set-up boxes, magnetic closures, foil and soft-touch, all in-house.<br>Seasonal timelines planned backward from your ship window.</p>
       </div>
 
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="1" y="3" width="15" height="13" rx="2"/>
-            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
-            <circle cx="5.5" cy="18.5" r="2.5"/>
-            <circle cx="18.5" cy="18.5" r="2.5"/>
-          </svg>
-        </div>
-        <h3>E-commerce &amp; retail dual-channel</h3>
-        <div class="channel-card-sub">Amazon, DTC, plus brick-and-mortar</div>
-        <div class="pressure-row"><span class="pressure-label">Pressure</span> Transit integrity · Unboxing · Shelf-ready presentation</div>
-        <p>Packaging that ships direct-to-consumer needs to survive freight without a shipper. We design for transit integrity on the structural side, and for unboxing impact on the graphic side — without compromising the shelf-facing when the same SKU runs in retail.</p>
+      <div class="needs-block">
+        <h3>Household &amp; Electronics</h3>
+        <div class="needs-block-sub">Personal care devices, batteries, home goods</div>
+        <div class="needs-block-tags">Brand color across SKUs · Peg-ready formats</div>
+        <p>One color standard across every SKU in the line.<br>Backer, blister and header cards alongside folding cartons.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ══ BUILT FOR RETAIL BUYERS ══════════════════════════════════ -->
-<section class="section">
+<!-- ═══════════ FAQ ════════════════════════════════════════ -->
+<section class="section" id="faq">
   <div class="section-wrap">
     <div class="section-head">
-      <h2>Built for how retail brands buy</h2>
+      <h2>Retail Packaging FAQ</h2>
     </div>
-    <div class="audience-grid">
+    <div class="faq-wrap">
 
-      <div class="audience-block">
-        <div class="audience-block-label">For brand managers</div>
-        <h3>Shelf impact you can prove before you commit</h3>
-        <p>We run ECG proof-of-concepts on your existing artwork before you authorize a production run. See the color delta on your specific SKU — not a generic gamut comparison — so the shelf-impact conversation with your team is grounded in your actual packaging.</p>
+      <div class="faq-item">
+        <details>
+          <summary>We're moving our line from another printer. Can you match the packaging already on shelf?</summary>
+          <p>Yes, and it's a common place to start. Send us current production samples along with your files. We measure them, match to the numbers, and send a sample of your artwork from our press within 7–10 days so you can set it next to what's on shelf. Once you approve it, that sample becomes your color standard, and every reorder is measured against it.</p>
+        </details>
       </div>
 
-      <div class="audience-block">
-        <div class="audience-block-label">For packaging engineers</div>
-        <h3>Dieline review and structural samples first</h3>
-        <p>Send us your dieline and we'll flag structural issues — glue flap clearances, score placement, tuck tolerances — before tooling is cut. Physical samples of finishes on the actual substrates we run, not supplier swatches. Every quote breaks out board weight, coating, and compliance line by line.</p>
+      <div class="faq-item">
+        <details>
+          <summary>Can the carton match the color of the product inside?</summary>
+          <p>Send us the product, or a swatch of it, with your artwork. Shades like warm beige, coral and plum are where CMYK tends to drift. 7-color ECG covers about 82% of Pantone within ΔE 2.5, so most product shades can be matched without a spot color. For large solid areas we may still recommend a Pantone spot, and we'll tell you up front.</p>
+        </details>
       </div>
 
-      <div class="audience-block">
-        <div class="audience-block-label">For sustainability leads</div>
-        <h3>FSC board, recycled content, PPWR compliance</h3>
-        <p>FSC-certified board is standard. We can document recycled content percentages and help you map packaging against EU PPWR requirements for sales into Europe. Plastic-free window options are available on folding cartons and window boxes. <a href="/resources/ppwr-packaging-compliance" style="color: var(--accent);">Read our PPWR guide →</a></p>
+      <div class="faq-item">
+        <details>
+          <summary>When do we need to start to make holiday?</summary>
+          <p>Start from your in-store or ship date and work backward: sample (7–10 days), your approval rounds, production, then ocean freight from Ningbo. Send us the date first, and we'll lay out the calendar with you before artwork is final, so seasonal timing is planned rather than squeezed.</p>
+        </details>
       </div>
 
+      <div class="faq-item">
+        <details>
+          <summary>How do we get a premium look without paying for a rigid box?</summary>
+          <p>A folding carton with soft-touch lamination, foil or spot UV often reads as premium on shelf at a fraction of the cost. Rigid set-up boxes earn their price when the box is kept, the product is heavy, or you want a magnetic closure. We're happy to quote both so you can compare.</p>
+        </details>
+      </div>
+
+      <div class="faq-item">
+        <details>
+          <summary>We sell online now and just landed our first retail account. What changes about our packaging?</summary>
+          <p>Usually more than people expect: the retailer's packaging spec, a front panel that reads from across the aisle, hang or peg formats, case packs, and durability for store handling. We work through your retailer's requirements with you and turn them into a spec before anything is printed.</p>
+        </details>
+      </div>
+
+      <div class="faq-item">
+        <details>
+          <summary>Can one supplier handle our cartons, hang cards and display trays?</summary>
+          <p>Yes. Folding cartons, rigid boxes, backer, blister and header cards, inserts and display trays all run through the same measured color workflow. Your line stays consistent across formats, and you manage one vendor and one approval process.</p>
+        </details>
+      </div>
+
+      <div class="faq-item">
+        <details>
+          <summary>What color standard do you print to, and how do you hold it from batch to batch?</summary>
+          <p>We manage color by measurement, then confirm it by eye. Most factories judge a press run visually. We track ink volume and dot gain on press and test each paper batch before it runs, so a reorder measures like the first run. If your retail program sets a target (some require ΔE ≤ 2.8 on 75% or more of four-color areas), we build to it. If it doesn't, we set one with you: our internal standard is ΔE ≤ 2.5, followed by a visual check against your approved sample. When brands have split production across suppliers, other factories have been asked to match our output.</p>
+        </details>
+      </div>
+
+      <p class="faq-more"><a href="/faq">More questions? See the full FAQ →</a></p>
     </div>
   </div>
 </section>
 
-<!-- ══ FAQ ════════════════════════════════════════════════════ -->
+<!-- ═══════════ CLOSING CTA ═══════════════════════════════ -->
 <section class="section section--soft">
-  <div class="section-wrap" style="max-width: 780px;">
-    <div class="section-head">
-      <h2>Common questions</h2>
-    </div>
-    <div class="faq-list">
-
-      <details>
-        <summary>How do we qualify Sinso as a Target or Walmart vendor?</summary>
-        <p>We're a GMI-certified vendor, which means our quality management and color process documentation meet the baseline both programs require. We can provide audit reports, ISO certificates (ISO 9001, ISO 14001), and facility information to your sourcing or compliance team on request. Factory visits are welcome — contact us to arrange one.</p>
-      </details>
-
-      <details>
-        <summary>How consistent is color across reorders?</summary>
-        <p>We run every press to a G7-calibrated ICC profile and measure inline throughout the run. That profile is locked to your job file, not reset between orders. The practical result: a reorder six months later hits the same density targets as the original. If you've had reorder drift with other printers, we're happy to do a comparison sample against your current approved before you commit.</p>
-      </details>
-
-      <details>
-        <summary>Can you produce shelf-ready packaging (SRP) alongside the inner carton?</summary>
-        <p>Yes. We produce corrugated display trays and PDQ units in-house using the same litho-lamination workflow as the inner carton, so the graphic treatment is consistent across both. Include your SRP spec in the brief and we'll quote them together.</p>
-      </details>
-
+  <div class="section-wrap">
+    <div class="cta-block">
+      <p>Ready to spec your retail packaging?</p>
+      <a href="mailto:hello@sinso.us?subject=Retail%20Packaging%20Inquiry" class="btn-primary">Get a Sample</a>
     </div>
   </div>
 </section>
 
-<footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 64px; font-size: 0.85em; color: #666;">
+<footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 0; font-size: 0.85em; color: #666;">
   <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
     <div>© 2026 Sinso · <a href="https://www.sinsoprinting.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ningbo Sinso Printing Co., Ltd.</a></div>
     <div style="display: flex; gap: 20px;">

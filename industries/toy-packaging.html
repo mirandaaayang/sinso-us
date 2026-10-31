@@ -181,7 +181,6 @@
     }
     .logo-strip-img {
       height: 36px; width: auto; max-width: 130px; object-fit: contain;
-      opacity: 0.75; filter: grayscale(20%);
     }
     .logo-strip-img--square { height: 44px; max-width: 56px; }
 
@@ -232,64 +231,16 @@
     .gallery-chip[aria-pressed="true"] .chip-count { background: rgba(255,255,255,0.25); }
     .gallery-count { font-size: 0.82rem; color: #6B7280; margin: 0 0 14px; }
 
-    /* Audience blocks */
-    .audience-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    /* Needs grid */
+    .needs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+    .needs-block { border-top: 1px solid var(--border); padding: 28px 0; }
+    .needs-block h3 {
+      font-family: var(--font-head); font-size: 1rem; font-weight: 700;
+      color: var(--navy); margin: 0 0 4px;
     }
-    .audience-block {
-      background: #fff; border: 1px solid var(--border);
-      border-radius: 12px; padding: 28px;
-    }
-    .audience-block-label {
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
-    }
-    .audience-block h3 {
-      font-family: var(--font-head); font-size: 1.05rem; font-weight: 700;
-      color: var(--navy); margin: 0 0 12px;
-    }
-    .audience-block p { font-size: 0.9rem; color: #444; line-height: 1.65; margin: 0 0 12px; }
-    .audience-block p:last-child { margin-bottom: 0; }
-
-    /* Channel cards */
-    .channel-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
-    }
-    .channel-card {
-      background: #fff; border: 1px solid var(--border);
-      border-radius: 14px; padding: 28px 28px 24px;
-    }
-    .channel-card-icon {
-      width: 44px; height: 44px; border-radius: 10px;
-      background: var(--bg-soft); display: flex; align-items: center; justify-content: center;
-      margin-bottom: 16px;
-    }
-    .channel-card-icon svg { display: block; }
-    .channel-card h3 {
-      font-family: var(--font-head); font-size: 1.05rem; font-weight: 700;
-      color: var(--navy); margin: 0 0 3px;
-    }
-    .channel-card-sub {
-      font-size: 0.8rem; color: #9CA3AF; margin-bottom: 16px;
-    }
-    .channel-pressure {
-      display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px;
-      padding-bottom: 12px; border-bottom: 1px solid #F3F4F6;
-    }
-    .pressure-label {
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--accent); white-space: nowrap;
-    }
-    .pressure-text {
-      font-size: 0.88rem; font-weight: 600; color: var(--navy);
-    }
-    .channel-card p {
-      font-size: 0.875rem; color: #4B5563; line-height: 1.65; margin: 0;
-    }
-    @media (max-width: 640px) { .channel-grid { grid-template-columns: 1fr; } }
-
-    /* Two-col layout */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .needs-block-sub { font-size: 0.8rem; color: #9CA3AF; margin-bottom: 8px; }
+    .needs-block-tags { font-size: 0.8rem; color: #555; margin-bottom: 10px; }
+    .needs-block p { font-size: 0.88rem; color: #444; line-height: 1.65; margin: 0; }
 
     /* FAQ */
     .faq-list { list-style: none; margin: 0; padding: 0; }
@@ -308,36 +259,23 @@
     }
     details[open] summary::after { content: '−'; }
     details p { padding: 0 0 18px; margin: 0; color: #444; line-height: 1.7; font-size: 0.95rem; }
-
-    /* Tags */
-    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .tag {
-      display: inline-block; padding: 5px 13px;
-      background: #EEF2F8; color: #1E3A5F;
-      font-size: 0.8rem; font-weight: 500; border-radius: 20px;
-    }
-    .tag--accent { background: var(--accent); color: #fff; }
+    .faq-more { margin-top: 24px; font-size: 0.9rem; }
+    .faq-more a { color: var(--accent); }
 
     /* CTA block */
     .cta-block {
       background: var(--navy); color: #fff;
       border-radius: 12px; padding: 48px; text-align: center;
     }
-    .cta-block h2 {
-      font-family: var(--font-head); font-size: 1.7rem; font-weight: 800;
-      margin: 0 0 16px; letter-spacing: -0.02em;
-    }
-    .cta-block p { color: rgba(255,255,255,0.75); margin: 0 0 28px; font-size: 1em; }
-    .cta-block .ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .cta-block p { color: rgba(255,255,255,0.8); font-size: 1.05em; line-height: 1.6; margin: 0 0 24px; }
 
-    /* Responsive */
+    @media (max-width: 760px) {
+      .needs-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 900px) {
-      .product-grid { grid-template-columns: repeat(2, 1fr); }
-      .audience-grid { grid-template-columns: 1fr; gap: 16px; }
       .two-col { grid-template-columns: 1fr; gap: 32px; }
     }
     @media (max-width: 600px) {
-      .product-grid { grid-template-columns: 1fr; }
       .hero { padding: 56px 0 48px; }
       .section { padding: 48px 0; }
       .page-wrap { padding: 0 20px; }
@@ -383,7 +321,7 @@
     "award": "Bronze, CTV Excellence category, Asian Print Awards 2026"
   }
   </script>
-    <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
+  <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
 </head>
 <body>
 
@@ -415,10 +353,12 @@
 
 <!-- ═══════════ HERO ═══════════════════════════════════════ -->
 <section class="hero">
-  <div class="hero-inner">
-    <span class="eyebrow">Industries · Toy &amp; Licensed Packaging</span>
-    <h1>Toy &amp; Licensed Packaging</h1>
+  <div class="hero-inner">    <h1>Toy &amp; Licensed Packaging</h1>
     <p class="hero-lead">Window boxes, blister and backer cards, and rigid sets for wooden toys, plastic construction sets, magnetic tiles, plush, and licensed characters — from mass retail to specialty and DTC.</p>
+    <div class="hero-ctas">
+      <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Inquiry" class="btn-primary">Get a Sample</a>
+      <a href="/technology" class="btn-secondary">View Technology →</a>
+    </div>
   </div>
 </section>
 
@@ -438,25 +378,25 @@
 <section class="section">
   <div class="page-wrap">
     <div class="section-head">
-      <h2>Built for how toy companies buy</h2>
+      <h2>Built for How Toy Companies Buy</h2>
     </div>
-    <div class="audience-grid">
+    <div class="needs-grid">
 
-      <div class="audience-block">
-        <div class="audience-block-label">For packaging engineers</div>
-        <h3>Samples before commitment</h3>
+      <div class="needs-block">
+        <div class="needs-block-sub">For packaging engineers</div>
+        <h3>Samples Before Commitment</h3>
         <p>Request a sample book and get physical finishes on the actual substrates we run — not swatches from a supplier catalog. We respond to structural and finish questions directly, without routing through a sales layer.</p>
       </div>
 
-      <div class="audience-block">
-        <div class="audience-block-label">For sourcing teams</div>
-        <h3>No surprises at approval</h3>
+      <div class="needs-block">
+        <div class="needs-block-sub">For sourcing teams</div>
+        <h3>No Surprises at Approval</h3>
         <p>Every quote itemizes substrate, board weight, coatings, and compliance documents as separate line items. Audit reports, ISO certificates, and factory visits are available without a special request.</p>
       </div>
 
-      <div class="audience-block">
-        <div class="audience-block-label">For licensed lines</div>
-        <h3>We know the approval sequence</h3>
+      <div class="needs-block">
+        <div class="needs-block-sub">For licensed lines</div>
+        <h3>We Know the Approval Sequence</h3>
         <p>Disney FAMA-authorized. We manage the full licensor workflow — pre-production proof, physical production sample, inline press measurement — so your approvals don't become your bottleneck.</p>
       </div>
 
@@ -464,79 +404,39 @@
   </div>
 </section>
 
-<!-- ═══════════ CHANNEL CARDS ════════════════════════════ -->
+<!-- ═══════════ WHAT EACH CHANNEL NEEDS ══════════════════ -->
 <section class="section section--soft">
   <div class="page-wrap">
     <div class="section-head">
-      <h2>Where each channel puts the pressure</h2>
+      <h2>What Each Channel Needs</h2>
     </div>
-    <div class="channel-grid">
+    <div class="needs-grid">
 
-      <!-- Mass retail -->
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 0 1-8 0"/>
-          </svg>
-        </div>
-        <h3>Mass retail</h3>
-        <div class="channel-card-sub">Target, Walmart</div>
-        <div class="channel-pressure">
-          <span class="pressure-label">Pressure</span>
-          <span class="pressure-text">Cost per unit · Reorder consistency</span>
-        </div>
+      <div class="needs-block">
+        <h3>Mass Retail</h3>
+        <div class="needs-block-sub">Target, Walmart</div>
+        <div class="needs-block-tags">Cost per unit · Reorder consistency</div>
         <p>GMI-certified vendor. Same G7-calibrated ICC profile on every reorder. Standard gloss lamination where premium finishes aren't needed.</p>
       </div>
 
-      <!-- Premium & specialty -->
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-        </div>
-        <h3>Premium &amp; specialty</h3>
-        <div class="channel-card-sub">Independent, gift, museum shops</div>
-        <div class="channel-pressure">
-          <span class="pressure-label">Pressure</span>
-          <span class="pressure-text">Finish quality · Sustainability</span>
-        </div>
+      <div class="needs-block">
+        <h3>Premium &amp; Specialty</h3>
+        <div class="needs-block-sub">Independent, gift, museum shops</div>
+        <div class="needs-block-tags">Finish quality · Sustainability</div>
         <p>Soft-touch lamination, foil, plastic-free paper windows, FSC-certified board. Full finishing line in-house.</p>
       </div>
 
-      <!-- Licensed -->
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-        </div>
+      <div class="needs-block">
         <h3>Licensed</h3>
-        <div class="channel-card-sub">Character &amp; entertainment IP</div>
-        <div class="channel-pressure">
-          <span class="pressure-label">Pressure</span>
-          <span class="pressure-text">Licensor approval · Color accuracy</span>
-        </div>
+        <div class="needs-block-sub">Character &amp; entertainment IP</div>
+        <div class="needs-block-tags">Licensor approval · Color accuracy</div>
         <p>FAMA-authorized. G7 proofs matched against approved artwork. ECG for character oranges, greens, and violets that CMYK shifts.</p>
       </div>
 
-      <!-- E-commerce -->
-      <div class="channel-card">
-        <div class="channel-card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003670" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-            <line x1="12" y1="22.08" x2="12" y2="12"/>
-          </svg>
-        </div>
-        <h3>E-commerce</h3>
-        <div class="channel-card-sub">DTC &amp; marketplace fulfillment</div>
-        <div class="channel-pressure">
-          <span class="pressure-label">Pressure</span>
-          <span class="pressure-text">Transit survival</span>
-        </div>
+      <div class="needs-block">
+        <h3>E-Commerce</h3>
+        <div class="needs-block-sub">DTC &amp; marketplace fulfillment</div>
+        <div class="needs-block-tags">Transit survival</div>
         <p>Board weight and structure quoted against your drop and stack requirements. Transit testing documentation available on request.</p>
       </div>
 
@@ -611,7 +511,7 @@
 <section class="section section--soft">
   <div class="page-wrap">
     <div style="max-width: 760px;">
-      <h2 style="font-family: var(--font-head); font-size: 1.6rem; font-weight: 800; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.02em;">Plastic-free options</h2>
+      <h2 style="font-family: var(--font-head); font-size: 1.6rem; font-weight: 800; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.02em;">Plastic-Free Options</h2>
       <p style="color: #444; line-height: 1.7; margin-bottom: 16px;">
         We can replace PET windows, thermoformed inserts, and standard blisters with paper-based alternatives across most toy packaging constructions. Deep-draw shapes and theft-resistant clamshells are the exception.
       </p>
@@ -624,7 +524,7 @@
 <section class="section">
   <div class="page-wrap">
     <div style="max-width: 760px;">
-      <h2 style="font-family: var(--font-head); font-size: 1.6rem; font-weight: 800; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.02em;">When ECG is worth it for toy packaging</h2>
+      <h2 style="font-family: var(--font-head); font-size: 1.6rem; font-weight: 800; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.02em;">When ECG Is Worth It for Toy Packaging</h2>
       <p style="color: #444; line-height: 1.7; margin-bottom: 20px;">
         7-color ECG adds Orange, Green, and Violet to CMYK - covering 82% of Pantone within ΔE 2.5. For toy packaging, ECG pays when:
       </p>
@@ -646,30 +546,47 @@
 <section class="section section--soft" id="faq">
   <div class="page-wrap">
     <div class="section-head">
-      <h2>Toy packaging FAQ</h2>
+      <h2>Toy Packaging FAQ</h2>
     </div>
     <div style="max-width: 760px; margin: 0 auto;">
 
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">What is your MOQ for toy packaging?</summary>
-        <p>Varies by structure, substrate, and finishing. Include your dieline with the brief for a per-structure number.</p>
-      </details>
+      <div class="faq-item">
+        <details>
+          <summary>What is your MOQ for toy packaging?</summary>
+          <p>Varies by structure, substrate, and finishing. Include your dieline with the brief for a per-structure number.</p>
+        </details>
+      </div>
 
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">Can you ship packaging to our assembly site in Guangdong or Vietnam?</summary>
-        <p>Yes. Include your factory address and program details in the brief and we will quote it.</p>
-      </details>
+      <div class="faq-item">
+        <details>
+          <summary>Can you ship packaging to our assembly site in Guangdong or Vietnam?</summary>
+          <p>Yes. Include your factory address and program details in the brief and we will quote it.</p>
+        </details>
+      </div>
 
-      <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-        <summary style="font-weight: 500; cursor: pointer;">How do we qualify Sinso as a vendor?</summary>
-        <p>Audit reports, ISO certificates, and compliance documents to qualified buyers on request. Factory visits are welcome.</p>
-      </details>
+      <div class="faq-item">
+        <details>
+          <summary>How do we qualify Sinso as a vendor?</summary>
+          <p>Audit reports, ISO certificates, and compliance documents to qualified buyers on request. Factory visits are welcome.</p>
+        </details>
+      </div>
 
+      <p class="faq-more"><a href="/faq">More questions? See the full FAQ →</a></p>
     </div>
   </div>
 </section>
 
-<footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 64px; font-size: 0.85em; color: #666;">
+<!-- ═══════════ CLOSING CTA ═══════════════════════════════ -->
+<section class="section">
+  <div class="page-wrap">
+    <div class="cta-block">
+      <p>Ready to spec your toy packaging?</p>
+      <a href="mailto:hello@sinso.us?subject=Toy%20Packaging%20Inquiry" class="btn-primary">Get a Sample</a>
+    </div>
+  </div>
+</section>
+
+<footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 0; font-size: 0.85em; color: #666;">
   <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
     <div>© 2026 Sinso · <a href="https://www.sinsoprinting.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ningbo Sinso Printing Co., Ltd.</a></div>
     <div style="display: flex; gap: 20px;">
