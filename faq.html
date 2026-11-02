@@ -24,6 +24,62 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "What packaging does Sinso make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sinso makes folding cartons, corrugated shipper boxes and mailers, backer cards and paper cards, the paper component of blister cards, paper hangers, stickers and labels, and small PDQ displays. If your project also needs a format Sinso does not make, Sinso can bring in partners and keep the whole order coordinated through one point of contact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What packaging does Sinso not make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sinso does not make flexible packaging such as pouches, films and flow wrap, plastic substrates, large floor-standing displays, or primary packaging with direct food or pharmaceutical contact. Sinso also does not offer US-based fulfillment or warehousing. For anything outside this scope, Sinso can bring in partners, and your project stays coordinated through one Sinso point of contact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum order quantity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sinso's minimum order quantity is generally 3,000 units, though the exact MOQ depends on the packaging structure. Unit price drops as quantity rises, so larger runs cost less per piece. Plate fees apply to each design, so an order split across several designs carries more setup cost than a single design at the same total quantity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What drives the price of custom packaging?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The price of custom printed cartons from Sinso depends on five things: quantity, number of designs, board type, printing method, and finish. Higher quantities lower the unit price. Each design carries its own plate fee. The board you choose, standard CMYK or ECG (extended color gamut) printing, and the finishes you add all change the cost per unit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What shipping terms does Sinso quote?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sinso quotes EXW, FCA or FOB Ningbo. Under EXW, you collect the goods at the factory. Under FCA, Sinso hands the goods to your nominated carrier. Under FOB Ningbo, Sinso delivers the goods onto the vessel at Ningbo port. In each case, ocean freight, US import duties and tariffs are arranged by you or your freight forwarder."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment terms does Sinso accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sinso accepts payment by T/T (bank wire) and does not accept letters of credit. New customers pay a deposit up front, with the balance due after final inspection and before shipment. For established, high-volume accounts, 30-day payment terms can be discussed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Sinso source packaging it does not make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Sinso offers sourcing support for packaging outside its own scope. Sinso brings in partner suppliers and coordinates the project, so you keep one point of contact for the whole order instead of managing several factories yourself."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Why should I use one vendor for an entire SKU?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -64,14 +120,6 @@
       },
       {
         "@type": "Question",
-        "name": "What don't you do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Flexible packaging (pouches, films, flow wrap), corrugated shipper boxes, and US-based fulfillment and warehousing. For anything outside our scope, we can bring in partners — your project stays coordinated from one point of contact."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "What substrates can you print on?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -83,7 +131,7 @@
         "name": "How does the project flow work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Brief and file submission → physical prototype airshipped in 7–10 days → approval and deposit → production (3 weeks ex-factory) → delivery FOB Ningbo or DDP. Ocean freight from Ningbo: ~45 days to US West Coast, ~60 days East Coast, ~30–35 days Northern Europe. Share your target in-hands date in the brief."
+          "text": "Brief and file submission → physical prototype airshipped in 7–10 days → approval and deposit → production (3 weeks ex-factory) → delivery EXW, FCA or FOB Ningbo. Ocean freight from Ningbo: ~45 days to US West Coast, ~60 days East Coast, ~30–35 days Northern Europe. Share your target in-hands date in the brief and we'll work back from there."
         }
       },
       {
@@ -305,6 +353,24 @@
   }
   </script>
     <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
+  <style>
+    /* FAQ accordion — toy-page style */
+    .faq-item { border-bottom: 1px solid var(--border); }
+    section > .faq-item:first-of-type { border-top: 1px solid var(--border); }
+    .faq-item details { padding: 0; }
+    .faq-item details summary {
+      font-weight: 500; cursor: pointer; padding: 18px 0;
+      list-style: none; display: flex; justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item details summary::-webkit-details-marker { display: none; }
+    .faq-item details summary::after {
+      content: '+'; font-size: 1.2rem; color: var(--accent);
+      flex-shrink: 0; margin-left: 16px;
+    }
+    .faq-item details[open] summary::after { content: '−'; }
+    .faq-item details p { padding: 0 0 18px; margin: 0; color: #444; line-height: 1.7; font-size: 0.95rem; }
+  </style>
 </head>
 <body>
 
@@ -339,13 +405,28 @@
   <header style="margin-bottom: 48px;">    <h1 style="font-size: 2.4em; line-height: 1.15; margin: 0 0 18px;">Frequently Asked Questions</h1>
   </header>
 
+  <section style="margin-bottom: 48px;">
+    <h2 style="font-size: 1.4em; margin: 0 0 18px;">Packaging</h2>
+    <div class="faq-item"><details><summary>What packaging does Sinso make?</summary><p>Sinso makes folding cartons, corrugated shipper boxes and mailers, backer cards and paper cards, the paper component of blister cards, paper hangers, stickers and labels, and small PDQ displays. If your project also needs a format Sinso does not make, Sinso can bring in partners and keep the whole order coordinated through one point of contact.</p></details></div>
+    <div class="faq-item"><details><summary>What packaging does Sinso not make?</summary><p>Sinso does not make flexible packaging such as pouches, films and flow wrap, plastic substrates, large floor-standing displays, or primary packaging with direct food or pharmaceutical contact. Sinso also does not offer US-based fulfillment or warehousing. For anything outside this scope, Sinso can bring in partners, and your project stays coordinated through one Sinso point of contact.</p></details></div>
+    <div class="faq-item"><details><summary>What is the minimum order quantity?</summary><p>Sinso's minimum order quantity is generally 3,000 units, though the exact MOQ depends on the packaging structure. Unit price drops as quantity rises, so larger runs cost less per piece. Plate fees apply to each design, so an order split across several designs carries more setup cost than a single design at the same total quantity.</p></details></div>
+    <div class="faq-item"><details><summary>What drives the price of custom packaging?</summary><p>The price of custom printed cartons from Sinso depends on five things: quantity, number of designs, board type, printing method, and finish. Higher quantities lower the unit price. Each design carries its own plate fee. The board you choose, standard CMYK or ECG (extended color gamut) printing, and the finishes you add all change the cost per unit.</p></details></div>
+  </section>
+
+  <section style="margin-bottom: 48px;">
+    <h2 style="font-size: 1.4em; margin: 0 0 18px;">Ordering</h2>
+    <div class="faq-item"><details><summary>What shipping terms does Sinso quote?</summary><p>Sinso quotes EXW, FCA or FOB Ningbo. Under EXW, you collect the goods at the factory. Under FCA, Sinso hands the goods to your nominated carrier. Under FOB Ningbo, Sinso delivers the goods onto the vessel at Ningbo port. In each case, ocean freight, US import duties and tariffs are arranged by you or your freight forwarder.</p></details></div>
+    <div class="faq-item"><details><summary>What payment terms does Sinso accept?</summary><p>Sinso accepts payment by T/T (bank wire) and does not accept letters of credit. New customers pay a deposit up front, with the balance due after final inspection and before shipment. For established, high-volume accounts, 30-day payment terms can be discussed.</p></details></div>
+    <div class="faq-item"><details><summary>Can Sinso source packaging it does not make?</summary><p>Yes. Sinso offers sourcing support for packaging outside its own scope. Sinso brings in partner suppliers and coordinates the project, so you keep one point of contact for the whole order instead of managing several factories yourself.</p></details></div>
+  </section>
+
   <section id="ecg" style="margin-bottom: 48px;">
     <h2 style="font-size: 1.4em; margin: 0 0 18px;">ECG &amp; Color</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Why should I use one vendor for an entire SKU?</summary><p style="margin-top: 12px; color: #444;">Because ECG output is tied to a specific vendor's process - their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-      <summary style="font-weight: 500; cursor: pointer;">How do I know if ECG is right for my product?</summary>
-      <p style="margin-top: 12px; color: #444;">ECG earns its keep in a few specific situations.</p>
-      <p style="margin-top: 14px; color: #444;"><strong>When your colors need it:</strong></p>
+    <div class="faq-item"><details><summary>Why should I use one vendor for an entire SKU?</summary><p>Because ECG output is tied to a specific vendor's process - their RIP software, ink chemistry, press profiles, and substrate calibration. Two vendors running the same 7-color process will produce different output from the same file, sometimes visibly so on saturated colors or large flat areas. Splitting a SKU across vendors reintroduces the inconsistency ECG was designed to eliminate.</p></details></div>
+    <div class="faq-item"><details>
+      <summary>How do I know if ECG is right for my product?</summary>
+      <p>ECG earns its keep in a few specific situations.</p>
+      <p><strong>When your colors need it:</strong></p>
       <ul style="margin: 8px 0 0 0; padding-left: 20px; color: #444; line-height: 1.7;">
         <li><strong>Your product sells on bright, saturated color.</strong> Think slime, toys, beauty, or pet products, where that pop of color is part of what you're selling. CMYK often makes these shades look flat or muddy.
           <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 4px;">
@@ -414,42 +495,41 @@
           <p style="font-size: 0.8em; color: #999; margin: 4px 0 8px; font-style: italic;">Colors shown are on-screen approximations. We're happy to send a printed proof.</p>
         </li>
       </ul>
-      <p style="margin-top: 14px; color: #444;"><strong>When your business needs it:</strong></p>
+      <p><strong>When your business needs it:</strong></p>
       <ul style="margin: 8px 0 0 0; padding-left: 20px; color: #444; line-height: 1.7;">
         <li><strong>You're printing licensed products.</strong> Licensors check character and brand colors closely. If a key color falls outside what CMYK can hit, ECG can be the difference between a smooth approval and a costly reprint.</li>
         <li><strong>You have a large family of SKUs.</strong> When you're managing dozens of variants, ECG helps every box match the next one on the shelf, and lets those variants share press time.</li>
       </ul>
-    </details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-      <summary style="font-weight: 500; cursor: pointer;">How do I know if ECG is not right for my product?</summary>
+    </details></div>
+    <div class="faq-item"><details>
+      <summary>How do I know if ECG is not right for my product?</summary>
       <ul style="margin-top: 12px; padding-left: 20px; color: #444; line-height: 1.7;">
         <li><strong>Your design uses just one or two flat colors.</strong> A single spot ink is simpler and more affordable.</li>
         <li><strong>Your colors already print well in CMYK.</strong> Earth tones, muted neutrals, and natural photography look great in standard four-color, so there's no need to pay for range you won't use.</li>
         <li><strong>A large solid area has to match an exact Pantone.</strong> If your brand guidelines call for a certified spot color across a big flat area, a dedicated spot ink will give you the smoothest result.</li>
       </ul>
-    </details>
+    </details></div>
   </section>
 
   <section style="margin-bottom: 48px;">
-    <h2 style="font-size: 1.4em; margin: 0 0 18px;">Certifications and Capabilities</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What don't you do?</summary><p style="margin-top: 12px; color: #444;">Flexible packaging (pouches, films, flow wrap), corrugated shipper boxes, and US-based fulfillment and warehousing. For anything outside our scope, we can bring in partners — your project stays coordinated from one point of contact.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">What substrates can you print on?</summary><p style="margin-top: 12px; color: #444;">We stock SBS (210–400 gsm), CCWB (250–450 gsm), CCNB (250–450 gsm), C2S (105–400 gsm), and E-flute corrugated (litho-laminated or direct print). If you have a specific spec in mind, send it with the brief.</p></details>
+    <h2 style="font-size: 1.4em; margin: 0 0 18px;">Capabilities</h2>
+    <div class="faq-item"><details><summary>What substrates can you print on?</summary><p>We stock SBS (210–400 gsm), CCWB (250–450 gsm), CCNB (250–450 gsm), C2S (105–400 gsm), and E-flute corrugated (litho-laminated or direct print). If you have a specific spec in mind, send it with the brief.</p></details></div>
+    <div class="faq-item"><details><summary>Do you provide design and engineering services?</summary><p>Our prepress and structural engineering team can advise on structure, materials, and finishing options from a manufacturing standpoint — what's achievable, what's cost-effective, and what works for a given channel or format. What we don't replicate is brand-side design: your visual identity and creative direction belong with whoever knows your brand. Come to us with a brief and no dieline, and we can get you there. Come with a finished design, and we'll make it print.</p></details></div>
   </section>
 
   <section style="margin-bottom: 48px;">
     <h2 style="font-size: 1.4em; margin: 0 0 18px;">Project Mechanics</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How does the project flow work?</summary><p style="margin-top: 12px; color: #444;">Brief and file submission → physical prototype airshipped in 7–10 days → approval and deposit → production (3 weeks ex-factory) → delivery FOB Ningbo or DDP. Ocean freight from Ningbo: ~45 days to US West Coast, ~60 days East Coast, ~30–35 days Northern Europe. Share your target in-hands date in the brief and we'll work back from there.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Do you provide design and engineering services?</summary><p style="margin-top: 12px; color: #444;">Our prepress and structural engineering team can advise on structure, materials, and finishing options from a manufacturing standpoint — what's achievable, what's cost-effective, and what works for a given channel or format. What we don't replicate is brand-side design: your visual identity and creative direction belong with whoever knows your brand. Come to us with a brief and no dieline, and we can get you there. Come with a finished design, and we'll make it print.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Who will I be working with?</summary><p style="margin-top: 12px; color: #444;">Sinso runs lean by design. The US operations lead is your single point of contact for briefs, quotes, proofs, timelines, and anything that needs a judgment call — no account manager layer in between. On the production side, you have direct access to the Ningbo team: the same people running the press and finishing line, not a customer service function. That structure keeps decisions fast and context from getting lost in translation.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Can you ship to our contract manufacturer instead of our warehouse?</summary><p style="margin-top: 12px; color: #444;">Yes. We ship packaging wherever it gets filled: a co-packer in the US, a factory elsewhere in Asia, a 3PL, a port, or a final address. One production run can be split across several destinations. Most programs ship by sea; air freight is available when timing calls for it.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Does packaging ship flat or assembled?</summary><p style="margin-top: 12px; color: #444;">Either. Folding cartons usually ship flat to keep freight costs down. Rigid boxes, windowed builds and multi-component packs can be assembled and kitted at our Ningbo factory before shipping, which typically costs less than doing it in the US.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Can you put together packaging with non-paper components?</summary><p style="margin-top: 12px; color: #444;">Yes. Components we don't make ourselves, such as thermoformed trays, hardware and closures, come through our supply chain and are assembled with the printed pieces at our factory. You get one finished package and one point of contact.</p></details>
+    <div class="faq-item"><details><summary>How does the project flow work?</summary><p>Brief and file submission → physical prototype airshipped in 7–10 days → approval and deposit → production (3 weeks ex-factory) → delivery EXW, FCA or FOB Ningbo. Ocean freight from Ningbo: ~45 days to US West Coast, ~60 days East Coast, ~30–35 days Northern Europe. Share your target in-hands date in the brief and we'll work back from there.</p></details></div>
+    <div class="faq-item"><details><summary>Who will I be working with?</summary><p>Sinso runs lean by design. The US operations lead is your single point of contact for briefs, quotes, proofs, timelines, and anything that needs a judgment call — no account manager layer in between. On the production side, you have direct access to the Ningbo team: the same people running the press and finishing line, not a customer service function. That structure keeps decisions fast and context from getting lost in translation.</p></details></div>
+    <div class="faq-item"><details><summary>Can you ship to our contract manufacturer instead of our warehouse?</summary><p>Yes. We ship packaging wherever it gets filled: a co-packer in the US, a factory elsewhere in Asia, a 3PL, a port, or a final address. One production run can be split across several destinations. Most programs ship by sea; air freight is available when timing calls for it.</p></details></div>
+    <div class="faq-item"><details><summary>Does packaging ship flat or assembled?</summary><p>Either. Folding cartons usually ship flat to keep freight costs down. Rigid boxes, windowed builds and multi-component packs can be assembled and kitted at our Ningbo factory before shipping, which typically costs less than doing it in the US.</p></details></div>
+    <div class="faq-item"><details><summary>Can you put together packaging with non-paper components?</summary><p>Yes. Components we don't make ourselves, such as thermoformed trays, hardware and closures, come through our supply chain and are assembled with the printed pieces at our factory. You get one finished package and one point of contact.</p></details></div>
   </section>
 
   <section style="margin-bottom: 48px;">
     <h2 style="font-size: 1.4em; margin: 0 0 18px;">Facility</h2>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">Where is the factory?</summary><p style="margin-top: 12px; color: #444;">No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China. The site covers more than 12,000 sqm with 15,000+ sqm of production floor.</p><p style="margin-top: 10px; color: #444;">Ningbo is one of the world's busiest cargo ports and a dense manufacturing hub for toys, electronics, and consumer goods. Component suppliers are typically within an hour of the factory — which compresses the feedback loop between packaging development and the product going inside it.</p></details>
-    <details style="border-bottom: 1px solid #eee; padding: 16px 0;"><summary style="font-weight: 500; cursor: pointer;">How long has Sinso been operating?</summary><p style="margin-top: 12px; color: #444;">Ningbo Sinso Printing Co., Ltd. was founded in 1998. Sinso has 25+ years of continuous operation.</p></details>
+    <div class="faq-item"><details><summary>Where is the factory?</summary><p>No. 118 Huiming Road, Fenghua High-tech Development Zone, Ningbo, Zhejiang, China. The site covers more than 12,000 sqm with 15,000+ sqm of production floor.</p><p>Ningbo is one of the world's busiest cargo ports and a dense manufacturing hub for toys, electronics, and consumer goods. Component suppliers are typically within an hour of the factory — which compresses the feedback loop between packaging development and the product going inside it.</p></details></div>
+    <div class="faq-item"><details><summary>How long has Sinso been operating?</summary><p>Ningbo Sinso Printing Co., Ltd. was founded in 1998. Sinso has 25+ years of continuous operation.</p></details></div>
   </section>
 
   <p style="margin-top: 48px; padding: 20px; background: #f7f8fa; border-radius: 8px;">

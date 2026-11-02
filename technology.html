@@ -141,6 +141,32 @@
       transition: background 0.12s, opacity 0.12s;
     }
     .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
+
+    /* FAQ section */
+    .section--soft { background: #F8F9FB; }
+    .page-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .section-head { max-width: 720px; margin: 0 auto 48px; text-align: center; }
+    .section-head h2 {
+      font-family: var(--font-head); font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+      font-weight: 800; letter-spacing: -0.02em; color: var(--navy); margin: 0;
+    }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-item details { padding: 0; }
+    .faq-item details summary {
+      font-weight: 500; cursor: pointer; padding: 18px 0;
+      list-style: none; display: flex; justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item details summary::-webkit-details-marker { display: none; }
+    .faq-item details summary::after {
+      content: '+'; font-size: 1.2rem; color: var(--accent);
+      flex-shrink: 0; margin-left: 16px;
+    }
+    .faq-item details[open] summary::after { content: '−'; }
+    .faq-item details p { padding: 0 0 18px; margin: 0; color: #444; line-height: 1.7; font-size: 0.95rem; }
+    .faq-more { margin-top: 24px; font-size: 0.9rem; }
+    .faq-more a { color: var(--accent); }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQMYX2KM0G"></script>
@@ -273,23 +299,37 @@
     <a href="/case-study/ecg-benchmarking" style="color: #003670; font-weight: 500; text-decoration: none;">See the technical benchmarks →</a>
   </p>
 
-  <h2 style="font-family: var(--font-head); font-size: 1.5em; margin: 64px 0 18px;">Common questions</h2>
-
-  <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-    <summary style="font-weight: 500; cursor: pointer; font-family: var(--font-body);">What is ECG printing, and why haven't I heard of it?</summary>
-    <p style="margin-top: 12px; color: #444;">It's been an ISO standard (ISO 20654) since 2014 but remains uncommon: the equipment investment is higher, the workflow requires specialized expertise, and most print buyers have never been offered it. If your current printer hasn't mentioned it, they likely don't run it.</p>
-  </details>
-  <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-    <summary style="font-weight: 500; cursor: pointer; font-family: var(--font-body);">What's the difference between RGB and ECG? Are they the same thing?</summary>
-    <p style="margin-top: 12px; color: #444;">No — they operate at different layers. RGB is a color model used by screens and design software, describing color as combinations of red, green, and blue light. ECG is a printing capability standard describing how wide a gamut a press can reproduce in physical ink. The connection: a 7-color ECG press can faithfully translate an RGB design file into print because its gamut is large enough to cover most of what a screen displays. Standard CMYK cannot make that claim.</p>
-  </details>
-  <details style="border-bottom: 1px solid #eee; padding: 16px 0;">
-    <summary style="font-weight: 500; cursor: pointer; font-family: var(--font-body);">How is 7-color ECG different from CMYK plus spot colors?</summary>
-    <p style="margin-top: 12px; color: #444;">Both can hit specific Pantone targets, but the economics differ. Spot color printing adds a dedicated ink station per color — each additional color increases plate costs and press setup. It works for one or two brand colors on simple layouts but breaks down on photography or complex gradients. 7-color ECG uses a fixed ink set as a baseline, with no per-color surcharges and no press reconfiguration. For the most extreme saturated colors outside that range, a spot ink plate can be added.</p>
-  </details>
-
-
 </main>
+
+<!-- ═══════════ FAQ ══════════════════════════════════════ -->
+<section class="section--soft" id="faq" style="padding: 72px 0;">
+  <div class="page-wrap">
+    <div class="section-head">
+      <h2>Technology FAQ</h2>
+    </div>
+    <div style="max-width: 760px; margin: 0 auto;">
+      <div class="faq-item">
+        <details>
+          <summary>What is ECG printing, and why haven't I heard of it?</summary>
+          <p>It's been an ISO standard (ISO 20654) since 2014 but remains uncommon: the equipment investment is higher, the workflow requires specialized expertise, and most print buyers have never been offered it. If your current printer hasn't mentioned it, they likely don't run it.</p>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>What's the difference between RGB and ECG? Are they the same thing?</summary>
+          <p>No — they operate at different layers. RGB is a color model used by screens and design software, describing color as combinations of red, green, and blue light. ECG is a printing capability standard describing how wide a gamut a press can reproduce in physical ink. The connection: a 7-color ECG press can faithfully translate an RGB design file into print because its gamut is large enough to cover most of what a screen displays. Standard CMYK cannot make that claim.</p>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>How is 7-color ECG different from CMYK plus spot colors?</summary>
+          <p>Both can hit specific Pantone targets, but the economics differ. Spot color printing adds a dedicated ink station per color — each additional color increases plate costs and press setup. It works for one or two brand colors on simple layouts but breaks down on photography or complex gradients. 7-color ECG uses a fixed ink set as a baseline, with no per-color surcharges and no press reconfiguration. For the most extreme saturated colors outside that range, a spot ink plate can be added.</p>
+        </details>
+      </div>
+      <p class="faq-more"><a href="/faq">More questions? See the full FAQ →</a></p>
+    </div>
+  </div>
+</section>
 
 <footer style="border-top: 1px solid #eee; padding: 32px; margin-top: 64px; font-size: 0.85em; color: #666;">
   <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
