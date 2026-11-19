@@ -2,15 +2,250 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Press &amp; Recognition | Sinso</title>
   <meta name="description" content="Press coverage, awards, and industry recognition for Sinso (Ningbo Sinso Printing Co., Ltd.), a color packaging manufacturer founded in 1998.">
   <link rel="canonical" href="https://sinso.us/news">
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #15132B;
+      --accent: #373368;
+      --accent-light: #ECEBF6;
+      --text: #111827;
+      --border: #E5E7EB;
+      --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --max-w: 1100px;
+    }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      padding-top: 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-right: 20px;
+    }
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+      opacity: 0.7;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .nav-links a:hover, .nav-links a[aria-current] { opacity: 1; }
+    .card-featured {
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.15s;
+    }
+    .card-featured:hover { box-shadow: 0 4px 20px rgba(0,54,112,0.08); }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .card-tag {
+      font-size: 0.78em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .card-tag-neutral {
+      font-size: 0.78em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .card-title-lg {
+      font-family: var(--font-head);
+      font-size: 1.7em;
+      line-height: 1.2;
+      margin: 0 0 14px;
+      color: var(--navy);
+    }
+    .card-title {
+      font-family: var(--font-head);
+      font-size: 1.35em;
+      line-height: 1.25;
+      margin: 0 0 12px;
+      color: var(--navy);
+    }
+    .card-desc {
+      color: #555;
+      max-width: 620px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .card-link {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.92em;
+    }
+    .card-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 640px) {
+      .nav-inner { padding: 0 20px; }
+      .card-featured, .card { padding: 24px; }
+      .card-title-lg { font-size: 1.4em; }
+    }
+    /* ─── Mobile nav hamburger ──── */
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    @media (max-width: 700px) {
+      .nav-hamburger { display: flex; align-items: center; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0 16px;
+        gap: 0;
+        z-index: 99;
+      }
+      .nav-links.nav-open { display: flex; }
+      .nav-links > a {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+        opacity: 0.8;
+        margin-right: 0;
+      }
+      .nav-links > a:last-child { border-bottom: none; }
+      .nav-dropdown { width: 100%; }
+      .nav-dropdown-btn {
+        padding: 12px 24px;
+        width: 100%;
+        text-align: left;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 4px 0 4px 24px;
+        background: var(--bg-soft);
+        min-width: unset;
+      }
+      .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+      .nav-dropdown.open .nav-dropdown-menu { display: block; }
+      .nav-dropdown-menu a { padding: 10px 24px; font-size: 0.88rem; }
+    }
+  </style>
 
+  <style>
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn {
+      background: none; border: none; cursor: pointer; padding: 0;
+      font-size: 0.88rem; font-weight: 500; color: var(--text);
+      opacity: 0.7; font-family: inherit;
+      display: flex; align-items: center; gap: 4px;
+      transition: opacity 0.15s;
+    }
+    .nav-dropdown-btn:hover,
+    .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%; padding-top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      padding: 6px 0;
+      z-index: 200;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 10px 18px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #111827;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: background 0.12s, opacity 0.12s;
+    }
+    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQMYX2KM0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WQMYX2KM0G');
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +276,6 @@
     "award": "Bronze, CTV Excellence category, Asian Print Awards 2026"
   }
   </script>
-  <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,109 +308,71 @@
     ]
   }
   </script>
-
-  <style>
-    :root {
-      --navy: #080F1C;
-      --accent: #003670;
-      --border: #E5E7EB;
-      --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
-      --font-body: 'Inter', system-ui, sans-serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-body); color: #111827; background: #fff; line-height: 1.65; }
-    a { color: var(--accent); }
-
-    .nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); }
-    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { font-family: var(--font-head); font-size: 1.3rem; font-weight: 600; color: var(--navy); text-decoration: none; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; align-items: center; gap: 28px; margin-right: 20px; }
-    .nav-links a { font-size: 0.88rem; font-weight: 500; color: #111827; opacity: 0.7; text-decoration: none; transition: opacity 0.15s; }
-    .nav-links a:hover, .nav-links a[aria-current] { opacity: 1; }
-    .nav-dropdown { position: relative; display: flex; align-items: center; }
-    .nav-dropdown-btn { background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 0.88rem; font-weight: 500; color: #111827; opacity: 0.7; display: flex; align-items: center; gap: 4px; padding: 0; }
-    .nav-dropdown-btn:hover, .nav-dropdown:hover .nav-dropdown-btn { opacity: 1; }
-    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 12px); left: -12px; background: #fff; border: 1px solid var(--border); border-radius: 8px; min-width: 220px; padding: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
-    .nav-dropdown-menu a { display: block; padding: 8px 12px; font-size: 0.87rem; font-weight: 500; color: #111827; opacity: 0.8; text-decoration: none; border-radius: 5px; }
-    .nav-dropdown-menu a:hover { background: #F7F8FA; opacity: 1; }
-    .nav-cta { background: var(--navy); color: #fff; font-size: 0.82rem; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; transition: background 0.15s; }
-    .nav-cta:hover { background: #243552; }
-
-    @media (max-width: 600px) { .nav-links { display: none; } }
-    @media (max-width: 768px) { .nav-inner { padding: 0 16px; } }
-  </style>
+  <!-- TODO(Miranda): add Chinese legal name to alternateName array above -->
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">Sinso<span>.</span></a>
+    <a href="/" class="nav-logo"><img src="/images/sinso-logo-indigo.svg" alt="Sinso" height="22" style="display:block;width:auto"></a>
     <div class="nav-links">
       <a href="/technology">Technology</a>
       <a href="/capabilities">Capabilities</a>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="nav-dropdown-menu">
-          <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
-          <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
-          <a href="/industries/retail-packaging">Retail Packaging</a>
-          <a href="/industries/toy-packaging">Toy &amp; Licensed Packaging</a>
-        </div>
+      <button class="nav-dropdown-btn" aria-haspopup="true">Industries <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nav-dropdown-menu">
+        <a href="/industries/artist-editions">Artist &amp; Collector Editions</a>
+        <a href="/industries/games-and-puzzles">Games &amp; Puzzles</a>
+        <a href="/industries/retail-packaging">Retail Packaging</a>
+        <a href="/industries/toy-packaging">Toy &amp; Licensed Packaging</a>
       </div>
+    </div>
       <a href="/resources">Resources</a>
       <a href="/news" aria-current="page">News</a>
       <a href="/faq">FAQ</a>
-    </div>
-    <a href="mailto:hello@sinso.us?subject=Packaging%20Inquiry" class="nav-cta">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      Get a Sample
-    </a>
+</div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
 
 <main style="max-width: 820px; margin: 64px auto; padding: 0 32px;">
 
-  <header style="margin-bottom: 56px;">    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0;">Discover our Latest News</h1>
+  <header style="margin-bottom: 48px;">
+    <h1 style="font-family: var(--font-head); font-size: 2.4em; line-height: 1.15; margin: 0;">Press &amp; Recognition</h1>
   </header>
 
-  <h2 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 0 0 20px; color: #374151;">Coverage</h2>
+  <!-- insights4print article (most recent, featured) -->
+  <a href="https://www.insights4print.ceo/2026/10/how-dull-substrates-started-a-move-towards-ecg/" target="_blank" rel="noopener" class="card-featured">
+    <p class="card-tag">Coverage · insights4print.ceo · October 2026</p>
+    <h2 class="card-title-lg">How dull substrates started a move towards ECG printing at Sinso</h2>
+    <p class="card-desc">Print industry analyst Eddy Hagen on why Sinso moved to ECG after the shift to recycled board dulled print results, and how it tuned inks, ink sequence, and separations to recover color on problem substrates.</p>
+    <span class="card-link">Read article →</span>
+  </a>
 
-  <div style="border-top: 1px solid var(--border); padding: 28px 0; border-bottom: 1px solid var(--border);">
-    <p style="font-size: 0.82em; color: #9CA3AF; margin-bottom: 8px;">insights4print.ceo · Eddy Hagen · <time datetime="2026-10-17">October 17, 2026</time></p>
-    <h3 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 0 0 10px; line-height: 1.35;">
-      <a href="https://www.insights4print.ceo/2026/10/how-dull-substrates-started-a-move-towards-ecg/" target="_blank" rel="noopener" style="color: var(--navy); text-decoration: none;">How dull substrates started a move towards ECG printing at Sinso</a>
-    </h3>
-    <p style="font-size: 0.92em; color: #4B5563; margin: 0;">Print industry analyst Eddy Hagen on why Sinso moved to ECG after the shift to recycled board dulled print results, and how it tuned inks, ink sequence, and separations.</p>
-  </div>
-
-  <h2 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 48px 0 20px; color: #374151;">Awards</h2>
-
-  <figure style="margin: 0 0 28px;">
+  <!-- Asian Print Awards -->
+  <div class="card">
+    <p class="card-tag">Award · Asian Print Awards · October 2026</p>
+    <h2 class="card-title">Bronze, CTV Excellence category</h2>
     <img src="/images/press/apa-2026-bronze.jpg"
          alt="Framed Bronze Award certificate — 2026 Asian Print Awards, CTV Excellence category, Ningbo Sinso Printing Co., Ltd"
          loading="lazy"
-         style="width: 100%; max-width: 340px; height: auto; border-radius: 8px; display: block;">
-  </figure>
-
-  <p style="font-size: 0.82em; color: #9CA3AF; margin-bottom: 8px;">Asian Print Awards · Shanghai · <time datetime="2026-10-15">October 15, 2026</time></p>
-  <h3 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 0 0 12px; line-height: 1.35; color: var(--navy);">Bronze, CTV Excellence category</h3>
-  <p style="font-size: 0.92em; color: #4B5563;">The Asian Print Awards have recognised the best in print production across Asia since 2001. Sinso received the Bronze in CTV Excellence — APTEC's standard for measuring expanded-colour-gamut accuracy against a verified target. Sinso is listed in the <a href="https://www.ctv-aptec.org/en/ctv-certified-printing-company/page/3/" target="_blank" rel="noopener">CTV certified printing companies directory</a>.</p>
-
-  <h2 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 48px 0 20px; color: #374151;">Chinese-Language Coverage</h2>
-
-  <div style="border-top: 1px solid var(--border); padding: 28px 0; border-bottom: 1px solid var(--border);">
-    <p style="font-size: 0.82em; color: #9CA3AF; margin-bottom: 8px;">Jufair（聚展网）· <time datetime="2023-10-05">October 5, 2023</time></p>
-    <h3 style="font-family: var(--font-head); font-size: 1.1em; font-weight: 600; margin: 0 0 10px; line-height: 1.35;">
-      <a href="https://www.jufair.com/information/86516.html" target="_blank" rel="noopener" style="color: var(--navy); text-decoration: none;">How Innovative ECG Printing Technology Helps Sinso Achieve Business Breakthroughs</a>
-    </h3>
-    <p style="font-size: 0.92em; color: #4B5563; margin: 0;">Tradeshow platform Jufair on how Sinso leveraged ECG technology and CGS ORIS color management to turn industry cost pressures into market growth — reducing spot-color expenses on short-run jobs and winning new business with eco-friendly recycled packaging.</p>
+         class="card-img">
+    <p class="card-desc">The Asian Print Awards have recognised the best in print production across Asia since 2001. Sinso received the Bronze in CTV Excellence — APTEC's standard for measuring expanded-colour-gamut accuracy against a verified target. Sinso is listed in the <a href="https://www.ctv-aptec.org/en/ctv-certified-printing-company/page/3/" target="_blank" rel="noopener" style="color: var(--accent);">CTV certified printing companies directory</a>.</p>
   </div>
+
+  <!-- Jufair Chinese-language article -->
+  <a href="https://www.jufair.com/information/86516.html" target="_blank" rel="noopener" class="card">
+    <p class="card-tag-neutral">Chinese-Language Coverage · Jufair（聚展网）· October 2023</p>
+    <h2 class="card-title">How Innovative ECG Printing Technology Helps Sinso Achieve Business Breakthroughs</h2>
+    <p class="card-desc">Tradeshow platform Jufair on how Sinso leveraged ECG technology and CGS ORIS color management to turn industry cost pressures into market growth — reducing spot-color expenses on short-run jobs and winning new business with eco-friendly recycled packaging.</p>
+    <span class="card-link">Read article →</span>
+  </a>
   <!-- TODO(Miranda): fill in additional entries from China team's list — include outlet, date, one-line English summary, and direct URL to original article (no redirects) -->
 
-  <p style="margin-top: 56px; font-size: 0.92em; color: #4B5563;">
-    Press inquiries, interview requests, or high-resolution assets: <a href="mailto:hello@sinso.us?subject=Press%20Inquiry">hello@sinso.us</a>
+  <p style="margin-top: 48px; padding: 20px; background: #f7f8fa; border-radius: 8px; line-height: 1.65;">
+    Press inquiries, interview requests, or high-resolution assets: <a href="mailto:hello@sinso.us?subject=Press%20Inquiry" style="color: #373368; font-weight: 500;">hello@sinso.us</a>
   </p>
 
 </main>
@@ -192,5 +388,27 @@
   </div>
 </footer>
 
+  <script>
+  (function(){
+    var btn = document.querySelector('.nav-hamburger');
+    var links = document.querySelector('.nav-links');
+    if (!btn || !links) return;
+    btn.addEventListener('click', function(){
+      var open = links.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.innerHTML = open
+        ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+        : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+    });
+    document.querySelectorAll('.nav-dropdown-btn').forEach(function(dBtn){
+      dBtn.addEventListener('click', function(e){
+        if (window.innerWidth <= 700) {
+          e.stopPropagation();
+          dBtn.closest('.nav-dropdown').classList.toggle('open');
+        }
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
