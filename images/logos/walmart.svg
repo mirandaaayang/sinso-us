@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <text x="12" y="40" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#0071CE" letter-spacing="-0.5">walmart</text>
+  <g transform="translate(133,30)" fill="#FFC220">
+    <polygon points="0,-12 2.2,-3.8 10.2,-6 4.8,1.8 10.2,9.6 2.2,7.4 0,15.6 -2.2,7.4 -10.2,9.6 -4.8,1.8 -10.2,-6 -2.2,-3.8" transform="scale(0.78)"/>
+  </g>
+</svg>
