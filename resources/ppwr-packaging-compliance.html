@@ -46,14 +46,10 @@
       justify-content: space-between;
     }
     .nav-logo {
-      font-family: var(--font-head);
-      font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: -0.03em;
-      color: var(--navy);
+      display: flex;
+      align-items: center;
       text-decoration: none;
     }
-    .nav-logo span { color: var(--accent); }
     .nav-links {
       display: flex;
       align-items: center;
@@ -200,7 +196,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">Sinso<span>.</span></a>
+    <a href="/" class="nav-logo"><img src="/images/sinso-logo-indigo.svg" alt="Sinso" height="22" style="display:block;width:auto"></a>
     <div class="nav-links">
       <a href="/technology">Technology</a>
       <a href="/capabilities">Capabilities</a>
