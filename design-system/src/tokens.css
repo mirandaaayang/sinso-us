@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
 
 :root {
-  --navy: #080F1C;
+  --navy: #15132B;
   --navy-2: #111827;
-  --accent: #003670;
-  --accent-hover: #004fa8;
-  --accent-light: #E6EDF5;
+  --accent: #373368;
+  --accent-hover: #2C2955;
+  --accent-light: #ECEBF6;
+  --accent-soft: #C9C6E8;
   --text: #111827;
   --text-2: #6B7280;
   --text-3: #9CA3AF;
@@ -22,7 +23,7 @@
   --font-head: 'Plus Jakarta Sans', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --max-w: 1100px;
-  --footer-bg: #050C18;
+  --footer-bg: #0D0C1E;
 }
 
 .ds-reset, .ds-reset *, .ds-reset *::before, .ds-reset *::after {

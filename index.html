@@ -38,10 +38,10 @@
 
     /* ─── Tokens ─────────────────────────────────────────── */
     :root {
-      --navy:   #080F1C;
+      --navy:   #15132B;
       --navy-2: #111827;
-      --accent: #003670;
-      --accent-light: #E6EDF5;
+      --accent: #373368;
+      --accent-light: #ECEBF6;
       --text:   #111827;
       --text-2: #6B7280;
       --text-3: #9CA3AF;
@@ -144,7 +144,7 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-    .nav-cta:hover { background: #004fa8; }
+    .nav-cta:hover { background: #2C2955; }
     .nav-links {
       display: flex;
       align-items: center;
@@ -172,7 +172,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(0,98,204,0.18) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(55,51,104,0.18) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-grid {
@@ -212,8 +212,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--accent);
-      color: #fff;
+      background: #fff;
+      color: var(--accent);
       font-family: var(--font-body);
       font-size: 0.95rem;
       font-weight: 500;
@@ -223,7 +223,7 @@
       cursor: pointer;
       transition: background 0.15s, transform 0.1s;
     }
-    .btn-primary:hover { background: #004fa8; transform: translateY(-1px); }
+    .btn-primary:hover { background: rgba(255,255,255,0.88); transform: translateY(-1px); }
     .btn-ghost {
       display: inline-flex;
       align-items: center;
@@ -360,7 +360,7 @@
       border-radius: 100px;
       transition: width 1s ease-out;
     }
-    .fill-ecg { background: linear-gradient(90deg, #003670, #1A6CB5); width: 82%; }
+    .fill-ecg { background: linear-gradient(90deg, #373368, #1A6CB5); width: 82%; }
     .fill-ecg-mid { background: #94A3B8; width: 72%; }
     .fill-cmyk { background: #CBD5E1; width: 55%; }
 
@@ -571,15 +571,15 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--accent);
-      color: #fff;
+      background: #fff;
+      color: var(--accent);
       font-size: 1.05rem;
       font-weight: 500;
       padding: 16px 36px;
       border-radius: 8px;
       transition: background 0.15s;
     }
-    .cta-email-link:hover { background: #004fa8; }
+    .cta-email-link:hover { background: rgba(255,255,255,0.88); }
     .cta-detail {
       margin-top: 24px;
       display: flex;
@@ -597,7 +597,7 @@
 
     /* ─── Footer ──────────────────────────────────────────── */
     .footer {
-      background: #050C18;
+      background: #0D0C1E;
       border-top: 1px solid rgba(255,255,255,0.06);
       padding: 40px 0;
     }
