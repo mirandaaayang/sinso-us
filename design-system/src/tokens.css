@@ -1,7 +1,23 @@
 /* Sinso design system — consolidated tokens.
    Canonical source: index.html / about.html / press.html :root block.
    Secondary-page raw hex (#eee, #666/#555/#444, #f7f8fa, #888) all resolve
-   onto these tokens — that drift is retired here. */
+   onto these tokens — that drift is retired here.
+
+   Brand bridge with CN identity (2026-11):
+   The US site (sinso.us) and the CN brand share a visual identity.
+   CN brand color: indigo C100 M100 Y30 K10 = #373368.
+   Three changes were made to align the two:
+   1. SINSO SVG logo replaces the "Sinso." text wordmark in every nav/footer.
+      Light backgrounds use sinso-logo-indigo.svg; dark use sinso-logo-white.svg.
+   2. Dark surface token: --navy #080F1C → #15132B (deep indigo).
+      Brand/accent token: --accent #003670 → #373368 (CN indigo).
+      Hover/pressed: --accent-hover #004fa8 → #2C2955.
+      Light tint: --accent-light #E6EDF5 → #ECEBF6.
+      Footer bg: --footer-bg #050C18 → #0D0C1E.
+      Added --accent-soft: #C9C6E8 for secondary text on dark.
+   3. Homepage CTA section uses ecg-ribbon-2400.{webp,jpg} as background.
+      Text and button are left-aligned on the dark half of the gradient.
+      Primary buttons on dark surfaces are white bg / #373368 text. */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
 
