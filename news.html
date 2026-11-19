@@ -108,6 +108,62 @@
 
     @media (max-width: 600px) { .nav-links { display: none; } }
     @media (max-width: 768px) { .nav-inner { padding: 0 16px; } }
+    /* ─── Mobile nav hamburger ──── */
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    @media (max-width: 700px) {
+      .nav-hamburger { display: flex; align-items: center; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0 16px;
+        gap: 0;
+        z-index: 99;
+      }
+      .nav-links.nav-open { display: flex; }
+      .nav-links > a {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+        opacity: 0.8;
+        margin-right: 0;
+      }
+      .nav-links > a:last-child { border-bottom: none; }
+      .nav-dropdown { width: 100%; }
+      .nav-dropdown-btn {
+        padding: 12px 24px;
+        width: 100%;
+        text-align: left;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 4px 0 4px 24px;
+        background: var(--bg-soft);
+        min-width: unset;
+      }
+      .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+      .nav-dropdown.open .nav-dropdown-menu { display: block; }
+      .nav-dropdown-menu a { padding: 10px 24px; font-size: 0.88rem; }
+    }
   </style>
 </head>
 <body>
@@ -130,10 +186,10 @@
       <a href="/resources">Resources</a>
       <a href="/news" aria-current="page">News</a>
       <a href="/faq">FAQ</a>
+</div>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
-    </div>
   </div>
 </nav>
 
