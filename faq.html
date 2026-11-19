@@ -373,6 +373,9 @@
       <a href="/resources">Resources</a>
       <a href="/news">News</a>
       <a href="/faq">FAQ</a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
     </div>
   </div>
 </nav>
@@ -526,5 +529,27 @@
   </div>
 </footer>
 
+  <script>
+  (function(){
+    var btn = document.querySelector('.nav-hamburger');
+    var links = document.querySelector('.nav-links');
+    if (!btn || !links) return;
+    btn.addEventListener('click', function(){
+      var open = links.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.innerHTML = open
+        ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+        : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+    });
+    document.querySelectorAll('.nav-dropdown-btn').forEach(function(dBtn){
+      dBtn.addEventListener('click', function(e){
+        if (window.innerWidth <= 700) {
+          e.stopPropagation();
+          dBtn.closest('.nav-dropdown').classList.toggle('open');
+        }
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
