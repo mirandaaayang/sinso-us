@@ -547,26 +547,23 @@
 
     /* ─── CTA ─────────────────────────────────────────────── */
     .cta-section {
-      background: var(--navy);
+      position: relative;
+      background-image: url('/images/ecg-ribbon-2400.webp'), url('/images/ecg-ribbon-2400.jpg');
+      background-size: cover;
+      background-position: 70% center;
       padding: 96px 0;
-      text-align: center;
+      overflow: hidden;
     }
-    .cta-section h2 { color: #fff; margin-bottom: 18px; max-width: 680px; margin-left: auto; margin-right: auto; }
-    .cta-section .lead { color: rgba(255,255,255,0.6); margin: 0 auto 40px; }
-    .cta-email-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      max-width: 560px;
-      margin: 0 auto;
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(21,19,43,0.96) 0%, rgba(21,19,43,0.8) 40%, rgba(21,19,43,0) 80%);
+      pointer-events: none;
     }
-    .cta-email-card p {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.88rem;
-      margin-bottom: 24px;
-      line-height: 1.6;
-    }
+    .cta-section > .container { position: relative; text-align: left; }
+    .cta-section h2 { color: #fff; margin-bottom: 18px; max-width: 540px; }
+    .cta-section .lead { color: rgba(255,255,255,0.65); max-width: 480px; margin-bottom: 40px; }
     .cta-email-link {
       display: inline-flex;
       align-items: center;
@@ -580,21 +577,6 @@
       transition: background 0.15s;
     }
     .cta-email-link:hover { background: rgba(255,255,255,0.88); }
-    .cta-detail {
-      margin-top: 24px;
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-    }
-    .cta-detail-item {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-    }
-
     /* ─── Footer ──────────────────────────────────────────── */
     .footer {
       background: #0D0C1E;
@@ -1182,29 +1164,12 @@
 <!-- ═══════════ CTA ═══════════════════════════════════════════ -->
 <section class="cta-section" id="contact">
   <div class="container">
-    <h2>Ready to See What Your Product Looks Like in ECG</h2>
-    <p class="lead">Sinso sends physical samples in 7–10 days. No commitment required.</p>
-    <div class="cta-email-card">
-      <p>Send a brief - product type, quantity range, any existing artwork - and Sinso will come back with a spec sheet and sample timeline.</p>
-      <a href="mailto:hello@sinso.us?subject=Sample%20Request%20-%20Sinso%20US" class="cta-email-link">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        hello@sinso.us
-      </a>
-      <div class="cta-detail">
-        <span class="cta-detail-item">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Reply within 24 hours
-        </span>
-        <span class="cta-detail-item">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Physical sample in 7–10 days
-        </span>
-        <span class="cta-detail-item">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          No minimum on samples
-        </span>
-      </div>
-    </div>
+    <h2>Send a dieline or a product.</h2>
+    <p class="lead">We'll spec it, quote it and proof it.</p>
+    <a href="mailto:hello@sinso.us?subject=Sample%20Request%20-%20Sinso%20US" class="cta-email-link">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      hello@sinso.us
+    </a>
   </div>
 </section>
 
